@@ -1,152 +1,229 @@
 ====================
-     12-04-2016
+     12-15-2016
 ====================
 
+   * OTA_config/
+4bdf5dd 7.1.1 update for lux & hammerhead
 
-   * frameworks/base/
-21b108a4 Allow custom alpha for notification shade bg color
-8892e37 Increase screenshot's timeout
-f07f6fc GlobalActions: Long press screenshot action to take a partial screenshot
-21187c2 Screenshot tile: single tap to choose the mode, long press to fire partial screenshot icon thanks to @kantjer
-dc4666a Clean up "Optional screenshot type" code in PhoneWindowManager
-6f4ec0d Optional screenshot type [1/2]
-685d883 Update Navbar Tile for Tesla
-c09bd47 Allow statusbar items to be launch without the jank [1/2]
-68bbb45 Add back 'Show brightness slider'
-e208341 QS: Expanded Desktop Tile Reloaded
-24d33ac [QUICK SETTINGS] Add Expanded Desktop QS Tile
-6f584a6 Add QSDetailItems
-74542d7 Navigation Bar Tile
-
-   * manifest/
-5ff12db fix substratum new branch
-
-   * packages/apps/TeslaCoil/
-f34dfc6 Optional screenshot type [2/2]
-92b4d9e Adding back 'full zen' aka do not disturb switch
-ded9045 Allow statusbar items to be launch without the jank [2/2]
-
-====================
-     12-03-2016
-====================
-
-
-   * external/DUtils/
-166a942 Update UserContentObserver for 7.1
-
-   * frameworks/base/
-44bbedd Option to use volume keys to control media volume anytime (2/2)
-051915a Buttons: Hardware key disable support with M adaptations [1/2]
-b3ebede frameworks/base: Don't report existing menu key if it was remapped. [2/3]
-ebb902c Buttons: Bring up DU hardware key action binding framework [1/2]
-b380954 Fix showing carrier label on keyguard status bar after reboot even it was disabled
-3c78da2 Custom Carrier Label & Carrier Label Placement [1/2] [Squashed] Squash Of: Keyguard/Statusbar Carrier label options [1/2] * Stock behavior(only on keyguard), only on statusbar,both disabled or both enabled * code originally writted by @Altaf-Mahdi i just squased into one commit PureNexusProject-Legacy/android_frameworks_base@688d56f
-9f94fc9 Fix build on 7.1
-0872a78 DUI: Initialize package monitor class
-2addb64 DUI: Initial DUI checkin for N
-ad67b12a DUI: core building support
-22fdbe5 statusbar: add screenPinningStateChanged(boolean enabled) api and pipe to navigation bar
-7bfa813 Pulse: forward port visualizer lock api
-4f25385 Bring back some removed statusbar API
-dc3f890 Runtime toggle of navbar This commit is signifigantly modified for DU, however, we maintain original authorship for API. Navbar visibility has no hardware contraints. Visibility is determined entirely from user settings and sane defaults based on factory configuration and emulator build prop.
-8f2dd56 Squashed commit for expanded desktop
-b84be8a Add Screen Record to the Power Menu [1/2]
-8cd5b13 Add a timer to screen record
-106b6b2 Save screenrecord in "Screenrecords" directory
-4792f21 screen record: make sure to always delete tmp files
-3ea60b6 Screen Recording: forward port from 4.4
-60c2b9d bring back screen record shortcut
-
-   * packages/apps/Settings/
-4376c36 add expanded desktop category in teslacoil (1/2)
-ca96308 DUI: Initial N checkin
-1982e6e Settings: Squashed commit for expanded desktop
-
-   * packages/apps/TeslaCoil/
-51d4d22 Option to use volume keys to control media volume anytime (1/2) Some users don't adjust ringtone volume often (e.g. only use toggle to switch between silent and non-silent) mode. Having an option to use the volume keys to control media volume anytime allows media volume to be controllled/muted before entering a game or other apps with sound in an undesirable location.
-fbdd2d1 strings: navigation buttons < Hardware keys
-f86c40e Buttons: Hardware key disable support with M adaptations [2/2]
-aeed613 Enable single tap rebinding for hwkey back and home
-c79a576 Buttons: HwKey action binding preferences [3/3]
-0454ffc add vector for carrier label category
-3d1cf25 Custom Carrier Label & Carrier Label Placement [2/2] [Squashed] Credit/Thanks to @Altaf-Mahdi @beanstown106 and @martincz
-f4d0e44 add expanded desktop category in teslacoil (2/2)
-7a54640 SmartBar: add Flip button animation [2/2]
-dd07074 little fixes
-35dc6a2 switch to colorAccent
-9bc50fa Fling: Fix FC in Fling settings when configuration changes
-51a0d71 DUI: Initial N checkin
-544af74 move navbar toggle to Navigation cat
-dca0e51 add a navbar toggle
-2e9c674 Add Screen Record to the Power Menu [2/2]
-
-   * vendor/tesla/
-2b12604 Revert "Revert "DIU Build utils library and add as boot jar""
-
-====================
-     12-02-2016
-====================
-
-
-   * device/motorola/lux/
-fce59e3 Permissive SElinux
-
-   * frameworks/base/
-2a86ab4 Make Build.TYPE and Build.FINGERPRINT consistent for apps.
-
-   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.9/
-a245adf Initial commit
-
-====================
-     12-01-2016
-====================
-
-
-   * build/
-8a4985a Say Goodbye API
+   * device/lge/g5-common/
+0b86312 g5: Remove unused sound configs and add protected vbat acdb
 
    * device/lge/hammerhead/
-ba2ac83 hammerhead: Remove enhanced NFC feature
+1502ade Tesla N Bringup
 
    * device/nvidia/shieldtablet/
-49a46d9 Use legacy camera system
-21eb80e Whitelist dev node used by zygote
-51b74a2 Revert "Use multithread decode for boot animation."
-422d13d Fix camera shim.
+d301311 set ro.product.device
 
    * frameworks/base/
-6ac480f Lockscreen weather improvementssquashed
-fab158b Keyguard: Create lockscreen weather
-b88a10f fix fc
-6999254 Build fixes
-4f26299 Allow adjusting screen density to smaller sizes.
-911487c Lockscreen : Only animate targets if launched via swipe
-b22aa0d SystemUI: fix double tap power launching custom lockscreen icon
-8ab202d SystemUI: avoid lock screen shortcut picker crash
-7619efa SettingsProvider : Add functions for delimited strings
-34016bd SystemUI: Lockscreen shortcut customization Squashed with: Fix leftAffordanceView visibility bug 121c7a982cd88bef53b79baf3665db9c415281f8 LockscreenShortcuts: Since Voice assist is default use its icon 7e6c2ebf86fe95300705ce5da847ac0ee855e1b7
+ef5559b DUI: fix SmartBar edit mode
+bcc4a29 Small QS tiles number: fix SystemUI FC when changing the value
+d9f49e2 Fix issue that padlock icon is not animating while expanding QS
+
+   * vendor/lge/
+1aa9411 g5: Initial blobs
+19ffe10 g4: update liboemcrypto from bullhead for widevine
+acf27b9 Merge pull request #242 from Shelnutt2/cm-14.1
+
+   * vendor/tesla/
+8e5f7ec Add Reliance Jio India IMS volte apn's
+d01f13f Fix Reliance Jio India APNs.
+f0f9af0 apns: Add Reliance Jio APNs
+
+====================
+     12-14-2016
+====================
+
+
+   * device/lge/g5-common/
+0d96d4a g5: add libvolumelistener
+
+   * device/lge/hammerhead/
+6656597 overlay: trim frameworks/base overlay
+4f2c2e3 hammerhead: Switch to cmhw vibrator implementation
+ff84b17 Revert "hammerhead: enable doze power saving mode"
+a76ecd0 hammerhead: Remove duplicate livedisplay permissions
+0384f37 hammerhead: Enable HAL1 hacks
+
+   * frameworks/base/
+e90b624 Data tile quick toggle: apply the custom behavior also to mini tiles bar
+0236598 Bring back 'custom small QS tiles' [1/2]
+3c1c314 N-Extras: Add dynamic theme BootAnimation support
+65d526d Revert "N-Extras: Add dynamic theme BootAnimation support"
+5fcdf76 Expose various QuickSettings text colors
+78eddbd Expose QS edit item decoration background color
+590669c Allow Navbar ripple color to be themed
+29a6e1e Allow Permission Icons to be fully themed
+226b861 Allow Immersive cling colors to be fully themed
+eae0eab Expose resolver hardcoded colors
+68ee0db OMS7-N: ApplicationsState: add filter for Substratum icon overlays [1/2]
+
+   * kernel/lge/msm8996/
+2e93ba8 qpnp: Fix LG derps on elsa
+7932e35 h918_defconfig: Initial CM defconfig
 
    * kernel/motorola/msm8916/
-69f8cd9 Even milder undervolt for improved compatibility
-c4a381a Mild undervolt
+3444e61 BACKPORT: perf: Fix event->ctx locking
+5a8e568 perf: protect group_leader from races that cause ctx double-free
+0f8b4e5 Revert "msm: mdss: Port HBM fixes"
+1cc95a0 fs: ext4: disable support for fallocate FALLOC_FL_PUNCH_HOLE
+12b84e3 KEYS: Fix short sprintf buffer in /proc/keys show function
+576a6c0 net: llc: use correct size for sysctl timeout entries
+6c3c4b2 mm: Fix NULL pointer dereference in madvise(MADV_WILLNEED) support
+b6c29c6 vfs: read file_handle only once in handle_to_path
+665802f mnt: Only change user settable mount flags in remount
+a21efc2 eCryptfs: Remove buggy and unnecessary write in file name decode routine
+
+   * packages/apps/Dialer/
+63d0b80 Revert "Re-add call recording feature."
+9f3ec13 rename to tesla_strings
+88c2a5c Re-add call recording feature.
+65b816d Substratum expose hardcoded colors
+dfbbc1e Themes: InCallUI dialpad digits color
+52ed98c Themes: Separate background color from text color
+fd62290 Add missing permissions to Dialer
+22f851e german translate
+b64c461 [3/3] Flip to Mute/Reject Call
+533989b [2/3] Dialer: Proximity Speakerphone originally done by dankoman30 rewritten and moved to dialer by beanstown106
+80e675f [3/3]InCallUI: Proximity Speaker
+c3e3193 Give speed dial entry editor a sane layout.
+844eb69 Remove SIP dial icon in dialer for some carriers
+6c1f739 Dialer: Add call/data usage Timer in Dialer setting
+8248c8e Using Setting provider to get WiFi call configuration instead of System properties
+9112648 Dialer: Input ,(pause) or ;(wait) when long press * or #
+0a30c4f Dialer: add upgrade for smart search table.
+a88a969 Dialer: Can't show Card 2 call log one card existed
+f70d261 Revert "Make FloatingActionButtonController view visible."
+638bf25 Dialer: fix the runtime exception issue for smartsearch.
+34436a5 IMS: CallLogs:FR33084_VoWiFi_Phonebook
+072a3db Dialer: add video call capability check based on PresenceService
+887243c Dialer: WFC: Add wifi call features.
+cb408dc Dialer: Add support for operator name
+8bc89ba InCallUI: Use proper sub IDs
+d6a647e incallui: remove qti framework dependency for DSDA
+8287e89 IMS-VT: Handle configuration changes on low battery Video call
+8123470 IMS-VT: FR36492 - UI to disable picture in picture mode
+d8d4694 IMS-VT: Fix preview size issue during VT call
+f4a0762 IMS-VT: Handle InCallActivity destroy when low battery dialog is showing
+c73d8ff IMS-VT: Validate phone number for a Video call
+3bdce51 Fix active call InCallUI buttons highlight when EM call disconnects
+5589d88 Dialer:phone interface has highlight when receive a BT request
+334b46d InCallUI: Config to control call record feature
+5038c2c IMS-VT: Remove one directional video call support
+10ef9c0 IMS: Customize HD icon in CallCard for some carriers
+05e4069 IMS-VT: Fix orientation change not working after back key press
+343098f IMS-VT: Handle buttons display in InCall Screen
+7ce44c1 IMS-VT: Set notificationType for IncomingCall when InCallUi is not showing
+e3d667f VideoCall: preview before upgrade video call is accepted.
+644b9c5 IMS-VT: Do not toggle full screen mode when not in video call.
+5a322de MSIM: Dismiss pending dialog on incoming call notification.
+8bd386b Fix incorrect call duration after system time changes
+d71d6b7 Revert "Expedite the processing of destroying Incall UI after end call"
+6d3b308 Revert "Fix MT call cannot be rejected for DSDS"
+cdd28f3 InCallUI: customize video call UI
+
+   * packages/apps/Settings/
+1822deb Settings: Expose LinearColorBar default colors
+f0fe53d Settings: Expose storage summary text
+403b0fe Settings: Expose storage icon colors
+27e1f28 Settings: Expose gesture settings switchbar
+cd3a02a Themes: Expose condition card colors
+d4f9a8f Expose dashboard category and tile color
+fcdf69d OMS7-N: Apps: show/hide Substratum icon overlays [2/2]
 
    * packages/apps/TeslaCoil/
-32ed9ea Lockscreen weather squashed
-bc3e33f Show summary for Teslacoil dashboard entry
-b20e826 Add Lockscreen shortcuts
-
-   * packages/apps/masquerade/
-6b6f33e Release 20: Finalize Icon Pack Handling for Masquerade
-244a92f Release 19: Properly show toast when config changing
-1cdd2f6 Release 18: Icon Pack Studio Stable
-61e43a6 Allow Substratum to share the icon helper function with the bypass
-6e6159d Release 17: Allow more flexibility with icon packs
+7875969 Bring back 'custom small QS tiles' [2/2]
 
    * packages/services/Telephony/
-84ebf5d [2/3] Flip to Mute/Reject Call
+922dc21 telephony: allow broadcasts from Samsung RIL
+
+   * system/netd/
+038e4d7 Revert "Revert "Don't start tethering if IPv6 RPF is not supported.""
+
+   * vendor/lge/
+b2fb644 ls990: Add pn544 firmware
+3bcab24 ls990: Remove prebuilt ril
 
 ====================
-     11-30-2016
+     12-13-2016
 ====================
 
+
+   * device/lge/g5-common/
+501464e g5: build snap and force HAL1 for Google Camera / Snap
+
+   * frameworks/base/
+dc4daab webview_packages: correct signature definition for Chrome Stable
+45eeac1 webview_packages: prefer the more powerful webview packages
+
+   * system/sepolicy/
+f092880 Allow apps in /system/priv-app to call and execute su commands
+
+   * vendor/lge/
+a78f691 g4: update libdrmdecrypt from bullhead
+4300094 g4: update drm blobs from bullhead nmf26f
+
+====================
+     12-12-2016
+====================
+
+
+   * device/nvidia/shieldtablet/
+47d45f4 Add caf_fw.mk
+
+   * frameworks/base/
+24c3768 SystemUI : Port forward statusbar brightness control Brings back the status bar brightness control from cm-10.2/cm-11
+1c2c757 Brightness mirror - fix multi-touch issue
+b9837f5 fix build
+9f226c3 Tesla logo in the statusbar
+8632c70 FWB: Add Volume Key Answer (1/2) hey, winter)
+da02534 Allow Volume wake and music control to work toghether [1/2] *disable volume wake when muic is active if music controls is on *change volume wake logic
+fed1903 Revert "Statusbar brightness control [2/2]"
+eccbfc1 Revert "Brightness control: UserHandle.USER_CURRENT"
+c67c66e Brightness control: UserHandle.USER_CURRENT
+150aaa3 Statusbar brightness control [2/2]
+
+   * manifest/
+dc52c40  8916,8952 audio-caf track 7.1
+
+   * packages/apps/TeslaCoil/
+1fb513c statusbar brightness control
+d3bfa7d  Add Volume Key Answer (2/2)
+cbd4ec2 Allow Volume wake and music control to work toghether [2/2] *disable volume wake when muic is active if music controls is on
+670b9d8 Revert "Statusbar brightness control [1/2]"
+f82ad93 Statusbar brightness control [1/2]
+
+====================
+     12-11-2016
+====================
+
+
+   * device/lge/g5-common/
+7d14dfe Revert "g5: Redo the way we fetch BT and WiFi addrs"
+
+   * frameworks/base/
+bd8b31d Merge branch 'n7.1.1' of pull ya ass
+50a9a4b settingsprovider: bt default off
+
+   * manifest/
+60c4da4 8996 audio-caf track 7.1
+1d39fc8 our telephony again
+
+   * packages/apps/Settings/
+279e8ec Changed information string about model
+
+   * packages/services/Telecomm/
+b0454e9 Telecomm: Notification Led
+
+   * packages/services/Telephony/
+6f6f024 [2/3] Flip to Mute/Reject Call
+
+   * system/netd/
+ad8af1e Revert "Don't start tethering if IPv6 RPF is not supported."
+
+   * vendor/lge/
+4c98487 Merge pull request #243 from finnq/cm-14.1_g3_izat
+23d781a g3: move izat.conf to our device tree
+
+   * vendor/tesla/
+e84ab6e v3.4
 
