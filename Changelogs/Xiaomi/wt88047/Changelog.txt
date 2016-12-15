@@ -1,177 +1,174 @@
 ====================
-     12-07-2016
+     12-15-2016
 ====================
 
-   * OTA_config/
-6dd47da ota: URL is now moved to devices repo
 
-   * device/wingtech/wt88047/
-a00dcae msm8916-common: Add VoLTE stuff
+   * kernel/wingtech/msm8916/
+d0ea8fc defconfig: enable NF_MATCH_RPFILTER
 
-   * frameworks/base/
-a3b6c03 alarmmanager: Remove stacktrace spamming from poweroff alarm
-5f20ed1 services: Doze only if GMS is present
-71bbb75 Notification dynamic colors bool compatible with OMS7 (2/2)
-7a763e6 Notifications: Expose a bool to disable dynamic colors
-
-   * manifest/
-a453d03 ota: track device repos OTA_Config
-
-   * packages/apps/Settings/
-8583170 kminilte maintainer
-913a5e7 edit Adam #fixit
-ae7986e bring myself in
-21f7e29 did i say you can be there? lol
-1426c22 tesla about; add myself :)
-6cd8611 tesla about: add me
-bbbcf72 tesla about: add Char
-9adcb14 Tesla about: add me
-4bd3cce fix TeslaAbout.java for nougat
-0845eff A cold with some code = what just happened
-b9eed4b About Tesla Section
-1b2e3e2 Changelog in settings(1)
-d3a8b01 Add TeslaOTA
+   * system/netd/
+038e4d7 Revert "Revert "Don't start tethering if IPv6 RPF is not supported.""
 
    * vendor/tesla/
-01a5bd7 cm: overlay: Enable auto-power-save modes globally
+8e5f7ec Add Reliance Jio India IMS volte apn's
+d01f13f Fix Reliance Jio India APNs.
+f0f9af0 apns: Add Reliance Jio APNs
+
+====================
+     12-14-2016
+====================
+
+
+   * frameworks/base/
+e90b624 Data tile quick toggle: apply the custom behavior also to mini tiles bar
+0236598 Bring back 'custom small QS tiles' [1/2]
+3c1c314 N-Extras: Add dynamic theme BootAnimation support
+65d526d Revert "N-Extras: Add dynamic theme BootAnimation support"
+5fcdf76 Expose various QuickSettings text colors
+78eddbd Expose QS edit item decoration background color
+590669c Allow Navbar ripple color to be themed
+29a6e1e Allow Permission Icons to be fully themed
+226b861 Allow Immersive cling colors to be fully themed
+eae0eab Expose resolver hardcoded colors
+68ee0db OMS7-N: ApplicationsState: add filter for Substratum icon overlays [1/2]
+
+   * packages/apps/Dialer/
+63d0b80 Revert "Re-add call recording feature."
+9f3ec13 rename to tesla_strings
+88c2a5c Re-add call recording feature.
+65b816d Substratum expose hardcoded colors
+dfbbc1e Themes: InCallUI dialpad digits color
+52ed98c Themes: Separate background color from text color
+fd62290 Add missing permissions to Dialer
+22f851e german translate
+b64c461 [3/3] Flip to Mute/Reject Call
+533989b [2/3] Dialer: Proximity Speakerphone originally done by dankoman30 rewritten and moved to dialer by beanstown106
+80e675f [3/3]InCallUI: Proximity Speaker
+c3e3193 Give speed dial entry editor a sane layout.
+844eb69 Remove SIP dial icon in dialer for some carriers
+6c1f739 Dialer: Add call/data usage Timer in Dialer setting
+8248c8e Using Setting provider to get WiFi call configuration instead of System properties
+9112648 Dialer: Input ,(pause) or ;(wait) when long press * or #
+0a30c4f Dialer: add upgrade for smart search table.
+a88a969 Dialer: Can't show Card 2 call log one card existed
+f70d261 Revert "Make FloatingActionButtonController view visible."
+638bf25 Dialer: fix the runtime exception issue for smartsearch.
+34436a5 IMS: CallLogs:FR33084_VoWiFi_Phonebook
+072a3db Dialer: add video call capability check based on PresenceService
+887243c Dialer: WFC: Add wifi call features.
+cb408dc Dialer: Add support for operator name
+8bc89ba InCallUI: Use proper sub IDs
+d6a647e incallui: remove qti framework dependency for DSDA
+8287e89 IMS-VT: Handle configuration changes on low battery Video call
+8123470 IMS-VT: FR36492 - UI to disable picture in picture mode
+d8d4694 IMS-VT: Fix preview size issue during VT call
+f4a0762 IMS-VT: Handle InCallActivity destroy when low battery dialog is showing
+c73d8ff IMS-VT: Validate phone number for a Video call
+3bdce51 Fix active call InCallUI buttons highlight when EM call disconnects
+5589d88 Dialer:phone interface has highlight when receive a BT request
+334b46d InCallUI: Config to control call record feature
+5038c2c IMS-VT: Remove one directional video call support
+10ef9c0 IMS: Customize HD icon in CallCard for some carriers
+05e4069 IMS-VT: Fix orientation change not working after back key press
+343098f IMS-VT: Handle buttons display in InCall Screen
+7ce44c1 IMS-VT: Set notificationType for IncomingCall when InCallUi is not showing
+e3d667f VideoCall: preview before upgrade video call is accepted.
+644b9c5 IMS-VT: Do not toggle full screen mode when not in video call.
+5a322de MSIM: Dismiss pending dialog on incoming call notification.
+8bd386b Fix incorrect call duration after system time changes
+d71d6b7 Revert "Expedite the processing of destroying Incall UI after end call"
+6d3b308 Revert "Fix MT call cannot be rejected for DSDS"
+cdd28f3 InCallUI: customize video call UI
+
+   * packages/apps/Settings/
+1822deb Settings: Expose LinearColorBar default colors
+f0fe53d Settings: Expose storage summary text
+403b0fe Settings: Expose storage icon colors
+27e1f28 Settings: Expose gesture settings switchbar
+cd3a02a Themes: Expose condition card colors
+d4f9a8f Expose dashboard category and tile color
+fcdf69d OMS7-N: Apps: show/hide Substratum icon overlays [2/2]
+
+   * packages/apps/TeslaCoil/
+7875969 Bring back 'custom small QS tiles' [2/2]
+
+   * packages/services/Telephony/
+922dc21 telephony: allow broadcasts from Samsung RIL
+
+====================
+     12-13-2016
+====================
+
+
+   * frameworks/base/
+dc4daab webview_packages: correct signature definition for Chrome Stable
+45eeac1 webview_packages: prefer the more powerful webview packages
+24c3768 SystemUI : Port forward statusbar brightness control Brings back the status bar brightness control from cm-10.2/cm-11
+1c2c757 Brightness mirror - fix multi-touch issue
+b9837f5 fix build
+9f226c3 Tesla logo in the statusbar
+8632c70 FWB: Add Volume Key Answer (1/2) hey, winter)
+da02534 Allow Volume wake and music control to work toghether [1/2] *disable volume wake when muic is active if music controls is on *change volume wake logic
+fed1903 Revert "Statusbar brightness control [2/2]"
+eccbfc1 Revert "Brightness control: UserHandle.USER_CURRENT"
+c67c66e Brightness control: UserHandle.USER_CURRENT
+
+   * packages/apps/TeslaCoil/
+1fb513c statusbar brightness control
+d3bfa7d  Add Volume Key Answer (2/2)
+cbd4ec2 Allow Volume wake and music control to work toghether [2/2] *disable volume wake when muic is active if music controls is on
+670b9d8 Revert "Statusbar brightness control [1/2]"
+
+   * system/sepolicy/
+f092880 Allow apps in /system/priv-app to call and execute su commands
+
+====================
+     12-12-2016
+====================
+
+
+   * frameworks/base/
+150aaa3 Statusbar brightness control [2/2]
+
+   * manifest/
+dc52c40  8916,8952 audio-caf track 7.1
+
+   * packages/apps/TeslaCoil/
+f82ad93 Statusbar brightness control [1/2]
+
+====================
+     12-11-2016
+====================
+
+
+   * frameworks/base/
+bd8b31d Merge branch 'n7.1.1' of pull ya ass
+50a9a4b settingsprovider: bt default off
+82b07c6 add adb socket and dev node to Whitelist
+3f75bcd fw/base: allow home button to wake device [1/2]
+
+   * manifest/
+60c4da4 8996 audio-caf track 7.1
+1d39fc8 our telephony again
+
+   * packages/apps/Settings/
+279e8ec Changed information string about model
+
+   * packages/apps/TeslaCoil/
+506dcea allow home button to wake device [2/2]
+
+   * packages/services/Telecomm/
+b0454e9 Telecomm: Notification Led
+
+   * packages/services/Telephony/
+6f6f024 [2/3] Flip to Mute/Reject Call
+
+   * system/netd/
+ad8af1e Revert "Don't start tethering if IPv6 RPF is not supported."
+
+   * vendor/tesla/
+e84ab6e v3.4
 
    * vendor/wingtech/
-e840116 msm8916-common: Add IMS blobs
-
-====================
-     12-06-2016
-====================
-
-   * OTA_config/
-543e042 ota: update for Redmi2 7.1
-
-   * build/
-a731985 Remove abort logic (MultiROM fix)
-59629ed Disable the after flash image verification
-
-   * device/wingtech/wt88047/
-91bcb8f Build Snap
-
-   * frameworks/base/
-0599a8d Power Menu animations [1/2]
-156d155 Power/reboot dialogs dim [1/2]
-16f41d0 Fix single action power menu issue
-7304883 Add alarm fullscreen
-1c4d706 base: silent mode is back Update SoundTile for silent
-59d914b Disable/Enable screenshot sound [1/2]
-
-   * packages/apps/Settings/
-f8c2136 Disable/Enable screenshot sound [2/2]
-
-   * packages/apps/TeslaCoil/
-3158479 Power Menu animations [2/2]
-7e1c37e Power/reboot dialogs dim [2/2] - Controls the dim amount of the power/reboot menu dialog
-
-====================
-     12-05-2016
-====================
-
-   * OTA_config/
-ea5bd29 7.1 update for lux, shieldtablet & hammerhead
-
-   * frameworks/base/
-b4edb75 Fix race condition when writing UidState of appops.
-981c0e0 Fix NPE from AppOpsManager.checkPackage.
-21b108a4 Allow custom alpha for notification shade bg color
-8892e37 Increase screenshot's timeout
-f07f6fc GlobalActions: Long press screenshot action to take a partial screenshot
-21187c2 Screenshot tile: single tap to choose the mode, long press to fire partial screenshot icon thanks to @kantjer
-dc4666a Clean up "Optional screenshot type" code in PhoneWindowManager
-6f4ec0d Optional screenshot type [1/2]
-
-   * manifest/
-5ff12db fix substratum new branch
-
-   * packages/apps/Settings/
-782f262 AppOps: use tesla arrays and strings without summaries
-4f5ec0e settings: Fix viewpager tabs not showing on AppOpsSummary
-df7f15d Move App Ops to Main Settings
-1b7f26b Return App Ops (bug - without tabs)
-
-   * packages/apps/TeslaCoil/
-f34dfc6 Optional screenshot type [2/2]
-
-====================
-     12-04-2016
-====================
-
-
-   * device/wingtech/wt88047/
-36c1768 overlay: bring back hardware keys
-09c02df overlay: bring back LED lights
-
-   * frameworks/base/
-685d883 Update Navbar Tile for Tesla
-c09bd47 Allow statusbar items to be launch without the jank [1/2]
-68bbb45 Add back 'Show brightness slider'
-e208341 QS: Expanded Desktop Tile Reloaded
-24d33ac [QUICK SETTINGS] Add Expanded Desktop QS Tile
-6f584a6 Add QSDetailItems
-74542d7 Navigation Bar Tile
-44bbedd Option to use volume keys to control media volume anytime (2/2)
-051915a Buttons: Hardware key disable support with M adaptations [1/2]
-b3ebede frameworks/base: Don't report existing menu key if it was remapped. [2/3]
-ebb902c Buttons: Bring up DU hardware key action binding framework [1/2]
-b380954 Fix showing carrier label on keyguard status bar after reboot even it was disabled
-3c78da2 Custom Carrier Label & Carrier Label Placement [1/2] [Squashed] Squash Of: Keyguard/Statusbar Carrier label options [1/2] * Stock behavior(only on keyguard), only on statusbar,both disabled or both enabled * code originally writted by @Altaf-Mahdi i just squased into one commit PureNexusProject-Legacy/android_frameworks_base@688d56f
-
-   * packages/apps/TeslaCoil/
-92b4d9e Adding back 'full zen' aka do not disturb switch
-ded9045 Allow statusbar items to be launch without the jank [2/2]
-51d4d22 Option to use volume keys to control media volume anytime (1/2) Some users don't adjust ringtone volume often (e.g. only use toggle to switch between silent and non-silent) mode. Having an option to use the volume keys to control media volume anytime allows media volume to be controllled/muted before entering a game or other apps with sound in an undesirable location.
-fbdd2d1 strings: navigation buttons < Hardware keys
-f86c40e Buttons: Hardware key disable support with M adaptations [2/2]
-aeed613 Enable single tap rebinding for hwkey back and home
-c79a576 Buttons: HwKey action binding preferences [3/3]
-0454ffc add vector for carrier label category
-3d1cf25 Custom Carrier Label & Carrier Label Placement [2/2] [Squashed] Credit/Thanks to @Altaf-Mahdi @beanstown106 and @martincz
-
-====================
-     12-03-2016
-====================
-
-
-   * external/DUtils/
-166a942 Update UserContentObserver for 7.1
-
-   * frameworks/base/
-9f94fc9 Fix build on 7.1
-0872a78 DUI: Initialize package monitor class
-2addb64 DUI: Initial DUI checkin for N
-ad67b12a DUI: core building support
-22fdbe5 statusbar: add screenPinningStateChanged(boolean enabled) api and pipe to navigation bar
-7bfa813 Pulse: forward port visualizer lock api
-4f25385 Bring back some removed statusbar API
-dc3f890 Runtime toggle of navbar This commit is signifigantly modified for DU, however, we maintain original authorship for API. Navbar visibility has no hardware contraints. Visibility is determined entirely from user settings and sane defaults based on factory configuration and emulator build prop.
-8f2dd56 Squashed commit for expanded desktop
-b84be8a Add Screen Record to the Power Menu [1/2]
-8cd5b13 Add a timer to screen record
-106b6b2 Save screenrecord in "Screenrecords" directory
-4792f21 screen record: make sure to always delete tmp files
-3ea60b6 Screen Recording: forward port from 4.4
-60c2b9d bring back screen record shortcut
-
-   * packages/apps/Settings/
-4376c36 add expanded desktop category in teslacoil (1/2)
-ca96308 DUI: Initial N checkin
-1982e6e Settings: Squashed commit for expanded desktop
-
-   * packages/apps/TeslaCoil/
-f4d0e44 add expanded desktop category in teslacoil (2/2)
-7a54640 SmartBar: add Flip button animation [2/2]
-dd07074 little fixes
-35dc6a2 switch to colorAccent
-9bc50fa Fling: Fix FC in Fling settings when configuration changes
-51a0d71 DUI: Initial N checkin
-544af74 move navbar toggle to Navigation cat
-dca0e51 add a navbar toggle
-2e9c674 Add Screen Record to the Power Menu [2/2]
-
-   * vendor/tesla/
-2b12604 Revert "Revert "DIU Build utils library and add as boot jar""
+0ec8ade ims: update some libs
 
