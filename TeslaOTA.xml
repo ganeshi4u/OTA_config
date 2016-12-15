@@ -51,11 +51,11 @@
                 description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
         </OnePlus3>
         <lux>
-            <Filename>Tesla-lux-7.1.Beta.v3.3-Official-20161204-1126.zip</Filename>
+            <Filename>Tesla-lux-7.1.1.Beta.v3.4-Official-20161214-1211.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download TeslaN build">https://www.androidfilehost.com/?fid=601300970940399963</RomUrl>
+                description="Download TeslaN build">https://www.androidfilehost.com/?fid=673368273298916807</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -81,11 +81,11 @@
                 description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
         </shieldtablet>
         <hammerhead>
-            <Filename>Tesla-hammerhead-7.1.Beta.v3.3-Official-20161204-1334.zip</Filename>
+            <Filename>Tesla-hammerhead-7.1.1.Beta.v3.4-Official-20161215-1315.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download TeslaN build">https://www.androidfilehost.com/?fid=601300970940399965</RomUrl>
+                description="Download TeslaN build">https://www.androidfilehost.com/?fid=529152257862688660</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
