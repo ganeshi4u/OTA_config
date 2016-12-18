@@ -95,5 +95,20 @@
                 title="Gapps"
                 description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
         </hammerhead>
+        <osprey>
+            <Filename>Tesla-osprey-7.1.1.Beta.v3.4-Official-20161217-1902.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download TeslaN build">https://www.androidfilehost.com/?w=files&amp;flid=134206</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View TeslaN changelogs">https://github.com/TeslaRom-N/OTA_config/blob/master/Changelogs/Motorola/osprey/Changelog.txt</ChangelogUrl>
+            <GappsUrl
+                id="gapps"
+                title="Gapps"
+                description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
+        </osprey>
     </Stable>
 </SlimOTA>
