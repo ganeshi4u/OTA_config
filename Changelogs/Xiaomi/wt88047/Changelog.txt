@@ -1,219 +1,87 @@
 ====================
-     12-18-2016
+     12-24-2016
+====================
+
+
+   * device/wingtech/wt88047/
+f81f1cc bacon: Google assistant prop
+
+   * frameworks/base/
+b17b2e6 SystemUI: Use own drawables for QS expand icon
+
+   * packages/apps/Settings/
+fa0432b Exclude overlays from the app counter
+2bc2e87 Hide the "show/hide overlays" when no overlay installed
+
+====================
+     12-23-2016
+====================
+
+
+====================
+     12-22-2016
 ====================
 
 
    * bionic/
-37005cc Fix mako, flo, geehrc sensors. Thanks to @DevSwift
+d273413 Revert "Fix mako, flo, geehrc sensors. Thanks to @DevSwift"
 
    * frameworks/base/
-4e3b404 Merge pull request #3 from oraixearl/n7.1.1
-250b2d5 Pie tile fix
-c7ebcf3 Pie Tile
-889a2c2 Remove bracket
-ebef750 Add PIE 3.0 [1/2]
-f62c227 Add EdgeGesture service
-4b33d18 Remove Uneeded Style
-36850b9 FWB:Add a Switch to Enable Disable Dynamic Navbar[1/2] Everything works as it should. To see changes within the app after enabling/disabling this switch, app must be restarted everytime switch is toggled .
-b11901d Revert "base: dynamic navbar colors"
+80c9fe9 Reset battery stats (extracted from https://github.com/CyanogenMod/android_frameworks_base/commit/910397f2390d6821a006991ed6035c76cbc74897 by @xyyx)
+2a9f22c Fix warning: Potential leak of memory pointed to by 'set'
+df74499 Fix a memory leak.
+5b0db48 fix persistent process is killed and restart again and again
+47d116a Fix incorrect FIFO cgroup assignment.
+29fe0fa Fix logic typo in the JobPackageTracker
+391234d Fix broadcast receiver leak issue
+25a9733 note the last msg that might make the Looper blocking
+5148d53 Fix incorrect calculation of sizeof package structure
+292079b Fix window transformation related issue
+09dafdb Fix thread safety issue
+318b065 Fix static analyzer warnings.
+57385d6 Fix static-analyzer warning.
+ec2d89a Fix a static-analyzer warning.
+bebff40 Fix keyguard flash issue
+53d7ce1 [AM] Fix system server may killed when monkey crash.
+2058d76 Fix the deadlock problem
+3d5e47d Themes: Expose QS battery
+f08cbbe QS: Add Music QS Tile
+94ca92a FWB :SmartBar Button Tint [1/3] With Reference to Patch AICP/frameworks_base@85d97f4
 
-   * kernel/wingtech/msm8916/
-2a4e3ce hotplug: msm active all the time, as its default for uw
-
-   * manifest/
-2dd2212 qcom bt-caf: n7.1.1 branch
-892c5df HALs track n7.1-caf-8xxx
-
-   * packages/apps/TeslaCoil/
-a169d7f PA Pie 3.0
-7ec8557 Fix empty carrier label options on msim devices
-b0d6d99 Settings:Add a Switch to Enable Disable Dynamic Navbar[2/2]
-
-====================
-     12-17-2016
-====================
-
-
-   * frameworks/base/
-b167d62 Tesla dark theme initial [1/2]
-ded9f46 Revert "Remove DayNight theme"
-bc09026 Revert "Remove -night qualified resources"
-c27a1be [2/2] Frameworks: Add option for position date left-right of clock
-a9ce51f base: dynamic navbar colors
-167fd8f fb: add back all keyboard IME features back (1/2)
-421a115 hmm howd this get here google :P
-bd5c6ab [1/2] Lockscreen PIN quick unlock old way does not work anymore exactly like before. So adapt the idea to new LP code
-85e1bc6 Fix pin shuffle since mKeyguardBouncerFrame is deprecated for mContainer
-9f39928 Fix scramblepin logic
-6d3687f Don't disable visibility when scrambling pin
-db09d4d Add option to scramble pin layout when unlocking [1/2]
-
-   * hardware/qcom/audio-caf/msm8916/
-b17153f policy_hal: Fix mismerges
-
-   * kernel/wingtech/msm8916/
-a8252bc hotplug: revamp msm hotplug
-c5391c3 defconfig: enable state notifier
-19561c5 input: touchscreen: Add state_notifier driver
-
-   * manifest/
-f2f2fe8 msm8916: track 7.1 media-caf & display-caf
+   * packages/apps/DUI/
+69bf11d Smarbar Tint: Use Multiply Color filter
+a3d2175 DUI :SmartBar Button Tint [2/3]
 
    * packages/apps/Settings/
-9903871 Theme: manifest day/night changes
-a2bfaf8 Tesla dark theme initial [2/2]
-04870d3 Settings: add back all keyboard IME features back (2/2)
-294ef37 [2/2] Lockscreen PIN quick unlock old way does not work anymore exactly like before. So adapt the idea to new LP code
-173a573 Add option to scramble pin layout when unlocking [2/2]
+b179fbe Title is different after tapping "Memory used by apps"
+ea6b3b8 Fix network name for Passpoint network
+f07c697 Fix crash when rotating HighPowerDetail dialog
+7e3ede0 Fix NPE when rotating "Saved networks" screen
+78fab98 Fix ApplicationsState.Session memory leak in settings app
+d7f50a8 Fix end padding of summary text for dialog is too narrow
+f30ef15 Fix synchronization of Wi-Fi hotspot switch
+c3b5050 finish() dialog whenever it's dismissed
+b58b8de Sync qs invert color with color inversion in Settings
+f88263b Wi-Fi tethering switch was briefly in wrong state
+0a77ec0 Fix settings force close when adding a account.
+6fecde7 Settings: fix FC if opening Audio Settings after enabling DND
+f9f2e3d move substratum and supersu to extra option
+63b1bc4 Reset battery stats [2/2]
+b523724 InstalledApp: show link to Google Play
+7fb852e Settings: Add Substratum to dashboard
+52be1c0 Launch SuperSU from Settings
+6f13659 Define background color on the dashboard
 
    * packages/apps/TeslaCoil/
-f1a9c63 [1/2] Settings: Add option for position date left-right of clock
-a841f34 add a headsup toggle
-
-   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.9/
-151e55d Initial commit
-
-   * vendor/wingtech/
-315c811 ims: remove some binaries that are crashing
-166eb0d Revert "ims: update some libs"
+3576ac5 Smartbar Button Tint [3/3]
 
 ====================
-     12-16-2016
-====================
-
-   * OTA_config/
-420704e Merge https://github.com/Tesla-M-Devices/OTA_config into HEAD
-3c9c3ec 7.1.1 update for Shieldtablet
-81af2a5 ota: update Redmi2 12/15 7.1.1
-4bdf5dd 7.1.1 update for lux & hammerhead
-
-   * device/wingtech/wt88047/
-5708157 overlay: enable round icons
-60c3185 overlay: enable device and carrier vt
-
-   * frameworks/base/
-fb6969e Recents Clear All Button Tweaks and Add FAB to Recents Panel
-fd15bed2 Add OmniSwitch as option for default recents [1/2]
-0e73edf Immersive Recents [1/2]
-
-   * manifest/
-31acc33 add omniswitch
-
-   * packages/apps/TeslaCoil/
-7ddcc4c Add Clear All Button to Recents [2/2] Change-Id: Id264db6712e05a3b6fa6095208cb6e3a3dd15ae0
-443b450 Remove/Disable OmniSwitch PS and features if package is uninstalled
-a9eecb0 Add OmniSwitch as option for default recents [2/2]
-2519690 Immersive Recents [2/2]
-21b9f32 Add Recents category
-
-   * vendor/tesla/
-cc95a98 add omniswitch
-9786662 Update Nova Launcher 5.0
-
-====================
-     12-15-2016
+     12-21-2016
 ====================
 
 
-   * frameworks/base/
-ef5559b DUI: fix SmartBar edit mode
-bcc4a29 Small QS tiles number: fix SystemUI FC when changing the value
-d9f49e2 Fix issue that padlock icon is not animating while expanding QS
-e90b624 Data tile quick toggle: apply the custom behavior also to mini tiles bar
-0236598 Bring back 'custom small QS tiles' [1/2]
-
-   * kernel/wingtech/msm8916/
-d0ea8fc defconfig: enable NF_MATCH_RPFILTER
-
-   * packages/apps/TeslaCoil/
-7875969 Bring back 'custom small QS tiles' [2/2]
-
-   * packages/services/Telephony/
-922dc21 telephony: allow broadcasts from Samsung RIL
-
-   * system/netd/
-038e4d7 Revert "Revert "Don't start tethering if IPv6 RPF is not supported.""
-
-   * vendor/tesla/
-8e5f7ec Add Reliance Jio India IMS volte apn's
-d01f13f Fix Reliance Jio India APNs.
-f0f9af0 apns: Add Reliance Jio APNs
-
 ====================
-     12-14-2016
+     12-20-2016
 ====================
 
-
-   * frameworks/base/
-3c1c314 N-Extras: Add dynamic theme BootAnimation support
-65d526d Revert "N-Extras: Add dynamic theme BootAnimation support"
-5fcdf76 Expose various QuickSettings text colors
-78eddbd Expose QS edit item decoration background color
-590669c Allow Navbar ripple color to be themed
-29a6e1e Allow Permission Icons to be fully themed
-226b861 Allow Immersive cling colors to be fully themed
-eae0eab Expose resolver hardcoded colors
-68ee0db OMS7-N: ApplicationsState: add filter for Substratum icon overlays [1/2]
-dc4daab webview_packages: correct signature definition for Chrome Stable
-45eeac1 webview_packages: prefer the more powerful webview packages
-
-   * packages/apps/Dialer/
-63d0b80 Revert "Re-add call recording feature."
-9f3ec13 rename to tesla_strings
-88c2a5c Re-add call recording feature.
-65b816d Substratum expose hardcoded colors
-dfbbc1e Themes: InCallUI dialpad digits color
-52ed98c Themes: Separate background color from text color
-fd62290 Add missing permissions to Dialer
-22f851e german translate
-b64c461 [3/3] Flip to Mute/Reject Call
-533989b [2/3] Dialer: Proximity Speakerphone originally done by dankoman30 rewritten and moved to dialer by beanstown106
-80e675f [3/3]InCallUI: Proximity Speaker
-c3e3193 Give speed dial entry editor a sane layout.
-844eb69 Remove SIP dial icon in dialer for some carriers
-6c1f739 Dialer: Add call/data usage Timer in Dialer setting
-8248c8e Using Setting provider to get WiFi call configuration instead of System properties
-9112648 Dialer: Input ,(pause) or ;(wait) when long press * or #
-0a30c4f Dialer: add upgrade for smart search table.
-a88a969 Dialer: Can't show Card 2 call log one card existed
-f70d261 Revert "Make FloatingActionButtonController view visible."
-638bf25 Dialer: fix the runtime exception issue for smartsearch.
-34436a5 IMS: CallLogs:FR33084_VoWiFi_Phonebook
-072a3db Dialer: add video call capability check based on PresenceService
-887243c Dialer: WFC: Add wifi call features.
-cb408dc Dialer: Add support for operator name
-8bc89ba InCallUI: Use proper sub IDs
-d6a647e incallui: remove qti framework dependency for DSDA
-8287e89 IMS-VT: Handle configuration changes on low battery Video call
-8123470 IMS-VT: FR36492 - UI to disable picture in picture mode
-d8d4694 IMS-VT: Fix preview size issue during VT call
-f4a0762 IMS-VT: Handle InCallActivity destroy when low battery dialog is showing
-c73d8ff IMS-VT: Validate phone number for a Video call
-3bdce51 Fix active call InCallUI buttons highlight when EM call disconnects
-5589d88 Dialer:phone interface has highlight when receive a BT request
-334b46d InCallUI: Config to control call record feature
-5038c2c IMS-VT: Remove one directional video call support
-10ef9c0 IMS: Customize HD icon in CallCard for some carriers
-05e4069 IMS-VT: Fix orientation change not working after back key press
-343098f IMS-VT: Handle buttons display in InCall Screen
-7ce44c1 IMS-VT: Set notificationType for IncomingCall when InCallUi is not showing
-e3d667f VideoCall: preview before upgrade video call is accepted.
-644b9c5 IMS-VT: Do not toggle full screen mode when not in video call.
-5a322de MSIM: Dismiss pending dialog on incoming call notification.
-8bd386b Fix incorrect call duration after system time changes
-d71d6b7 Revert "Expedite the processing of destroying Incall UI after end call"
-6d3b308 Revert "Fix MT call cannot be rejected for DSDS"
-cdd28f3 InCallUI: customize video call UI
-
-   * packages/apps/Settings/
-1822deb Settings: Expose LinearColorBar default colors
-f0fe53d Settings: Expose storage summary text
-403b0fe Settings: Expose storage icon colors
-27e1f28 Settings: Expose gesture settings switchbar
-cd3a02a Themes: Expose condition card colors
-d4f9a8f Expose dashboard category and tile color
-fcdf69d OMS7-N: Apps: show/hide Substratum icon overlays [2/2]
-
-   * system/sepolicy/
-f092880 Allow apps in /system/priv-app to call and execute su commands
 
