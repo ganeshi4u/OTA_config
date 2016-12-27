@@ -1,0 +1,127 @@
+====================
+     12-24-2016
+====================
+
+
+   * frameworks/base/
+b17b2e6 SystemUI: Use own drawables for QS expand icon
+
+   * packages/apps/Settings/
+fa0432b Exclude overlays from the app counter
+2bc2e87 Hide the "show/hide overlays" when no overlay installed
+
+====================
+     12-23-2016
+====================
+
+
+   * device/xiaomi/msm8956-common/
+56a26ee kenzo: Add highspeed recording profiles
+
+====================
+     12-22-2016
+====================
+
+
+   * bionic/
+d273413 Revert "Fix mako, flo, geehrc sensors. Thanks to @DevSwift"
+
+   * frameworks/base/
+80c9fe9 Reset battery stats (extracted from https://github.com/CyanogenMod/android_frameworks_base/commit/910397f2390d6821a006991ed6035c76cbc74897 by @xyyx)
+2a9f22c Fix warning: Potential leak of memory pointed to by 'set'
+df74499 Fix a memory leak.
+5b0db48 fix persistent process is killed and restart again and again
+47d116a Fix incorrect FIFO cgroup assignment.
+29fe0fa Fix logic typo in the JobPackageTracker
+391234d Fix broadcast receiver leak issue
+25a9733 note the last msg that might make the Looper blocking
+5148d53 Fix incorrect calculation of sizeof package structure
+292079b Fix window transformation related issue
+09dafdb Fix thread safety issue
+318b065 Fix static analyzer warnings.
+57385d6 Fix static-analyzer warning.
+ec2d89a Fix a static-analyzer warning.
+bebff40 Fix keyguard flash issue
+53d7ce1 [AM] Fix system server may killed when monkey crash.
+2058d76 Fix the deadlock problem
+3d5e47d Themes: Expose QS battery
+f08cbbe QS: Add Music QS Tile
+94ca92a FWB :SmartBar Button Tint [1/3] With Reference to Patch AICP/frameworks_base@85d97f4
+
+   * kernel/xiaomi/msm8956/
+8d14d18 sdcardfs: Flag files as non-mappable
+
+   * packages/apps/DUI/
+69bf11d Smarbar Tint: Use Multiply Color filter
+a3d2175 DUI :SmartBar Button Tint [2/3]
+
+   * packages/apps/Settings/
+b179fbe Title is different after tapping "Memory used by apps"
+ea6b3b8 Fix network name for Passpoint network
+f07c697 Fix crash when rotating HighPowerDetail dialog
+7e3ede0 Fix NPE when rotating "Saved networks" screen
+78fab98 Fix ApplicationsState.Session memory leak in settings app
+d7f50a8 Fix end padding of summary text for dialog is too narrow
+f30ef15 Fix synchronization of Wi-Fi hotspot switch
+c3b5050 finish() dialog whenever it's dismissed
+b58b8de Sync qs invert color with color inversion in Settings
+f88263b Wi-Fi tethering switch was briefly in wrong state
+0a77ec0 Fix settings force close when adding a account.
+6fecde7 Settings: fix FC if opening Audio Settings after enabling DND
+f9f2e3d move substratum and supersu to extra option
+63b1bc4 Reset battery stats [2/2]
+b523724 InstalledApp: show link to Google Play
+7fb852e Settings: Add Substratum to dashboard
+52be1c0 Launch SuperSU from Settings
+6f13659 Define background color on the dashboard
+
+   * packages/apps/TeslaCoil/
+3576ac5 Smartbar Button Tint [3/3]
+
+====================
+     12-21-2016
+====================
+
+
+====================
+     12-20-2016
+====================
+
+
+   * kernel/xiaomi/msm8956/
+898d34f input: Handle an additional framebuffer hint
+a3b8f7c video: Revert back to basic livedisplay driver
+a991e59 sdcardfs: Fix build
+e9af71d defconfigs: Enable SDCARDFS
+381c2d4 sdcardfs: Change magic value
+107928c sdcardfs: Use per mount permissions
+0823344 sdcardfs: Add gid and mask to private mount data
+4970ec8 sdcardfs: User new permission2 functions
+8ddcf57 vfs: Add setattr2 for filesystems with per mount permissions
+a373a3e vfs: Add permission2 for filesystems with per mount permissions
+55e30f6 vfs: Allow filesystems to access their private mount data
+71f0dc4 mnt: Add filesystem private data to mount points
+50022c1 sdcardfs: Move directory unlock before touch
+b5ab7ae sdcardfs: fix external storage exporting incorrect uid
+6e4168f sdcardfs: Added top to sdcardfs_inode_info
+b8669fb sdcardfs: Switch package list to RCU
+fb3b6bd sdcardfs: Fix locking for permission fix up
+41dac13 sdcardfs: Check for other cases on path lookup
+74d6fd8 sdcardfs: override umask on mkdir and create
+b0acdbe ANDROID: sdcardfs: fix itnull.cocci warnings
+0c6cdf6 sdcardfs: Truncate packages_gid.list on overflow
+a711771 fuse: Add support for d_canonical_path
+13186cc vfs: change d_canonical_path to take two paths
+8c336f3 sdcardfs: remove unneeded __init and __exit
+21e8598 sdcardfs: Remove unused code
+8464b38 sdcardfs: remove effectless config option
+77c5bd2 inotify: Fix erroneous update of bit count
+ad3088a sdcardfs: Add support for d_canonicalize
+f573bf8 vfs: add d_canonical_path for stacked filesystem support
+f0ceba7 sdcardfs: Bring up to date with Android M permissions:
+cc53701 sdcardfs: Changed type-cast in packagelist management
+f01a520 sdcardfs: port to 3.10
+24f2ec6 Initial port of sdcardfs
+b331fec input: atmel_mxt_ts: Add double tap sysfs symlink
+
+
