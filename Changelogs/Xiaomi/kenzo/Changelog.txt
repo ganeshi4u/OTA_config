@@ -1,127 +1,172 @@
 ====================
-     12-24-2016
+     12-30-2016
 ====================
 
 
-   * frameworks/base/
-b17b2e6 SystemUI: Use own drawables for QS expand icon
-
-   * packages/apps/Settings/
-fa0432b Exclude overlays from the app counter
-2bc2e87 Hide the "show/hide overlays" when no overlay installed
-
-====================
-     12-23-2016
-====================
-
+   * device/xiaomi/kenzo/
+afb9659 kenzo: Blacklist fingerprint HAL key events
 
    * device/xiaomi/msm8956-common/
-56a26ee kenzo: Add highspeed recording profiles
-
-====================
-     12-22-2016
-====================
-
-
-   * bionic/
-d273413 Revert "Fix mako, flo, geehrc sensors. Thanks to @DevSwift"
+52df621 Change dpi
+9e7c15d msm8956: prevent core 4 from hotplugging
+3f7c412 msm8956: remove auto-power-save mode overlay
+f4566fb Revert "msm8956: Build libprotobuf-cpp-full"
+5026e24 msm8956: Set monotonic property to 0
 
    * frameworks/base/
-80c9fe9 Reset battery stats (extracted from https://github.com/CyanogenMod/android_frameworks_base/commit/910397f2390d6821a006991ed6035c76cbc74897 by @xyyx)
-2a9f22c Fix warning: Potential leak of memory pointed to by 'set'
-df74499 Fix a memory leak.
-5b0db48 fix persistent process is killed and restart again and again
-47d116a Fix incorrect FIFO cgroup assignment.
-29fe0fa Fix logic typo in the JobPackageTracker
-391234d Fix broadcast receiver leak issue
-25a9733 note the last msg that might make the Looper blocking
-5148d53 Fix incorrect calculation of sizeof package structure
-292079b Fix window transformation related issue
-09dafdb Fix thread safety issue
-318b065 Fix static analyzer warnings.
-57385d6 Fix static-analyzer warning.
-ec2d89a Fix a static-analyzer warning.
-bebff40 Fix keyguard flash issue
-53d7ce1 [AM] Fix system server may killed when monkey crash.
-2058d76 Fix the deadlock problem
-3d5e47d Themes: Expose QS battery
-f08cbbe QS: Add Music QS Tile
-94ca92a FWB :SmartBar Button Tint [1/3] With Reference to Patch AICP/frameworks_base@85d97f4
-
-   * kernel/xiaomi/msm8956/
-8d14d18 sdcardfs: Flag files as non-mappable
-
-   * packages/apps/DUI/
-69bf11d Smarbar Tint: Use Multiply Color filter
-a3d2175 DUI :SmartBar Button Tint [2/3]
-
-   * packages/apps/Settings/
-b179fbe Title is different after tapping "Memory used by apps"
-ea6b3b8 Fix network name for Passpoint network
-f07c697 Fix crash when rotating HighPowerDetail dialog
-7e3ede0 Fix NPE when rotating "Saved networks" screen
-78fab98 Fix ApplicationsState.Session memory leak in settings app
-d7f50a8 Fix end padding of summary text for dialog is too narrow
-f30ef15 Fix synchronization of Wi-Fi hotspot switch
-c3b5050 finish() dialog whenever it's dismissed
-b58b8de Sync qs invert color with color inversion in Settings
-f88263b Wi-Fi tethering switch was briefly in wrong state
-0a77ec0 Fix settings force close when adding a account.
-6fecde7 Settings: fix FC if opening Audio Settings after enabling DND
-f9f2e3d move substratum and supersu to extra option
-63b1bc4 Reset battery stats [2/2]
-b523724 InstalledApp: show link to Google Play
-7fb852e Settings: Add Substratum to dashboard
-52be1c0 Launch SuperSU from Settings
-6f13659 Define background color on the dashboard
+ca4486f fix missing volume qs tile
+50c9d20 Fix battery  bug on Header DateTime Positions
+9f62802 Header Date+Time positions [1/2]
+5e346e7 QS Header Icon settings [1/2]
+15012e2 Battery icon: add alternative Big Circle style [1/2]
+a8766e2 Revert "Base: charger sounds also for wired"
+c00eeec Battery bolt: don't show it when using charging symbol near percentage text
 
    * packages/apps/TeslaCoil/
-3576ac5 Smartbar Button Tint [3/3]
+a2ca71b Header Date+Time positions [2/2]
+c7eb9a1 QS Header Icon settings [2/2]
+2ba1918 Battery icon: add alternative Big Circle style [2/2]
 
 ====================
-     12-21-2016
+     12-29-2016
 ====================
 
+   * OTA_config/
+ac7183c Hammerhead & Shieldtablet 28-12 update
+
+   * frameworks/base/
+8ec8511 Fixes Hardware keys backlight not turning of with disabler
+543d12a PowerManagerService: Fix updating of mUserActivitySummary
+8de5894 Support enforcing a minimum delay between notification sounds of an app.
+e47cea7 Power connect/disconnect notif: fix sound playing when set to silent
+4ca3f2d SystemUI: fix notification on charger
+e8f2599 [1/2] Forward port power connect/disconnect notification support
+dee1529 Battery custom charging symbol near pct: show also on keyguard
+5889a58 [2/2] frameworks_base: show battery info on lockscreen when charging
+ed49831 [2/2] frameworks: show charging current & voltage on lockscreen
+
+   * packages/apps/Dialer/
+c711a9b dialer: Hide SIP dial icon
+
+   * packages/apps/Settings/
+039cd66 Add setup UI for minimum delay between an app's notification sounds.
+257554a [2/2] Forward port power connect/disconnect notification support
+
+   * packages/apps/TeslaCoil/
+2cc23a8 make a lockscreen battery category
+b9c9653 [1/2] AE: show battery info on lockscreen when charging
+
+   * packages/apps/masquerade/
+bf57c24 OMS7-N: Allow Play Store to filter out OMS-only themes
+
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.9/
+68973b7 Initial commit
+
+   * system/sepolicy/
+f8f4ef3 temp: remove neverallow for the moment
+7f2aeee sepolicy: allow sdcard access via sdcardfs
 
 ====================
-     12-20-2016
+     12-28-2016
 ====================
 
+   * OTA_config/
+881d7fb Update lux 27-12
+
+   * build/
+4d51ccb GoogleAudio: set new pixel sounds as defaults [2/2]
+
+   * device/xiaomi/msm8956-common/
+d1171c4 Revert "msm8956: Enable sdcardfs"
+
+   * frameworks/base/
+735e760 Advanced Reboot: turn on again
+56ecc5f Adjust QS battery tile padding from 2dp to 0dp
+daf250d Turn off 'forced battery percent while charging' default [1/2]
+dce23cb circlebattery: bring back pulsing animation
+1fa6aaf Battery icon: fix getDrawable for new Android API
+8fdc3d1 OMS themes: prevent potential SysUI fc if no valid battery res
+927ad08 GoogleAudio: update effect sound and add pixel sounds [1/2]
+fe190dd Fix battery text gap issue
+c26d303 Fix possible SysUI fc when playing lowbattery sound
+4b13239 SystemUI: AssistManager - how is this supposed to ever work?
+9f1ca5c base: [MicroG] Allow location providers also outside of /system
+d21f5c1 Cleanup
+4a73c33 Battery styles: bring in latest upstream changes
+f14ae43 Circle battery inside icon percentage: eyes saver size
+9475a77 Battery bolt inside the icon: fix visibility when charging
+4ba0bef Data activity icon in statusbar
+24e2b78 Adjust the battery text to a sane level
+23caa53 Battery: allow set a custom symbol near text pct on charging [1/2]
+8b6e8d6 Battery icon: let disable force text outside icon when charging [1/2]
+b9e8e35 Battery icon: allow to set a custom charging color [1/2]
+d162d08 Update Auto Brightness Icon
+0f8edc8 Battery tile: allow to disable custom battery style [1/2]
+3232fc4 Circle and landscape battery perc inside the icon: use bigger text
+b17d3f9 Few improvements to battery styles
+b036eaf Battery tile bolt/text should not be clear
+41a9eac Fix a few possible NPE's - Lockscreen shortcuts activity - TunerFragment
+7d178d3 Fix battery text scaling issue
+4315295 Sync battery tile icon with statusbar
+3a959f2 Always show battery percentage when charging
+d7b1880 SysUI: Use VectorDrawable's for rendering battery
+3f171cf SystemUI: Implement hidden and text battery styles
+45da03a SystemUI: Implement battery level text customisations
+2cd832a Revert "[1/2] base: battery styles are back"
+4521658 Revert "battery style: enable dark intensity when needed"
+7b3bc3a Revert "base: horizontal battery style: change charging symbol positioning"
+5327d61 Revert "base: battery style: fix layout changes"
+29a6ed6 Revert "Teslafy battery settings"
+a6a36d5 Revert "Lower custom battery icon stroke a bit(Make the ring a lil thinner"
+00af0cd3 OMS7 compatible 'Ambient notification inversion'
+80a929c Revert "FwBools: Enable/disable ambient notification color inversion [1/2]"
+
+   * packages/apps/OmniSwitch/
+1f22b51 OmniSiwtch: fix duplicate broadcast receiver
+
+   * packages/apps/Settings/
+636a998 Revert "FwBools: Allow the user to toggle dynamic notification title colors [2/2]"
+2e888f5 Revert "FwBools: Enable/disable doze notification color inversion [2/2]"
+
+   * packages/apps/TeslaCoil/
+acedd94 Turn off 'forced battery percent while charging' default [2/2]
+9e36775 add battery icon
+b2887ad Battery: allow set a custom symbol near text pct on charging [2/2] Change-Id: Ibc7aca0295f5089995e5cc8b98c71751f73775b1
+5dc6955 Battery icon: let disable force text outside icon when charging [2/2] Change-Id: I531aa7f1a10b29691cd2171a82445b85eb4b3bc3
+89157cd Battery icon: allow to set a custom charging color [2/2] Change-Id: I33a167e9b537f0de4f57ab90bd355979891349ca
+72695cb Battery tile: allow to disable custom battery style [2/2] - Disable battery tile toggle when style is enabled for portrait, text or hidden.
+194b376 Battery Customizations Code inspired by @CyanogenMod and @OmniROM
+6b92352 Revert "Settings: Battery styles are back [2/2]"
+
+   * vendor/tesla/
+0f718a6 Update Nova Launcher 5.0.1
+
+====================
+     12-27-2016
+====================
+
+   * OTA_config/
+1980c39 Kenzo 7.1.1
 
    * kernel/xiaomi/msm8956/
-898d34f input: Handle an additional framebuffer hint
-a3b8f7c video: Revert back to basic livedisplay driver
-a991e59 sdcardfs: Fix build
-e9af71d defconfigs: Enable SDCARDFS
-381c2d4 sdcardfs: Change magic value
-107928c sdcardfs: Use per mount permissions
-0823344 sdcardfs: Add gid and mask to private mount data
-4970ec8 sdcardfs: User new permission2 functions
-8ddcf57 vfs: Add setattr2 for filesystems with per mount permissions
-a373a3e vfs: Add permission2 for filesystems with per mount permissions
-55e30f6 vfs: Allow filesystems to access their private mount data
-71f0dc4 mnt: Add filesystem private data to mount points
-50022c1 sdcardfs: Move directory unlock before touch
-b5ab7ae sdcardfs: fix external storage exporting incorrect uid
-6e4168f sdcardfs: Added top to sdcardfs_inode_info
-b8669fb sdcardfs: Switch package list to RCU
-fb3b6bd sdcardfs: Fix locking for permission fix up
-41dac13 sdcardfs: Check for other cases on path lookup
-74d6fd8 sdcardfs: override umask on mkdir and create
-b0acdbe ANDROID: sdcardfs: fix itnull.cocci warnings
-0c6cdf6 sdcardfs: Truncate packages_gid.list on overflow
-a711771 fuse: Add support for d_canonical_path
-13186cc vfs: change d_canonical_path to take two paths
-8c336f3 sdcardfs: remove unneeded __init and __exit
-21e8598 sdcardfs: Remove unused code
-8464b38 sdcardfs: remove effectless config option
-77c5bd2 inotify: Fix erroneous update of bit count
-ad3088a sdcardfs: Add support for d_canonicalize
-f573bf8 vfs: add d_canonical_path for stacked filesystem support
-f0ceba7 sdcardfs: Bring up to date with Android M permissions:
-cc53701 sdcardfs: Changed type-cast in packagelist management
-f01a520 sdcardfs: port to 3.10
-24f2ec6 Initial port of sdcardfs
-b331fec input: atmel_mxt_ts: Add double tap sysfs symlink
+ba1dd8c core_ctl: Fix not preferred cpus getting hotplugged
+ffc499d Revert "defconfigs: Enable SDCARDFS"
+
+   * packages/apps/OmniSwitch/
+1c92fdc Use WallpaperManager suggestDesiredDimensions
+8623414 OmniSwitch: launcher: deep shortcut support
+979c100 OmniSwitch: call resetRecentsPosition only on first open and not on refresh after a kill
+
+   * vendor/tesla/
+6800f53 add calculator
+
+====================
+     12-26-2016
+====================
+
+
+   * frameworks/base/
+0f02789 Merge pull request #4 from oraixearl/n7.1.1
+9426ff3 Fix systemui fc
 
 

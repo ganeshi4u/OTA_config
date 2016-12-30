@@ -111,15 +111,15 @@
                 description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
         </osprey>
        <kenzo>
-            <Filename>Tesla-kenzo-7.1.1.Beta.v3.4-OFFICIAL-20161224-0733.zip</Filename>
+            <Filename>Tesla-kenzo-7.1.1.Beta.v3.4-OFFICIAL-20161230-1301.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download TeslaN build">https://www.androidfilehost.com/?fid=385035244224407571</RomUrl>
+                description="Download TeslaN build">https://www.androidfilehost.com/?fid=529152257862691696</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
-                description="View TeslaN changelogs">https://github.com/TeslaRom-N/OTA_config/blob/master/Changelogs/Xiaomi/kenzo/Changelog.txt</ChangelogUrl>
+                description="View TeslaN changelogs">https://github.com/Tesla-M-Devices/OTA_config/blob/master/Changelogs/Xiaomi/kenzo/Changelog.txt</ChangelogUrl>
             <GappsUrl
                 id="gapps"
                 title="Gapps"
