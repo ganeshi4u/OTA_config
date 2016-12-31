@@ -111,11 +111,11 @@
                 description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
         </osprey>
        <kenzo>
-            <Filename>Tesla-kenzo-7.1.1.Beta.v3.4-OFFICIAL-20161230-1301.zip</Filename>
+            <Filename>Tesla-kenzo-7.1.1.Beta.v3.4-OFFICIAL-20161231-1157.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download TeslaN build">https://www.androidfilehost.com/?fid=529152257862691696</RomUrl>
+                description="Download TeslaN build">https://www.androidfilehost.com/?fid=529152257862691907</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -127,7 +127,11 @@
             <XDAUrl
                 id="xda"
                 title="XDA"
-                description="Visit TeslaN RedmiNote3 XDA thread">http://forum.xda-developers.com/redmi-note-3/development/7-0-x-tesla-n-t3490445</XDAUrl>             
+                description="Visit TeslaN RedmiNote3 XDA thread">http://forum.xda-developers.com/redmi-note-3/development/7-0-x-tesla-n-t3490445</XDAUrl>
+            <PATCHUrl
+                id="patch"
+                title="PATCH"
+                description="Download VoltePatch">https://www.androidfilehost.com/?fid=745425885120696992</PATCHUrl>             
        </kenzo>
     </Stable>
 </SlimOTA>

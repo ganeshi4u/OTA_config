@@ -1,4 +1,18 @@
 ====================
+     12-31-2016
+====================
+
+   * OTA_config/
+10e67ab Update Build
+
+   * frameworks/base/
+1f90d4a TeslaCoil qs tile -Icon coverted from png to vector xml by De Jan thanks great work!
+8a2c289 Frameworks: follow charging notification settings also for wireless charging
+
+   * packages/apps/Bluetooth/
+a7a3377 jni: fix merge failure
+
+====================
      12-30-2016
 ====================
 
@@ -21,6 +35,20 @@ ca4486f fix missing volume qs tile
 15012e2 Battery icon: add alternative Big Circle style [1/2]
 a8766e2 Revert "Base: charger sounds also for wired"
 c00eeec Battery bolt: don't show it when using charging symbol near percentage text
+8ec8511 Fixes Hardware keys backlight not turning of with disabler
+543d12a PowerManagerService: Fix updating of mUserActivitySummary
+8de5894 Support enforcing a minimum delay between notification sounds of an app.
+e47cea7 Power connect/disconnect notif: fix sound playing when set to silent
+4ca3f2d SystemUI: fix notification on charger
+e8f2599 [1/2] Forward port power connect/disconnect notification support
+dee1529 Battery custom charging symbol near pct: show also on keyguard
+
+   * kernel/xiaomi/msm8956/
+76efb0f Revert "defconfigs: Enable SDCARDFS"
+
+   * packages/apps/Settings/
+039cd66 Add setup UI for minimum delay between an app's notification sounds.
+257554a [2/2] Forward port power connect/disconnect notification support
 
    * packages/apps/TeslaCoil/
 a2ca71b Header Date+Time positions [2/2]
@@ -31,26 +59,13 @@ c7eb9a1 QS Header Icon settings [2/2]
      12-29-2016
 ====================
 
-   * OTA_config/
-ac7183c Hammerhead & Shieldtablet 28-12 update
 
    * frameworks/base/
-8ec8511 Fixes Hardware keys backlight not turning of with disabler
-543d12a PowerManagerService: Fix updating of mUserActivitySummary
-8de5894 Support enforcing a minimum delay between notification sounds of an app.
-e47cea7 Power connect/disconnect notif: fix sound playing when set to silent
-4ca3f2d SystemUI: fix notification on charger
-e8f2599 [1/2] Forward port power connect/disconnect notification support
-dee1529 Battery custom charging symbol near pct: show also on keyguard
 5889a58 [2/2] frameworks_base: show battery info on lockscreen when charging
 ed49831 [2/2] frameworks: show charging current & voltage on lockscreen
 
    * packages/apps/Dialer/
 c711a9b dialer: Hide SIP dial icon
-
-   * packages/apps/Settings/
-039cd66 Add setup UI for minimum delay between an app's notification sounds.
-257554a [2/2] Forward port power connect/disconnect notification support
 
    * packages/apps/TeslaCoil/
 2cc23a8 make a lockscreen battery category
@@ -70,8 +85,6 @@ f8f4ef3 temp: remove neverallow for the moment
      12-28-2016
 ====================
 
-   * OTA_config/
-881d7fb Update lux 27-12
 
    * build/
 4d51ccb GoogleAudio: set new pixel sounds as defaults [2/2]
@@ -148,9 +161,8 @@ b2887ad Battery: allow set a custom symbol near text pct on charging [2/2] Chang
    * OTA_config/
 1980c39 Kenzo 7.1.1
 
-   * kernel/xiaomi/msm8956/
-ba1dd8c core_ctl: Fix not preferred cpus getting hotplugged
-ffc499d Revert "defconfigs: Enable SDCARDFS"
+   * frameworks/base/
+0f02789 Merge pull request #4 from oraixearl/n7.1.1
 
    * packages/apps/OmniSwitch/
 1c92fdc Use WallpaperManager suggestDesiredDimensions
@@ -159,14 +171,5 @@ ffc499d Revert "defconfigs: Enable SDCARDFS"
 
    * vendor/tesla/
 6800f53 add calculator
-
-====================
-     12-26-2016
-====================
-
-
-   * frameworks/base/
-0f02789 Merge pull request #4 from oraixearl/n7.1.1
-9426ff3 Fix systemui fc
 
 
