@@ -1,205 +1,95 @@
 ====================
-     12-14-2016
+     01-04-2017
 ====================
 
 
-   * device/lge/g5-common/
-0d96d4a g5: add libvolumelistener
-501464e g5: build snap and force HAL1 for Google Camera / Snap
+   * frameworks/base/
+93bcd76 Merge branch 'n7.1.1' into HEAD
+c8f047d remove slim framework from assetmanager
+
+   * vendor/lge/
+000864c g5/v20: Simplify BT firmware name
+
+====================
+     01-03-2017
+====================
+
+
+   * device/motorola/msm8916-common/
+dea4ea0 msm8916-common: add framework GLES package
+42e39d4 msm8916-common: sepolicy: Fix some bluetooth denials
+92d71fe msm8916-common: add new blob for MPI24.241-15.3 release
+0a87be4 msm8916-common: make libmot-qc-fd-offline device specific
+7e6746a msm8916-common: add support for harpia
 
    * frameworks/base/
-e90b624 Data tile quick toggle: apply the custom behavior also to mini tiles bar
-0236598 Bring back 'custom small QS tiles' [1/2]
-3c1c314 N-Extras: Add dynamic theme BootAnimation support
-65d526d Revert "N-Extras: Add dynamic theme BootAnimation support"
-5fcdf76 Expose various QuickSettings text colors
-78eddbd Expose QS edit item decoration background color
-590669c Allow Navbar ripple color to be themed
-29a6e1e Allow Permission Icons to be fully themed
-226b861 Allow Immersive cling colors to be fully themed
-eae0eab Expose resolver hardcoded colors
-68ee0db OMS7-N: ApplicationsState: add filter for Substratum icon overlays [1/2]
+d42082b Themes: Expose QS battery
+393b0ac Revert "Themes: Expose QS battery"
+ee17f28 Revert "Fix systemui fc"
+76d1f35 OMS: Introduce MODIFY_OVERLAYS permission for user apps
 
-   * kernel/lge/msm8996/
-2e93ba8 qpnp: Fix LG derps on elsa
-7932e35 h918_defconfig: Initial CM defconfig
+   * hardware/qcom/audio-caf/msm8916/
+3d8599c hal: Make HUAWEI_SOUND_PARAM_PATH a board flag
+7485473 hal: handle dolby set_license status
+0151933 hal: handle CLANG errors for Dolby
+139c318 audio: configs: Enable Dolby feature
+
+   * hardware/qcom/audio-caf/msm8996/
+e487e4f policy_hal: Fix mismerges
+
+   * hardware/qcom/display-caf/msm8916/
+a898c7a Merge branch 'cm-14.1-caf-8916' of https://github.com/LineageOS/android_hardware_qcom_display into n7.1-caf-8916
+9ba058b HWC: Fix typo error in prepareSwapRect function
 
    * kernel/motorola/msm8916/
-3444e61 BACKPORT: perf: Fix event->ctx locking
-5a8e568 perf: protect group_leader from races that cause ctx double-free
-0f8b4e5 Revert "msm: mdss: Port HBM fixes"
-1cc95a0 fs: ext4: disable support for fallocate FALLOC_FL_PUNCH_HOLE
-12b84e3 KEYS: Fix short sprintf buffer in /proc/keys show function
-576a6c0 net: llc: use correct size for sysctl timeout entries
-6c3c4b2 mm: Fix NULL pointer dereference in madvise(MADV_WILLNEED) support
-b6c29c6 vfs: read file_handle only once in handle_to_path
-665802f mnt: Only change user settable mount flags in remount
-a21efc2 eCryptfs: Remove buggy and unnecessary write in file name decode routine
-
-   * packages/apps/Dialer/
-63d0b80 Revert "Re-add call recording feature."
-9f3ec13 rename to tesla_strings
-88c2a5c Re-add call recording feature.
-65b816d Substratum expose hardcoded colors
-dfbbc1e Themes: InCallUI dialpad digits color
-52ed98c Themes: Separate background color from text color
-fd62290 Add missing permissions to Dialer
-22f851e german translate
-b64c461 [3/3] Flip to Mute/Reject Call
-533989b [2/3] Dialer: Proximity Speakerphone originally done by dankoman30 rewritten and moved to dialer by beanstown106
-80e675f [3/3]InCallUI: Proximity Speaker
-c3e3193 Give speed dial entry editor a sane layout.
-844eb69 Remove SIP dial icon in dialer for some carriers
-6c1f739 Dialer: Add call/data usage Timer in Dialer setting
-8248c8e Using Setting provider to get WiFi call configuration instead of System properties
-9112648 Dialer: Input ,(pause) or ;(wait) when long press * or #
-0a30c4f Dialer: add upgrade for smart search table.
-a88a969 Dialer: Can't show Card 2 call log one card existed
-f70d261 Revert "Make FloatingActionButtonController view visible."
-638bf25 Dialer: fix the runtime exception issue for smartsearch.
-34436a5 IMS: CallLogs:FR33084_VoWiFi_Phonebook
-072a3db Dialer: add video call capability check based on PresenceService
-887243c Dialer: WFC: Add wifi call features.
-cb408dc Dialer: Add support for operator name
-8bc89ba InCallUI: Use proper sub IDs
-d6a647e incallui: remove qti framework dependency for DSDA
-8287e89 IMS-VT: Handle configuration changes on low battery Video call
-8123470 IMS-VT: FR36492 - UI to disable picture in picture mode
-d8d4694 IMS-VT: Fix preview size issue during VT call
-f4a0762 IMS-VT: Handle InCallActivity destroy when low battery dialog is showing
-c73d8ff IMS-VT: Validate phone number for a Video call
-3bdce51 Fix active call InCallUI buttons highlight when EM call disconnects
-5589d88 Dialer:phone interface has highlight when receive a BT request
-334b46d InCallUI: Config to control call record feature
-5038c2c IMS-VT: Remove one directional video call support
-10ef9c0 IMS: Customize HD icon in CallCard for some carriers
-05e4069 IMS-VT: Fix orientation change not working after back key press
-343098f IMS-VT: Handle buttons display in InCall Screen
-7ce44c1 IMS-VT: Set notificationType for IncomingCall when InCallUi is not showing
-e3d667f VideoCall: preview before upgrade video call is accepted.
-644b9c5 IMS-VT: Do not toggle full screen mode when not in video call.
-5a322de MSIM: Dismiss pending dialog on incoming call notification.
-8bd386b Fix incorrect call duration after system time changes
-d71d6b7 Revert "Expedite the processing of destroying Incall UI after end call"
-6d3b308 Revert "Fix MT call cannot be rejected for DSDS"
-cdd28f3 InCallUI: customize video call UI
+5f76a6c Merge branch 'cm-14.1' of https://github.com/LineageOS/android_kernel_motorola_msm8916 into cm-14.1
 
    * packages/apps/Settings/
-1822deb Settings: Expose LinearColorBar default colors
-f0fe53d Settings: Expose storage summary text
-403b0fe Settings: Expose storage icon colors
-27e1f28 Settings: Expose gesture settings switchbar
-cd3a02a Themes: Expose condition card colors
-d4f9a8f Expose dashboard category and tile color
-fcdf69d OMS7-N: Apps: show/hide Substratum icon overlays [2/2]
+2d71da4 Expose color for external settings icons
 
-   * packages/apps/TeslaCoil/
-7875969 Bring back 'custom small QS tiles' [2/2]
-
-====================
-     12-13-2016
-====================
-
-
-   * frameworks/base/
-dc4daab webview_packages: correct signature definition for Chrome Stable
-45eeac1 webview_packages: prefer the more powerful webview packages
-24c3768 SystemUI : Port forward statusbar brightness control Brings back the status bar brightness control from cm-10.2/cm-11
-1c2c757 Brightness mirror - fix multi-touch issue
-b9837f5 fix build
-9f226c3 Tesla logo in the statusbar
-8632c70 FWB: Add Volume Key Answer (1/2) hey, winter)
-da02534 Allow Volume wake and music control to work toghether [1/2] *disable volume wake when muic is active if music controls is on *change volume wake logic
-fed1903 Revert "Statusbar brightness control [2/2]"
-eccbfc1 Revert "Brightness control: UserHandle.USER_CURRENT"
-c67c66e Brightness control: UserHandle.USER_CURRENT
-
-   * packages/apps/TeslaCoil/
-1fb513c statusbar brightness control
-d3bfa7d  Add Volume Key Answer (2/2)
-cbd4ec2 Allow Volume wake and music control to work toghether [2/2] *disable volume wake when muic is active if music controls is on
-670b9d8 Revert "Statusbar brightness control [1/2]"
-
-   * system/sepolicy/
-f092880 Allow apps in /system/priv-app to call and execute su commands
-
-====================
-     12-12-2016
-====================
-
-
-   * device/nvidia/shieldtablet/
-47d45f4 Add caf_fw.mk
-
-   * frameworks/base/
-150aaa3 Statusbar brightness control [2/2]
-
-   * manifest/
-dc52c40  8916,8952 audio-caf track 7.1
-
-   * packages/apps/TeslaCoil/
-f82ad93 Statusbar brightness control [1/2]
-
-====================
-     12-11-2016
-====================
-
-
-   * device/lge/g5-common/
-7d14dfe Revert "g5: Redo the way we fetch BT and WiFi addrs"
-
-   * device/nvidia/shieldtablet/
-3a2df7b Shieldtablet: Enable MTP/ADB by default
-829aa80 Revert "Whitelist dev node used by zygote"
-
-   * frameworks/base/
-bd8b31d Merge branch 'n7.1.1' of pull ya ass
-50a9a4b settingsprovider: bt default off
-82b07c6 add adb socket and dev node to Whitelist
-3f75bcd fw/base: allow home button to wake device [1/2]
-
-   * manifest/
-60c4da4 8996 audio-caf track 7.1
-1d39fc8 our telephony again
-
-   * packages/apps/Settings/
-279e8ec Changed information string about model
-
-   * packages/apps/TeslaCoil/
-506dcea allow home button to wake device [2/2]
-
-   * packages/services/Telecomm/
-b0454e9 Telecomm: Notification Led
-
-   * packages/services/Telephony/
-6f6f024 [2/3] Flip to Mute/Reject Call
-
-   * system/netd/
-ad8af1e Revert "Don't start tethering if IPv6 RPF is not supported."
+   * vendor/motorola/
+3f18222 harpia: initial blob set
+25bf25f msm8916-common: update blobs
+2ae2730 msm8916-common: make libmot-qc-fd-offline device specific
 
    * vendor/tesla/
-e84ab6e v3.4
+467d52b sepolicy: Address new bluetooth denial
 
 ====================
-     12-10-2016
+     01-02-2017
 ====================
 
+
+   * frameworks/av/
+d55b3ae libaudiopolicyservice: make legacy build with Werror
+8bd2401 audiopolicy: Remove duplicated AUDIO_FEATURE_ENABLED_PROXY_DEVICE flag
+53a488c frameworks/av: Fix video recording breaks
+5e86327 video: Use boot clock for recording start time
+12336bd frameworks/av: Don't override LOCAL_CFLAGS
+785a47f soundtrigger: fix memory corruption
+d6f5f34 audioflinger: Fix audio for WifiDisplay
+
+====================
+     01-01-2017
+====================
+
+   * OTA_config/
+de3c787 Update Build
 
    * frameworks/base/
-99b1196 Revert "Expose call creation time to link call recordings with recent call log (1/2)"
-6c2c520 Fixes part 3
+1f90d4a TeslaCoil qs tile -Icon coverted from png to vector xml by De Jan thanks great work!
+8a2c289 Frameworks: follow charging notification settings also for wireless charging
 
-   * hardware/qcom/audio-caf/msm8952/
-f3d5f7f policy_hal: Fix mismerges
+   * packages/apps/Bluetooth/
+a7a3377 jni: fix merge failure
 
-   * hardware/qcom/audio-caf/msm8994/
-37d34aa audio: set voice call volume step by property
-4447d48 hal: Fix warnings in audio HAL and policy
-9e0713e policy_hal: fix improper voice-playback concurrency handling
-9e03baf hal: Add performance lock for playback usecase
-9c6bb64 hal: update combo device handling
-d12dc1b hal: Add support for LINE out device
+====================
+     12-31-2016
+====================
 
-   * manifest/
-d58494b temp: track some slim telephony
+   * OTA_config/
+10e67ab Update Build
+
+   * frameworks/base/
+ca4486f fix missing volume qs tile
 
