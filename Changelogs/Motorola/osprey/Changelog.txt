@@ -1,215 +1,122 @@
 ====================
-     12-17-2016
+     01-03-2017
 ====================
 
-
-   * bionic/
-37005cc Fix mako, flo, geehrc sensors. Thanks to @DevSwift
-
-   * frameworks/base/
-4b33d18 Remove Uneeded Style
-36850b9 FWB:Add a Switch to Enable Disable Dynamic Navbar[1/2] Everything works as it should. To see changes within the app after enabling/disabling this switch, app must be restarted everytime switch is toggled .
-b11901d Revert "base: dynamic navbar colors"
-b167d62 Tesla dark theme initial [1/2]
-ded9f46 Revert "Remove DayNight theme"
-bc09026 Revert "Remove -night qualified resources"
-
-   * manifest/
-2dd2212 qcom bt-caf: n7.1.1 branch
-892c5df HALs track n7.1-caf-8xxx
-
-   * packages/apps/Settings/
-9903871 Theme: manifest day/night changes
-a2bfaf8 Tesla dark theme initial [2/2]
-
-   * packages/apps/TeslaCoil/
-b0d6d99 Settings:Add a Switch to Enable Disable Dynamic Navbar[2/2]
-
-   * prebuilts/gcc/linux-x86/arm/arm-eabi-4.9/
-151e55d Initial commit
-
-====================
-     12-16-2016
-====================
-
-   * OTA_config/
-420704e Merge https://github.com/Tesla-M-Devices/OTA_config into HEAD
-3c9c3ec 7.1.1 update for Shieldtablet
 
    * device/motorola/msm8916-common/
-cd1d662 sepolicy: Escape '.' character
+8faa3bc Revert "msm8916-common: sepolicy: Fix some bluetooth denials"
+dea4ea0 msm8916-common: add framework GLES package
+42e39d4 msm8916-common: sepolicy: Fix some bluetooth denials
+92d71fe msm8916-common: add new blob for MPI24.241-15.3 release
+0a87be4 msm8916-common: make libmot-qc-fd-offline device specific
+7e6746a msm8916-common: add support for harpia
 
-   * frameworks/base/
-c27a1be [2/2] Frameworks: Add option for position date left-right of clock
-a9ce51f base: dynamic navbar colors
-167fd8f fb: add back all keyboard IME features back (1/2)
-421a115 hmm howd this get here google :P
-bd5c6ab [1/2] Lockscreen PIN quick unlock old way does not work anymore exactly like before. So adapt the idea to new LP code
-85e1bc6 Fix pin shuffle since mKeyguardBouncerFrame is deprecated for mContainer
-9f39928 Fix scramblepin logic
-6d3687f Don't disable visibility when scrambling pin
-db09d4d Add option to scramble pin layout when unlocking [1/2]
-fb6969e Recents Clear All Button Tweaks and Add FAB to Recents Panel
-fd15bed2 Add OmniSwitch as option for default recents [1/2]
-0e73edf Immersive Recents [1/2]
+   * device/motorola/osprey/
+425e9a5 osprey: libmot-qc-fd-offline moved to device
 
    * hardware/qcom/audio-caf/msm8916/
-b17153f policy_hal: Fix mismerges
+3d8599c hal: Make HUAWEI_SOUND_PARAM_PATH a board flag
+7485473 hal: handle dolby set_license status
+0151933 hal: handle CLANG errors for Dolby
+139c318 audio: configs: Enable Dolby feature
+
+   * hardware/qcom/audio-caf/msm8996/
+e487e4f policy_hal: Fix mismerges
+
+   * hardware/qcom/display-caf/msm8916/
+a898c7a Merge branch 'cm-14.1-caf-8916' of https://github.com/LineageOS/android_hardware_qcom_display into n7.1-caf-8916
+9ba058b HWC: Fix typo error in prepareSwapRect function
 
    * kernel/motorola/msm8916/
-ff8eb90 Revert "android-recommended.cfg: enable fstack-protector-strong"
-e2e57bc Revert "Revert "Makefile: Try to always use GNU ld""
+5f76a6c Merge branch 'cm-14.1' of https://github.com/LineageOS/android_kernel_motorola_msm8916 into cm-14.1
 
-   * manifest/
-f2f2fe8 msm8916: track 7.1 media-caf & display-caf
-31acc33 add omniswitch
-
-   * packages/apps/Settings/
-04870d3 Settings: add back all keyboard IME features back (2/2)
-294ef37 [2/2] Lockscreen PIN quick unlock old way does not work anymore exactly like before. So adapt the idea to new LP code
-173a573 Add option to scramble pin layout when unlocking [2/2]
-
-   * packages/apps/TeslaCoil/
-f1a9c63 [1/2] Settings: Add option for position date left-right of clock
-a841f34 add a headsup toggle
-7ddcc4c Add Clear All Button to Recents [2/2] Change-Id: Id264db6712e05a3b6fa6095208cb6e3a3dd15ae0
-443b450 Remove/Disable OmniSwitch PS and features if package is uninstalled
-a9eecb0 Add OmniSwitch as option for default recents [2/2]
-2519690 Immersive Recents [2/2]
-21b9f32 Add Recents category
+   * vendor/motorola/
+3f18222 harpia: initial blob set
+25bf25f msm8916-common: update blobs
+2ae2730 msm8916-common: make libmot-qc-fd-offline device specific
 
    * vendor/tesla/
-cc95a98 add omniswitch
-9786662 Update Nova Launcher 5.0
+467d52b sepolicy: Address new bluetooth denial
 
 ====================
-     12-15-2016
+     01-02-2017
+====================
+
+
+   * frameworks/av/
+d55b3ae libaudiopolicyservice: make legacy build with Werror
+8bd2401 audiopolicy: Remove duplicated AUDIO_FEATURE_ENABLED_PROXY_DEVICE flag
+53a488c frameworks/av: Fix video recording breaks
+5e86327 video: Use boot clock for recording start time
+12336bd frameworks/av: Don't override LOCAL_CFLAGS
+785a47f soundtrigger: fix memory corruption
+d6f5f34 audioflinger: Fix audio for WifiDisplay
+
+====================
+     01-01-2017
 ====================
 
    * OTA_config/
-81af2a5 ota: update Redmi2 12/15 7.1.1
-4bdf5dd 7.1.1 update for lux & hammerhead
+de3c787 Update Build
 
    * frameworks/base/
-ef5559b DUI: fix SmartBar edit mode
-bcc4a29 Small QS tiles number: fix SystemUI FC when changing the value
-d9f49e2 Fix issue that padlock icon is not animating while expanding QS
+1f90d4a TeslaCoil qs tile -Icon coverted from png to vector xml by De Jan thanks great work!
+8a2c289 Frameworks: follow charging notification settings also for wireless charging
 
-   * vendor/tesla/
-8e5f7ec Add Reliance Jio India IMS volte apn's
-d01f13f Fix Reliance Jio India APNs.
-f0f9af0 apns: Add Reliance Jio APNs
+   * packages/apps/Bluetooth/
+a7a3377 jni: fix merge failure
 
 ====================
-     12-14-2016
+     12-31-2016
 ====================
 
+   * OTA_config/
+10e67ab Update Build
 
    * frameworks/base/
-e90b624 Data tile quick toggle: apply the custom behavior also to mini tiles bar
-0236598 Bring back 'custom small QS tiles' [1/2]
-3c1c314 N-Extras: Add dynamic theme BootAnimation support
-65d526d Revert "N-Extras: Add dynamic theme BootAnimation support"
-5fcdf76 Expose various QuickSettings text colors
-78eddbd Expose QS edit item decoration background color
-590669c Allow Navbar ripple color to be themed
-29a6e1e Allow Permission Icons to be fully themed
-226b861 Allow Immersive cling colors to be fully themed
-eae0eab Expose resolver hardcoded colors
-68ee0db OMS7-N: ApplicationsState: add filter for Substratum icon overlays [1/2]
-
-   * packages/apps/Dialer/
-63d0b80 Revert "Re-add call recording feature."
-9f3ec13 rename to tesla_strings
-88c2a5c Re-add call recording feature.
-65b816d Substratum expose hardcoded colors
-dfbbc1e Themes: InCallUI dialpad digits color
-52ed98c Themes: Separate background color from text color
-fd62290 Add missing permissions to Dialer
-22f851e german translate
-b64c461 [3/3] Flip to Mute/Reject Call
-533989b [2/3] Dialer: Proximity Speakerphone originally done by dankoman30 rewritten and moved to dialer by beanstown106
-80e675f [3/3]InCallUI: Proximity Speaker
-c3e3193 Give speed dial entry editor a sane layout.
-844eb69 Remove SIP dial icon in dialer for some carriers
-6c1f739 Dialer: Add call/data usage Timer in Dialer setting
-8248c8e Using Setting provider to get WiFi call configuration instead of System properties
-9112648 Dialer: Input ,(pause) or ;(wait) when long press * or #
-0a30c4f Dialer: add upgrade for smart search table.
-a88a969 Dialer: Can't show Card 2 call log one card existed
-f70d261 Revert "Make FloatingActionButtonController view visible."
-638bf25 Dialer: fix the runtime exception issue for smartsearch.
-34436a5 IMS: CallLogs:FR33084_VoWiFi_Phonebook
-072a3db Dialer: add video call capability check based on PresenceService
-887243c Dialer: WFC: Add wifi call features.
-cb408dc Dialer: Add support for operator name
-8bc89ba InCallUI: Use proper sub IDs
-d6a647e incallui: remove qti framework dependency for DSDA
-8287e89 IMS-VT: Handle configuration changes on low battery Video call
-8123470 IMS-VT: FR36492 - UI to disable picture in picture mode
-d8d4694 IMS-VT: Fix preview size issue during VT call
-f4a0762 IMS-VT: Handle InCallActivity destroy when low battery dialog is showing
-c73d8ff IMS-VT: Validate phone number for a Video call
-3bdce51 Fix active call InCallUI buttons highlight when EM call disconnects
-5589d88 Dialer:phone interface has highlight when receive a BT request
-334b46d InCallUI: Config to control call record feature
-5038c2c IMS-VT: Remove one directional video call support
-10ef9c0 IMS: Customize HD icon in CallCard for some carriers
-05e4069 IMS-VT: Fix orientation change not working after back key press
-343098f IMS-VT: Handle buttons display in InCall Screen
-7ce44c1 IMS-VT: Set notificationType for IncomingCall when InCallUi is not showing
-e3d667f VideoCall: preview before upgrade video call is accepted.
-644b9c5 IMS-VT: Do not toggle full screen mode when not in video call.
-5a322de MSIM: Dismiss pending dialog on incoming call notification.
-8bd386b Fix incorrect call duration after system time changes
-d71d6b7 Revert "Expedite the processing of destroying Incall UI after end call"
-6d3b308 Revert "Fix MT call cannot be rejected for DSDS"
-cdd28f3 InCallUI: customize video call UI
-
-   * packages/apps/Settings/
-1822deb Settings: Expose LinearColorBar default colors
-f0fe53d Settings: Expose storage summary text
-403b0fe Settings: Expose storage icon colors
-27e1f28 Settings: Expose gesture settings switchbar
-cd3a02a Themes: Expose condition card colors
-d4f9a8f Expose dashboard category and tile color
-fcdf69d OMS7-N: Apps: show/hide Substratum icon overlays [2/2]
-
-   * packages/apps/TeslaCoil/
-7875969 Bring back 'custom small QS tiles' [2/2]
-
-   * packages/services/Telephony/
-922dc21 telephony: allow broadcasts from Samsung RIL
-
-   * system/netd/
-038e4d7 Revert "Revert "Don't start tethering if IPv6 RPF is not supported.""
+ca4486f fix missing volume qs tile
 
 ====================
-     12-13-2016
+     12-30-2016
 ====================
 
 
    * frameworks/base/
-dc4daab webview_packages: correct signature definition for Chrome Stable
-45eeac1 webview_packages: prefer the more powerful webview packages
-24c3768 SystemUI : Port forward statusbar brightness control Brings back the status bar brightness control from cm-10.2/cm-11
-1c2c757 Brightness mirror - fix multi-touch issue
-b9837f5 fix build
-9f226c3 Tesla logo in the statusbar
-8632c70 FWB: Add Volume Key Answer (1/2) hey, winter)
-da02534 Allow Volume wake and music control to work toghether [1/2] *disable volume wake when muic is active if music controls is on *change volume wake logic
-fed1903 Revert "Statusbar brightness control [2/2]"
-eccbfc1 Revert "Brightness control: UserHandle.USER_CURRENT"
+50c9d20 Fix battery  bug on Header DateTime Positions
+9f62802 Header Date+Time positions [1/2]
+5e346e7 QS Header Icon settings [1/2]
+15012e2 Battery icon: add alternative Big Circle style [1/2]
+a8766e2 Revert "Base: charger sounds also for wired"
+c00eeec Battery bolt: don't show it when using charging symbol near percentage text
+8ec8511 Fixes Hardware keys backlight not turning of with disabler
+543d12a PowerManagerService: Fix updating of mUserActivitySummary
+8de5894 Support enforcing a minimum delay between notification sounds of an app.
+e47cea7 Power connect/disconnect notif: fix sound playing when set to silent
+4ca3f2d SystemUI: fix notification on charger
+e8f2599 [1/2] Forward port power connect/disconnect notification support
+dee1529 Battery custom charging symbol near pct: show also on keyguard
+
+   * hardware/qcom/display-caf/msm8916/
+eda3b27 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.10' into cm-14.1-caf-8916
+
+   * hardware/qcom/media-caf/msm8916/
+4c3361b Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.10' into cm-14.1-caf-8916
 
    * kernel/motorola/msm8916/
-1483a74 BACKPORT: perf: Fix event->ctx locking
-551e714 perf: protect group_leader from races that cause ctx double-free
+1c8a11a usb: Avoid exposing kernel addresses
+5a7932b net: ping: check minimum size on ICMP header length
+762f0cb net: avoid signed overflows for SO_{SND|RCV}BUFFORCE
+c5e860d tcp: fix potential memory corruption
+4d4fd95 cgroup: prefer %pK to %p
+3cd708f msm: crypto: Fix integer over flow check in qce driver
+857907d ecryptfs: don't allow mmap when the lower fs doesn't support it
+
+   * packages/apps/Settings/
+039cd66 Add setup UI for minimum delay between an app's notification sounds.
+257554a [2/2] Forward port power connect/disconnect notification support
 
    * packages/apps/TeslaCoil/
-1fb513c statusbar brightness control
-d3bfa7d  Add Volume Key Answer (2/2)
-cbd4ec2 Allow Volume wake and music control to work toghether [2/2] *disable volume wake when muic is active if music controls is on
-670b9d8 Revert "Statusbar brightness control [1/2]"
+a2ca71b Header Date+Time positions [2/2]
+c7eb9a1 QS Header Icon settings [2/2]
+2ba1918 Battery icon: add alternative Big Circle style [2/2]
 
-   * system/sepolicy/
-f092880 Allow apps in /system/priv-app to call and execute su commands
