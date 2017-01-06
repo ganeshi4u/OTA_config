@@ -1,7 +1,48 @@
 ====================
+     01-05-2017
+====================
+
+   * OTA_config/
+c0cb295 Update osprey 03/01
+
+   * build/
+0f6ae00 N4F26M
+15e9a5f Updating Security String to 2017-01-05 on nyc-dev
+
+   * device/motorola/lux/
+5155955 op3: Google assistant prop
+
+   * frameworks/av/
+8939bfc Fix security vulnerability: Effect command might allow negative indexes
+fe90bc0 Make VBRISeeker more robust
+3c9c553 Effects: Check get parameter command size
+dd7117e DO NOT MERGE: defensive parsing of mp3 album art information
+82dbb83 Fix security vulnerability: Equalizer command might allow negative indexes
+f005575 stagefright: remove allottedSize equality check in IOMX::useBuffer
+acda575 Visualizer: Check capture size and latency parameters
+
+   * frameworks/base/
+c081baf Zygote : Block SIGCHLD during fork.
+b5ff975 Zygote: Additional whitelisting for legacy devices.
+a02ceca Zygote: Additional whitelists for runtime overlay / other static resources.
+4c61195 Public volumes belong to a single user.
+5bb2d37 Add SafetyNet logging to DHCP packet parsing
+
+   * manifest/
+99fb15c android 7.1.1_r12
+
+   * packages/services/Telephony/
+c3db302 Merge tag 'android-7.1.1_r12' into n7.1.1
+
+====================
      01-04-2017
 ====================
 
+   * OTA_config/
+73fce7b Update lux 04/01
+
+   * art/
+a358b6b Merge pull request #1 from oraixearl/n7.1.1
 
    * frameworks/base/
 93bcd76 Merge branch 'n7.1.1' into HEAD
@@ -15,6 +56,20 @@ c8f047d remove slim framework from assetmanager
 ====================
 
 
+   * frameworks/base/
+d42082b Themes: Expose QS battery
+393b0ac Revert "Themes: Expose QS battery"
+ee17f28 Revert "Fix systemui fc"
+76d1f35 OMS: Introduce MODIFY_OVERLAYS permission for user apps
+
+   * packages/apps/Settings/
+2d71da4 Expose color for external settings icons
+
+====================
+     01-02-2017
+====================
+
+
    * device/motorola/msm8916-common/
 dea4ea0 msm8916-common: add framework GLES package
 42e39d4 msm8916-common: sepolicy: Fix some bluetooth denials
@@ -22,11 +77,14 @@ dea4ea0 msm8916-common: add framework GLES package
 0a87be4 msm8916-common: make libmot-qc-fd-offline device specific
 7e6746a msm8916-common: add support for harpia
 
-   * frameworks/base/
-d42082b Themes: Expose QS battery
-393b0ac Revert "Themes: Expose QS battery"
-ee17f28 Revert "Fix systemui fc"
-76d1f35 OMS: Introduce MODIFY_OVERLAYS permission for user apps
+   * frameworks/av/
+d55b3ae libaudiopolicyservice: make legacy build with Werror
+8bd2401 audiopolicy: Remove duplicated AUDIO_FEATURE_ENABLED_PROXY_DEVICE flag
+53a488c frameworks/av: Fix video recording breaks
+5e86327 video: Use boot clock for recording start time
+12336bd frameworks/av: Don't override LOCAL_CFLAGS
+785a47f soundtrigger: fix memory corruption
+d6f5f34 audioflinger: Fix audio for WifiDisplay
 
    * hardware/qcom/audio-caf/msm8916/
 3d8599c hal: Make HUAWEI_SOUND_PARAM_PATH a board flag
@@ -44,9 +102,6 @@ a898c7a Merge branch 'cm-14.1-caf-8916' of https://github.com/LineageOS/android_
    * kernel/motorola/msm8916/
 5f76a6c Merge branch 'cm-14.1' of https://github.com/LineageOS/android_kernel_motorola_msm8916 into cm-14.1
 
-   * packages/apps/Settings/
-2d71da4 Expose color for external settings icons
-
    * vendor/motorola/
 3f18222 harpia: initial blob set
 25bf25f msm8916-common: update blobs
@@ -56,40 +111,7 @@ a898c7a Merge branch 'cm-14.1-caf-8916' of https://github.com/LineageOS/android_
 467d52b sepolicy: Address new bluetooth denial
 
 ====================
-     01-02-2017
-====================
-
-
-   * frameworks/av/
-d55b3ae libaudiopolicyservice: make legacy build with Werror
-8bd2401 audiopolicy: Remove duplicated AUDIO_FEATURE_ENABLED_PROXY_DEVICE flag
-53a488c frameworks/av: Fix video recording breaks
-5e86327 video: Use boot clock for recording start time
-12336bd frameworks/av: Don't override LOCAL_CFLAGS
-785a47f soundtrigger: fix memory corruption
-d6f5f34 audioflinger: Fix audio for WifiDisplay
-
-====================
      01-01-2017
 ====================
 
-   * OTA_config/
-de3c787 Update Build
-
-   * frameworks/base/
-1f90d4a TeslaCoil qs tile -Icon coverted from png to vector xml by De Jan thanks great work!
-8a2c289 Frameworks: follow charging notification settings also for wireless charging
-
-   * packages/apps/Bluetooth/
-a7a3377 jni: fix merge failure
-
-====================
-     12-31-2016
-====================
-
-   * OTA_config/
-10e67ab Update Build
-
-   * frameworks/base/
-ca4486f fix missing volume qs tile
 
