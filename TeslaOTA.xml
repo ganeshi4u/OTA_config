@@ -131,7 +131,26 @@
             <PATCHUrl
                 id="patch"
                 title="PATCH"
-                description="Download VoltePatch">https://www.androidfilehost.com/?fid=745425885120696992</PATCHUrl>             
+                description="Download VoltePatch">https://www.androidfilehost.com/?fid=745425885120696992</PATCHUrl>
        </kenzo>
+       <huashan>
+           <Filename>Tesla-huashan-7.1.1.Beta.v3.4-Official-20170108-0544.zip</Filename>
+           <RomUrl
+               id="rom"
+               title="Rom"
+               description="Download latest Tesla-N build">https://www.androidfilehost.com/?fid=385035244224411038</RomUrl>
+           <ChangelogUrl
+               id="changelog"
+               title="Changelog"
+               description="View Tesla-N changelogs">https://github.com/Tesla-M-Devices/OTA_config/blob/master/Changelogs/Sony/huashan/Changelog.txt</ChangelogUrl>
+           <XDAUrl
+               id="xda"
+               title="XDA"
+               description="Visit Tesla-N Xperia SP XDA thread">https://forum.xda-developers.com/xperia-sp/development/rom-6-0-1r46-ubertc-4-9-gzr-tesla-v2-1-t3397692</XDAUrl>
+           <GappsUrl
+               id="gapps"
+               title="Gapps"
+               description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
+       </huashan>
     </Stable>
 </SlimOTA>

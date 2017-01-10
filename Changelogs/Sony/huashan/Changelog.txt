@@ -1,0 +1,302 @@
+====================
+     01-08-2017
+====================
+
+   * frameworks/base/
+9d981df  SystemUI: double tap to sleep improvements  [Prema Chand Alugu]
+3343f1a  SystemUI: Double tap to sleep anywhere on the lock screen (1/2)  [Prema Chand Alugu]
+6f53be3  SystemUI: Add double tap to sleep gesture  [Prema Chand Alugu]
+dde4269  Revert "SystemUI: double tap status bar to sleep (1/2)."  [Prema Chand Alugu]
+4fe3d66  SystemUI: Expose switch bar title  [Alx31]
+   * frameworks/native/
+8a64c36  Merge pull request #10 from TipsyOs/testing  [GitHub]
+   * frameworks/opt/slim/
+ebb6a9c  Merge pull request #4 from TipsyOs/testing  [GitHub]
+2913ab5  Status bar category removed from 'Interface'settings  [Prema Chand Alugu]
+   * manifest/
+c23f016  track our messaging removed some whitespace  [Martinusbe]
+f91376e  r9  [Martinusbe]
+   * packages/apps/Messaging/
+ffc6289  colors: actionbar text black  [Prema Chand Alugu]
+e46d1ff  add a lill yellow  [Prema Chand Alugu]
+2b7a464  Night mode updates  [Prema Chand Alugu]
+a69776b  ng7.1: add directory header styles  [Prema Chand Alugu]
+c4bbac8  Messaging DayNight switching Add the capability for aosp messaging to switch with DayNight. there are zero drawable edits, only style and color changes. As is, there are minor unthemed elements in the message text input and contact search results due to not being able to change them without altering drawables.  [Prema Chand Alugu]
+   * packages/apps/Settings/
+173c92c  dashboard suggestions default off  [Martinusbe]
+fab2eb1  Expose color for external settings icons  [Martinusbe]
+4eecaf0  Add LCD Density Changer to Tipsy (1/2)  [Martinusbe]
+25eee4a  Fix crash when proximity wake is not enabled  [Martinusbe]
+40779f4  Add missing OnPreferenceClickListener  [Martinusbe]
+80411c7  Settings: Use seekbar to allow setting arbitrary animation values  [Martinusbe]
+0178499  expanded desktop metric from teslacoil to tavern  [Martinusbe]
+9d43996  add expanded desktop category in teslacoil (1/2)  [Martinusbe]
+010a498  Settings: Squashed commit for expanded desktop  [Martinusbe]
+3d49b23  [2/3] Add proximity wake  [Martinusbe]
+95812e8  [2/2] unlink notification volume is back  [Martinusbe]
+268eb43  LED lights customization Settings: Notification and battery light [2/2] (SQAUSHED) BenzoEdit: Squashed: Omnigears: [2/2] Notification light settings Omnigears: [2/3] Battery Light Settings Settings: [3/2] Battery Light Settings  [Martinusbe]
+   * packages/apps/Tavern/
+40ed418  Merge pull request #4 from TipsyOs/testing  [GitHub]
+fe679d2  Modify in tavern icons to more theme friendly value switch to android:tint="?android:attr/colorAccent" tavern icons to allow themeing on it thanks @fraz14 for mentionning it ;)  [Alx31]
+55561c6  Merge branch 'testing' of https://github.com/TipsyOs/packages_apps_Tavern into testing  [Alx31]
+0a3f5ad  skull-ify carrier's vector  [Alx31]
+cf17243  LockScreen: Doubletap to sleep  [Prema Chand Alugu]
+525cd5b  Statusbar:Double tap to sleep  [Prema Chand Alugu]
+bc4c87c  Revert "Tavern: double tap status bar to sleep (1/2)."  [Prema Chand Alugu]
+aed593f  damn derps thanks @Premaca  [GitHub]
+0289e46  add vector for carrier label category  [Alx31]
+   * vendor/tipsy/
+0959a2f  Beta v4.1  [Martinusbe]
+
+====================
+     01-07-2017
+====================
+
+   * build/
+05674ed  N6F26Q  [Martinusbe]
+   * frameworks/av/
+17accce  Fix security vulnerability: Effect command might allow negative indexes  [Martinusbe]
+1d92dfe  Make VBRISeeker more robust  [Martinusbe]
+19f73e0  Effects: Check get parameter command size  [Martinusbe]
+79f5b3b  DO NOT MERGE: defensive parsing of mp3 album art information  [Martinusbe]
+b7925b3  Fix security vulnerability: Equalizer command might allow negative indexes  [Martinusbe]
+c10005c  stagefright: remove allottedSize equality check in IOMX::useBuffer  [Martinusbe]
+e9080c0  Visualizer: Check capture size and latency parameters  [Martinusbe]
+   * frameworks/base/
+74bcdf5  Fix build: update base's api's and clean merge derps"  [Alx31]
+f99f494  Custom Carrier Label & Carrier Label Placement [1/2] [Squashed] Squash Of: Keyguard/Statusbar Carrier label options [1/2] * Stock behavior(only on keyguard), only on statusbar,both disabled or both enabled * code originally writted by @Altaf-Mahdi i just squased into one commit PureNexusProject-Legacy/android_frameworks_base@688d56f  [Alx31]
+bb7ecb2  (2/2) base: fix SlimDim  [Martinusbe]
+33c4a6c  Reject DHCP packets with no magic cookie  [Martinusbe]
+e18af4a  Catch runtime exceptions when parsing DHCP packets  [Martinusbe]
+1eae14c  Zygote : Block SIGCHLD during fork.  [Martinusbe]
+985e13f  Zygote: Additional whitelisting for legacy devices.  [Martinusbe]
+a94cb5c  Zygote: Additional whitelists for runtime overlay / other static resources.  [Martinusbe]
+8487387  Public volumes belong to a single user.  [Martinusbe]
+b0615ea  Add SafetyNet logging to DHCP packet parsing  [Martinusbe]
+b9ad57e  Fix boot loop when upgrading direclty from L to N  [Martinusbe]
+c2e8d82  Revert "Fix thread safety issue"  [Martinusbe]
+   * frameworks/native/
+695d0b3  Fix integer overflow in unsafeReadTypedVector  [Martinusbe]
+5ecc7a9  Fix SF security vulnerability: 32660278  [Martinusbe]
+   * frameworks/opt/slim/
+a500e05  SlimSeekBarPreference: remove old import  [Martinusbe]
+445e0ed  (1/2) slim: fix SlimDim  [Martinusbe]
+   * packages/apps/Snap/
+4831b22  Slim : Update deviceHardwareKeys check for opt_slim  [Josue Rivera]
+   * packages/apps/Tavern/
+246fdd1  Fix empty carrier label options on msim devices  [Alx31]
+c5fb56e  move StatusbarNotifications.java in its place  [Alx31]
+95a1fa6  Custom Carrier Label & Carrier Label Placement [2/2] [Squashed] Credit/Thanks to @Altaf-Mahdi @beanstown106 and @martincz  [Alx31]
+7adc963  Add LCD Density Changer to Tipsy (1/2)  [Prema Chand Alugu]
+
+====================
+     01-06-2017
+====================
+
+   * build/
+c606458  Revert "Revert Security String to December"  [Martinusbe]
+   * frameworks/opt/slim/
+a658fa4  Remove enable hw rebinding, its redundant  [Martinusbe]
+02609b3  Revert "slim: Fix HwKey Rebinding not working until reset"  [Martinusbe]
+   * packages/apps/SlimWallpapers/
+4f329b6  really, ya ass  [Martinusbe]
+9cc862e  tipsy walls  [Martinusbe]
+60baf8c  show yourself, maybe  [Martinusbe]
+
+====================
+     01-05-2017
+====================
+
+   * build/
+1bd7169  NMF26V  [Martinusbe]
+1df2bee  NMF26U  [Martinusbe]
+7f7f2c3  NMF26T  [Martinusbe]
+441dece  NMF69  [Martinusbe]
+6358827  Revert Security String to December  [Martinusbe]
+5d2fee1  NMF26S  [Martinusbe]
+5043b5b  NMF26R  [Martinusbe]
+5c90d84  Updating Security String to 2017-01-05 on nyc-dev  [Martinusbe]
+a2574e1  Updating Security String to 2017-01-01 on nyc-dev  [Martinusbe]
+c54decc  NMF62  [Martinusbe]
+0cb42cc  NMF26Q  [Martinusbe]
+42329d2  NMF62  [Martinusbe]
+3bad285  NMF26P  [Martinusbe]
+   * frameworks/base/
+5ba29f9  Allow statusbar items to be launch without the jank [1/2]  [Prema Chand Alugu]
+c5d1ea3  Add back 'Show brightness slider'  [Prema Chand Alugu]
+2238443  Squashed commit for expanded desktop  [Prema Chand Alugu]
+cb2add1  Add Screen Record to the Power Menu [1/2]  [Prema Chand Alugu]
+6978ab4  Add a timer to screen record  [Prema Chand Alugu]
+027e513  Save screenrecord in "Screenrecords" directory  [Prema Chand Alugu]
+a0bb307  screen record: make sure to always delete tmp files  [Prema Chand Alugu]
+3e1e955  Screen Recording: forward port from 4.4  [Prema Chand Alugu]
+0b180c1  bring back screen record shortcut  [Prema Chand Alugu]
+84713d0  Merge branch 'testing' of https://github.com/TipsyOs/frameworks_base into HEAD  [Prema Chand Alugu]
+08051a4  [1/2] unlink notification volume is back  [Prema Chand Alugu]
+7ad968d  QS: Custom rows/columns, (1/2):  [Prema Chand Alugu]
+534be7a  Disable Immersive Messages [1/2]  [Prema Chand Alugu]
+098a071  Force Expanded Notifications [1/2]  [Prema Chand Alugu]
+07f6b00  SystemUI: small optimization for notification icon numbers  [Prema Chand Alugu]
+766a26b  Show infinity for large notification counts  [Prema Chand Alugu]
+2c19a62  Status bar: Update notification count icons  [Prema Chand Alugu]
+1afeb75  SystemUI: Forward-port notification counters [1/2]  [Prema Chand Alugu]
+   * hardware/qcom/audio-caf/msm8952/
+fb3931d  policy_hal: Fix mismerges  [Umang Leekha]
+6c62ec1  audio policy: fix capture indication to sound trigger service.  [Umang Leekha]
+cf5ed0a  audio policy: fix media volume after ringtone  [Umang Leekha]
+01b9bbd  audiopolicy: Avoid spurious routing in APM::stopSource  [Umang Leekha]
+9fffc18  Fix potential overflow in Visualizer effect  [Umang Leekha]
+b729fd8  audio: define max mic count for external codec  [Umang Leekha]
+dc134e6  hal: Fix the input device is disabled when VOICE and VOIP are active  [Umang Leekha]
+3c83a07  hal: spk_prot: remove cond_wait for spkr_calib_cancel  [Umang Leekha]
+   * packages/apps/Snap/
+3f92dde  Snap: Remove storage menu if no external storage available  [Bruno Martins]
+   * packages/apps/Tavern/
+d196cd0  Allow statusbar items to be launch without the jank [2/2]  [Prema Chand Alugu]
+53bf22c  add expanded desktop category in tavern (2/2)  [Prema Chand Alugu]
+def6ae4  Add Screen Record to the Power Menu [2/2]  [Prema Chand Alugu]
+d7e7f32  Merge branch 'testing' of https://github.com/TipsyOs/packages_apps_Tavern into HEAD  [Prema Chand Alugu]
+7b22a8a  QS: Custom rows/columns, (2/2)  [Prema Chand Alugu]
+5af81d9  Disable Immersive Messages [2/2]  [Prema Chand Alugu]
+9decc07  Force Expanded Notifications [2/2]  [Prema Chand Alugu]
+33f0b10  Notification Count in Statusbar [2/2]  [Prema Chand Alugu]
+
+====================
+     01-04-2017
+====================
+
+   * device/sony/huashan/
+a21fa0d  GZR-ify  [a7r3]
+8dda1a8  huashan: build: Add AOSP 7.1 build support  [a7r3]
+1763339  huashan: boot: Move RMP.bin ELF bootimage asset to the device tree  [a7r3]
+d183732  huashan: sepolicy: Remove system_server setsched access  [a7r3]
+0a2b445  Revert "huashan: overlay: Remove CM lights for AOSP-based ROMs"  [a7r3]
+   * external/icu/
+1e545a4  docs: Fixing bad unicode sequence in Javadocs.  [Josue Rivera]
+   * frameworks/base/
+3d4e649  Circle battery inside icon percentage: eyes saver size  [Alx31]
+abbf4e0  Fix Alx's derp  [Alx31]
+106fb94  Fwb: Port PA battery circle style  [Alx31]
+98544fa  [1/3] Add proximity wake  [Martinusbe]
+05f5798  LED lights customization [1/3] [1/2] frameworks/base: Battery and Notification Lights  [Prema Chand Alugu]
+ae786b4  QS WiFi easy toggle: if enabled, long press for detail view  [Prema Chand Alugu]
+15b9583  QS: WiFi easy toggle [2/2]  [Prema Chand Alugu]
+aa261ae  drawable: night drawable for powermenu screenshot  [Prema Chand Alugu]
+   * frameworks/opt/slim/
+c71b756  [3/3] Add proximity wake  [Martinusbe]
+   * hardware/qcom/audio-caf/msm8952/
+a9eccb6  hal: Restrict SSR recording to channel position representation  [Umang Leekha]
+64b2c47  audio: add CHANNEL_INDEX_MASK_6 for surround sound  [umang96]
+ccf8b34  audio: add CHANNEL_INDEX_MASK_6 for surround sound  [umang96]
+8479cbb  audio: revert "remove 5.1 channel mask if SSR is not supported"  [umang96]
+71a78ea  audio: Add support for unprocessed audio source  [umang96]
+3073b46  hal: Add support for unprocessed audio source  [umang96]
+f848998  hal: Add support for 3 & 4 channel recording  [umang96]
+6b5b407  audio: Select device based on supported mic count  [umang96]
+f6212f3  hal: Add param for max mic count  [umang96]
+81c3ff3  mixer_paths: Add pcm offload afe loopback mixer control  [umang96]
+8984159  hal: allow VOIP standby to enable correct device for subsequent usecases  [umang96]
+55be40a  Merge c65709385fcf795091dc8330d052d513d090047b on remote branch  [umang96]
+   * hardware/qcom/audio/default/
+0d9b121  Fix security vulnerability: Effect command might allow negative indexes  [Josue Rivera]
+d3881df  Fix security vulnerability: Equalizer command might allow negative indexes  [Josue Rivera]
+   * hardware/qcom/display-caf/msm8952/
+8deec03  Merge remote-tracking branch 'caf/LA.BR.1.3.6_rb1.9' into cm-14.1-caf-8952  [umang96]
+37b4fd4  libmemtrack: Update parsing of kgsl mem file  [umang96]
+   * hardware/qcom/media-caf/msm8952/
+91c85ad  Merge remote-tracking branch 'caf/LA.BR.1.3.6_rb1.9' into cm-14.1-caf-8952  [umang96]
+3e846c9  mm-video-v4l2: vidc: venc: Remove unspported Levels  [umang96]
+ce9abf6  mm-video-v4l2: Detect interlace format types correctly.  [umang96]
+8ec9668  mm-video-v4l2: vdec: Disallow input usebuffer for secure case  [umang96]
+86e560d  media: video: Remove idle legacy code  [umang96]
+038d40a  mm-video-v4l2: vdec: Fix memory leak in secure wfd usecase  [umang96]
+eb4954a  Merge "mm-video-v4l2: Use correct size for client extradata"  [umang96]
+1132086  Merge "mm-video-v4l2: Add support for extradata access"  [umang96]
+48f4a63  mm-video: remove hevc sw decoder and encoder files  [umang96]
+0acfa60  mm-video-v4l2: Use correct size for client extradata  [umang96]
+0fe5216  mm-video-v4l2: Add support for extradata access  [umang96]
+7ce9b19  mm-video-v4l2: Align extradata offset to 4  [umang96]
+40d0324  Merge commit '420898eb55bc55b838289a7471d07d5597a3548e' into HEAD  [umang96]
+dbfa840  mm-video-v4l2: vidc: Add support for OMX_IndexConfigAndroidIntraRefresh  [umang96]
+fbfcbac  Merge "mm-video-v4l2: vidc: Fix read/write colorspace from/to gralloc-handle"  [umang96]
+c84b30e  mm-video-v4l2: vdec: Disallow changing buffer modes/counts on allocated ports  [umang96]
+814f8f0  mm-video-v4l2: venc: Disallow changing buffer count/size on allocated port  [umang96]
+cde0286  mm-core: Remove the size and version fields for some vpp structures  [umang96]
+   * packages/apps/Snap/
+da58793  Add PREVENT_POWER_KEY to fix Crash when using 'Power Shutter'  [Afshin Arani]
+   * packages/apps/Tavern/
+504a728  Bring in PA Battery Style  [Alx31]
+74e7691  QS: WiFi easy toggle [1/2]  [Prema Chand Alugu]
+
+====================
+     01-03-2017
+====================
+
+   * frameworks/base/
+e5a0d37  Revert "SystemUI: Add hooks for refactored battery styles"  [Alx31]
+c19f518  cleanup  [Alx31]
+e05d613  Themes: Expose QS battery  [Alx31]
+8f89368  Frameworks: follow charging notification settings also for wireless charging  [Alx31]
+bedfc8f  Battery icon: add alternative Big Circle style [1/2]  [Alx31]
+f4d7437  Battery bolt: don't show it when using charging symbol near percentage text  [Alx31]
+5dd05a0  Battery custom charging symbol near pct: show also on keyguard  [Alx31]
+380ec2f  Adjust QS battery tile padding from 2dp to 0dp  [Alx31]
+a16a73f  Turn off 'forced battery percent while charging' default [1/2]  [Alx31]
+1c73114  circlebattery: bring back pulsing animation  [Alx31]
+7f970fd  Battery icon: fix getDrawable for new Android API  [Alx31]
+442a100  OMS themes: prevent potential SysUI fc if no valid battery res  [Alx31]
+cbdd5b4  Fix battery text gap issue  [Alx31]
+0f128d1  Fix possible SysUI fc when playing lowbattery sound  [Alx31]
+a818e51  Battery styles: bring in latest upstream changes  [Alx31]
+403d835  Circle battery inside icon percentage: eyes saver size  [Alx31]
+c483c68  Battery bolt inside the icon: fix visibility when charging  [Alx31]
+68b5435  Adjust the battery text to a sane level  [Alx31]
+03fcd67  Battery: allow set a custom symbol near text pct on charging [1/2]  [Alx31]
+5c16af0  Battery icon: let disable force text outside icon when charging [1/2]  [Alx31]
+b802033  Battery icon: allow to set a custom charging color [1/2]  [Alx31]
+dcf151c  Battery tile: allow to disable custom battery style [1/2]  [Alx31]
+5f52cd0  Circle and landscape battery perc inside the icon: use bigger text  [Alx31]
+f70e4e5  Few improvements to battery styles  [Alx31]
+7bc1f56  Battery tile bolt/text should not be clear  [Alx31]
+ab4830e  Sync battery tile icon with statusbar  [Alx31]
+ebc204f  Fix battery text scaling issue  [Alx31]
+5b60d1e  Always show battery percentage when charging  [Alx31]
+6bca5ba  fix derp from 2d071a9  [Alx31]
+712ae5a  update base's api.  [Alx31]
+2d071a9  SysUI: Use VectorDrawable's for rendering battery  [Alx31]
+7b08aa9  SystemUI: Implement hidden and text battery styles  [Alx31]
+e6f60a3  fix build from eae4478  [Alx31]
+   * packages/apps/Tavern/
+91e95bb  Battery icon: add alternative Big Circle style [2/2]  [Alx31]
+fd7a83b  Battery: allow set a custom symbol near text pct on charging [2/2] Change-Id: Ibc7aca0295f5089995e5cc8b98c71751f73775b1  [Alx31]
+6309386  Battery icon: let disable force text outside icon when charging [2/2] Change-Id: I531aa7f1a10b29691cd2171a82445b85eb4b3bc3  [Alx31]
+2659c2a  Battery icon: allow to set a custom charging color [2/2] Change-Id: I33a167e9b537f0de4f57ab90bd355979891349ca  [Alx31]
+d101a4e  Battery tile: allow to disable custom battery style [2/2] - Disable battery tile toggle when style is enabled for portrait, text or hidden.  [Alx31]
+69b2561  add battery icon  [Alx31]
+035a375  Battery Customizations Code inspired by @CyanogenMod and @OmniROM  [Alx31]
+   * vendor/sony/
+61907e3  hayabusa,mint,tsubasa: proprietary: Use new generic extract utils  [Adrian DC]
+0b1c736  blue-common: proprietary: Use new generic extract utils  [Adrian DC]
+c3f2202  huashan: proprietary: Use the generic extract utils  [Adrian DC]
+
+====================
+     01-02-2017
+====================
+
+   * build/
+384f55d  Remove Feedback Directed Optimization support  [Dustin Rinne]
+1fc052f  Show compiler used when building (Updated for Nougat)  [Dustin Rinne]
+a0ba09f  Clang: Use O3  [Dustin Rinne]
+06c0eb6  build: do not enforce linker version-scripts  [Dustin Rinne]
+   * frameworks/base/
+118dfbd  ocd  [Alx31]
+   * vendor/sony/
+ee34933  blue-common: Move RMP.bin ELF bootimage asset to the device tree  [Adrian DC]
+5d4561b  huashan: Move RMP.bin ELF bootimage asset to the device tree  [Adrian DC]
+833795c  huashan: Remove unreferenced libc2d30 and libplayback_adreno  [Adrian DC]
+
+====================
+     01-01-2017
+====================
+
+
