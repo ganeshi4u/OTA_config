@@ -1,121 +1,206 @@
 ====================
-     01-07-2017
+     01-12-2017
 ====================
 
-   * OTA_config/
-52d9969 Update lux & shieldtablet 05/01
-
-   * device/wingtech/wt88047/
-aa75aaa sepolicy: Fix some bluetooth denials
-
-   * frameworks/base/
-3d2ddab Revert "Fix thread safety issue"
-
-   * hardware/qcom/wlan-caf/
-4f75216 wcnss-service: Enable and fix -Werror build
-
-   * packages/apps/ContactsCommon/
-bdf7735 fix merge
-86cac83 Themes: Expose hardcoded contact tile text colors
-432e103 Revert "Substratum expose hardcoded colors"
-
-   * system/sepolicy/
-78ed98c fix denials for rootfs:lnk_file
-
-====================
-     01-06-2017
-====================
-
-   * OTA_config/
-c0cb295 Update osprey 03/01
 
    * build/
-0f6ae00 N4F26M
-15e9a5f Updating Security String to 2017-01-05 on nyc-dev
+4a5c93a Drop PicoTTS
 
-   * frameworks/av/
-8939bfc Fix security vulnerability: Effect command might allow negative indexes
-fe90bc0 Make VBRISeeker more robust
-3c9c553 Effects: Check get parameter command size
-dd7117e DO NOT MERGE: defensive parsing of mp3 album art information
-82dbb83 Fix security vulnerability: Equalizer command might allow negative indexes
-f005575 stagefright: remove allottedSize equality check in IOMX::useBuffer
-acda575 Visualizer: Check capture size and latency parameters
-
-   * frameworks/base/
-c081baf Zygote : Block SIGCHLD during fork.
-b5ff975 Zygote: Additional whitelisting for legacy devices.
-a02ceca Zygote: Additional whitelists for runtime overlay / other static resources.
-4c61195 Public volumes belong to a single user.
-5bb2d37 Add SafetyNet logging to DHCP packet parsing
-
-   * manifest/
-99fb15c android 7.1.1_r12
-
-   * packages/apps/ContactsCommon/
-93a3eaa Merge tag 'android-7.1.1_r12' into n7.1.1
-
-   * packages/apps/TeslaCoil/
-f702ada margaritov color picker: add a proper landscape layout
-
-   * packages/services/Telephony/
-c3db302 Merge tag 'android-7.1.1_r12' into n7.1.1
+   * kernel/wingtech/msm8916/
+b81d58c ASoC: msm: Add support to enable PBE in DSP
+f731c04 ALSA: compress: Add support to send codec specific data
+efe8074 ASoC: msm: qdsp6v2: Handle additional codec specific metadata
+a52fa96 ASoC: msm: qdsp6v2: add support for ALAC/APE/VORBIS
+06b40cf net: rmnet_data: Add support for MAPv4 data format
+4c60796 net: rmnet_data: Fix deaggregation to work with DL checksum offload
+22bd455 net: rmnet_data: add support for UL MAP based checksum offload
+4075ca5 net: rmnet_data: Checksum offload handle IPv4 UDP frames with 0 checksum
+dc6e4f0 Compilation issue fix.
+0e127d4 Revert "Compilation Fix with MM Roms"
+e6c0820 config: enable CONFIG_WT_USE_XIAOMI_CHARGE_1050 to use stock charging frequencies
+7701b19 config: regenerate kernel configuration
+52ad5a3 hotplug: msm active all the time, as its default for uw
+a53ba1f hotplug: revamp msm hotplug
+443e135 defconfig: enable NF_MATCH_RPFILTER
+86c7f5b msm: vidc: Add control to set csc coefficients to firmware.
+c35b021 msm: vidc: Add support for color space information.
+9e5f020 msm: vidc: Add SEI extradata
+5705c0a implement kexec hardboot for Multirom
+013048b Enable MSM Hotplug as default
+525dcbf msm: mdss: hdmi: updated extended mode macro
+3a028b5 msm: mdss: specify HFlip and VFlip per pipe BW limit
+7306424 msm: mdss: Add support to select max MDP bandwidth
+690ca86 msm8916: N bringup
+5e041d8 msm8916: Mild undervolt
+d1bfef2 ARM: dts: msm8916: Unlock available frequencies
+5ebd577 wcnss: Move vddmx voltage regulator voting to corner base voting
+4c34b2c ARM: dts: msm: Add support for new speed bin for MSM8916
+0ac7b6b exFAT support
+8b3fe0c arm/dt: msm8916: Enable bam_dmux fast shutdown
+8d5f1f3 msm8916: gpu: Add UC/OC frequencies
+16f8c1c wifi ini is modified accroding to stock MiUi
+53e6b67 Prima driver version 3.8.22.14
+e2bd46e Revert "mm6.0: Add OpenSource Wifi Driver"
+b1b0469 zram: compact zram when suspended
+053dc93 zsmalloc: reorganize struct size_class to pack 4 bytes hole
+f116494 zsmalloc: use page->private instead of page->first_page
+d133f5f zsmalloc: reduce size_class memory usage
+d2b2cb0 mm/zsmalloc.c: remove useless line in obj_free()
+20f1dfd zsmalloc: use preempt.h for in_interrupt()
+c9a3c30 zsmalloc: fix obj_to_head use page_private(page) as value but not pointer
+640714b zsmalloc: add comments for ->inuse to zspage
+7b0a75d zsmalloc: remove null check from destroy_handle_cache()
+d4e1a5d zsmalloc: use class->pages_per_zspage
+7f1d653 zsmalloc: consider ZS_ALMOST_FULL as migrate source
+22473e5 zram: update documentation
+7b38aa3 zsmalloc: account the number of compacted pages
+54fca9e zsmalloc/zram: introduce zs_pool_stats api
+5bbe081 zsmalloc: cosmetic compaction code adjustments
+8767e61 zsmalloc: introduce zs_can_compact() function
+19db034 zsmalloc: always keep per-class stats
+28db1f8 zsmalloc: drop unused variable `nr_to_migrate'
+01133a38 zram: add `compact` sysfs entry to documentation
+11dc926 zsmalloc: remove obsolete ZSMALLOC_DEBUG
+52511a5 zsmalloc: partial page ordering within a fullness_list
+3f17ea9 zram: don't call idr_remove() from zram_remove()
+0ec4bf6 zram/zcomp: do not zero out zcomp private pages
+cf7dabb zram: pass gfp from zcomp frontend to backend
+3928d39 zram: make is_partial_io/valid_io_request/page_zero_filled return boolean
+e5dc2fa zram: keep the exact overcommited value in mem_used_max
+738cf5f zram: introduce comp algorithm fallback functionality
+7bf203e zram: fix possible use after free in zcomp_create()
+96d296f zram: unify error reporting
+da929d3 zram: fix pool name truncation
+2a5ab97 zram: check comp algorithm availability earlier
+d073d81 zram: cut trailing newline in algorithm name
+ee13f5b zram: cosmetic zram_bvec_write() cleanup
+cf694ab zram: add dynamic device add/remove functionality
+60af128 zram: close race by open overriding
+4ca1695 zram: return zram device_id from zram_add()
+4ace8ba zram: trivial: correct flag operations comment
+1e413a0 zram: report every added and removed device
+4c1aadf zram: remove max_num_devices limitation
+e79875e zram: reorganize code layout
+5d94ef1 zram: use idr instead of `zram_devices' array
+c02f4ac zram: cosmetic ZRAM_ATTR_RO code formatting tweak
+068cfa9 zram: Add back show_mem_notifier and QUEUE_FAST_FLAG
+255a265 staging: zram: Rate limit memory allocation errors
+7eb33ea zram: Disable allocation failure logging
+c3e89c8 zram: remove obsolete ZRAM_DEBUG option
+6de64aa zram: try vmalloc() after kmalloc()
+1acfca0 zram/zcomp: use GFP_NOIO to allocate streams
+6d5bfe6 Duration between PWRKEY is increased
+54a4955 dt2w - handle slot change more effectively
+ff8d969 dt2w disable debug
+b2828bf LTR559 - define CONFIG_MACH_WT88047 locally
+48b0830 dts: wt88047: Change LTR-559 interrupt type
+a2c825c Ondemand proximity sensor for CM version of LTR559
+3adb890 input: misc: Modify LTR-559 for WT88047
+e45ba11 Add MSM hotplug
+0a6004d cpufreq: add despair governor
+844847c Added fsync on/off support.
+c37df71 Add /dev/frandom support
+dfa89b3 wakeup: add toggles for wlan wakelocks. They are all enabled by default, it's up to the user and I provide no support if Wi-Fi stops working normally without these locks enabled. This is for advanced users
+cd48a4a int_sqrt: Improve 3x faster integer sqrt.
+44960f0 int_sqrt: correction square root algo with naming
+5b993e2 Fix whitespce errors
+26a1417 mm/zpool: add name argument to create zpool
+8e0d3ba mm/zpool: use prefixed module loading
+ef63dbc mm/zpool: implement common zpool api to zbud/zsmalloc
+5e2db8f msm: mdss: KCAL: Only apply updates on index 0
+b1ac406 msm: mdss: KCAL: Use PCC for negative display mode
+a30cd00 msm: mdss: KCAL: Send a pp display commit when changes are made
+baaaea4 msm: mdss: KCAL: Do not read from picture adjustment registers
+a9def32 msm: mdss: KCAL: Read values from MDP registers wherever possible
+acc1aee msm: mdss: KCAL: Apply default values on boot
+b113226 msm: mdss: KCAL: Queue changes when panel is powered off
+a545172 msm: mdss: KCAL: Remove MODULE_DESCRIPTION
+d260ebe msm: mdss: KCAL: Update Kconfig description
+481f61a msm: mdss: KCAL: Update according to linux guidelines and checkpatch.pl
+ce3ea15 msm: mdss: KCAL: Check panel power state before applying values
+0d867b6 msm: mdss: KCAL: Allow kcal_enable to control all post-processing features
+3563228 msm: mdss: Keep KCAL within its own source file
+9a402eb msm: mdss: Remove deprecated __dev* markings
+e0a24e8 msm: mdss: Add pa_v2 support to KCAL
+c7482a1 msm: mdss: Replace PGC implementation with PCC for KCAL
+7a65ec1 msm: mdss: Add KCAL support for post processing control [v2]
+685c723 mako hotplug - fix stats conflict with driver code
+717b957 cpufreq: add an helper to get/set cpu utilization to be used by mako_hotplug
+1aa715a Mako: Add working toggle.
+b3ba2b9 mako_hotplug: increase the work schedule time when dual-core or quad-core mode is active, from 1 to 2 seconds
+d677522 mako_hotplug: don't use PAGE_SIZE for snprintf
+fea8f76 mako_hotplug: run the main work only once every second if special cases apply
+3df0e4d mako_hotplug: don't offline cores if the load at that sample is above the threshold, even if we met all the other conditions
+9b0a4f5 mako_hotplug: let's use an unbound wq
+ee9ad3c mako_hotplug: remove works for resume/suspend entirely
+2951089 mako_hotplug: squash code from lollipop branch
+fee0076 msm: mpm: disable debugging
+8692ea5 lz4: fix compression/decompression signedness mismatch
+1703cad lib: add lz4 compressor module
+3e2286c lib: add support for LZ4-compressed kernel
+0a404c9 decompressor: add LZ4 decompressor module
+dc87162 mm: zsmalloc: backport from Linux 4.1
+b7bac8c block: zram: make lz4 the default compressor
+adbfdf2 block: zram: Backport from Linux 4.1
+b8cfc46 sched: prevent task migration while governor queries CPUs' load
+f97e0b0 cpufreq: Introduce new relation for freq selection
+28ff738 cpufreq: Add impulse governor
+3a366f5 cpufreq: Add lionfish governor v1.1
+b416352 block: introduce the BFQ-v7r8 I/O sched for 3.10.8+
+3094b24 block: Add sioplus,tripndroid & zen scheduler
+d5414d1 block: cgroups, kconfig, build bits for BFQ-v7r8-3.10.8+
+1ef76af Added fiops IO scheduler
+4d96ed9 Fix up compilation error for qpnp with redefition
+6d7061e Reenable dt2w with ltr559 support
+45eb3ff Fix up dt2w debug messages
+f11c9b1 msm: vibrator: Add a sysfs node for the default (boot-up) level.
+163330d msm: vibrator: Properly unregister device files
+b20bc4a msm: vibrator: Add min/max voltage sysfs entries
+e085a22 msm: Improve qpnp-vibrator scheduling
+aebb6d93 input: misc: ltr559: Report proper initial value to userspace
+849daea ltr559 - enable, fix whitespace errors
+78acc44 Add DT2W Support
+a3778ab input: sensors: optimize mpu6050 sensor resume time
+7d20e3a Move unsupported gains, fix compilation error
+ba3949b Faux Sound Control 3
+d77ca58 drivers: platform: msm: qpnp-vibrator: Add sysfs interface for intensity
+4244926 Add: SIO scheduler
+a30bd82 Fast Charge is added, and enabled by default
 
 ====================
-     01-05-2017
+     01-11-2017
 ====================
 
    * OTA_config/
-73fce7b Update lux 04/01
-
-   * art/
-a358b6b Merge pull request #1 from oraixearl/n7.1.1
+eaea46a Add huashan
 
    * frameworks/base/
-93bcd76 Merge branch 'n7.1.1' into HEAD
-c8f047d remove slim framework from assetmanager
-
-====================
-     01-04-2017
-====================
-
-
-   * frameworks/base/
-d42082b Themes: Expose QS battery
-393b0ac Revert "Themes: Expose QS battery"
-ee17f28 Revert "Fix systemui fc"
-76d1f35 OMS: Introduce MODIFY_OVERLAYS permission for user apps
+b4df324 Battery icon improvements
+1f23cfb Battery: correctly colorize the "!" critical level percentage text
+adb93f950 QS: Fix QuickQS visibility at non-first page
+4ef508d SystemUI: Expose switch bar title
 
    * packages/apps/Settings/
-2d71da4 Expose color for external settings icons
+3d2215c Settings: Let's get to choose keyboard again in Settings.
 
 ====================
-     01-03-2017
+     01-10-2017
 ====================
 
 
-   * frameworks/av/
-d55b3ae libaudiopolicyservice: make legacy build with Werror
-8bd2401 audiopolicy: Remove duplicated AUDIO_FEATURE_ENABLED_PROXY_DEVICE flag
-53a488c frameworks/av: Fix video recording breaks
-5e86327 video: Use boot clock for recording start time
-12336bd frameworks/av: Don't override LOCAL_CFLAGS
-785a47f soundtrigger: fix memory corruption
-d6f5f34 audioflinger: Fix audio for WifiDisplay
+====================
+     01-09-2017
+====================
 
-   * hardware/qcom/audio-caf/msm8916/
-3d8599c hal: Make HUAWEI_SOUND_PARAM_PATH a board flag
-7485473 hal: handle dolby set_license status
-0151933 hal: handle CLANG errors for Dolby
-139c318 audio: configs: Enable Dolby feature
 
-   * hardware/qcom/audio-caf/msm8996/
-e487e4f policy_hal: Fix mismerges
+====================
+     01-08-2017
+====================
 
-   * hardware/qcom/display-caf/msm8916/
-a898c7a Merge branch 'cm-14.1-caf-8916' of https://github.com/LineageOS/android_hardware_qcom_display into n7.1-caf-8916
-9ba058b HWC: Fix typo error in prepareSwapRect function
 
-   * vendor/tesla/
-467d52b sepolicy: Address new bluetooth denial
+   * frameworks/base/
+fc3f65e SystemUI: StatusBar Weather [SQUASHED] [1/2] --Add Temp Style --Add Text Size --Font Type --Left/Right
+
+   * packages/apps/TeslaCoil/
+d0a96f0 StatusBar Weather {SQUASHED} [2/2] --Temp Style --Temp Font --Font Size --Left/Right
 
