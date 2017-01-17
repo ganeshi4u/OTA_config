@@ -1,122 +1,94 @@
 ====================
-     01-03-2017
+     01-16-2017
 ====================
 
 
-   * device/motorola/msm8916-common/
-8faa3bc Revert "msm8916-common: sepolicy: Fix some bluetooth denials"
-dea4ea0 msm8916-common: add framework GLES package
-42e39d4 msm8916-common: sepolicy: Fix some bluetooth denials
-92d71fe msm8916-common: add new blob for MPI24.241-15.3 release
-0a87be4 msm8916-common: make libmot-qc-fd-offline device specific
-7e6746a msm8916-common: add support for harpia
+   * frameworks/base/
+b8d2f69 Themes: Expose manifest styles for themes
+2fcd435 Base: API to restart SystemUI without root
+5d6079f doze: allow grayscale even if invert boolean is false
 
-   * device/motorola/osprey/
-425e9a5 osprey: libmot-qc-fd-offline moved to device
-
-   * hardware/qcom/audio-caf/msm8916/
-3d8599c hal: Make HUAWEI_SOUND_PARAM_PATH a board flag
-7485473 hal: handle dolby set_license status
-0151933 hal: handle CLANG errors for Dolby
-139c318 audio: configs: Enable Dolby feature
-
-   * hardware/qcom/audio-caf/msm8996/
-e487e4f policy_hal: Fix mismerges
-
-   * hardware/qcom/display-caf/msm8916/
-a898c7a Merge branch 'cm-14.1-caf-8916' of https://github.com/LineageOS/android_hardware_qcom_display into n7.1-caf-8916
-9ba058b HWC: Fix typo error in prepareSwapRect function
+   * hardware/qcom/audio-caf/msm8994/
+0fb6b82 audio policy: fix capture indication to sound trigger service.
+28a90d7 audiopolicy: Avoid spurious routing in APM::stopSource
 
    * kernel/motorola/msm8916/
-5f76a6c Merge branch 'cm-14.1' of https://github.com/LineageOS/android_kernel_motorola_msm8916 into cm-14.1
-
-   * vendor/motorola/
-3f18222 harpia: initial blob set
-25bf25f msm8916-common: update blobs
-2ae2730 msm8916-common: make libmot-qc-fd-offline device specific
-
-   * vendor/tesla/
-467d52b sepolicy: Address new bluetooth denial
+793be2d Merge branch 'cm-14.1' of https://github.com/desaishivam26/android_kernel_motorola_msm8916 into cm-14.1
+3be141e Merge branch 'cm-14.1' of https://github.com/LineageOS/android_kernel_motorola_msm8916 into cm-14.1
 
 ====================
-     01-02-2017
-====================
-
-
-   * frameworks/av/
-d55b3ae libaudiopolicyservice: make legacy build with Werror
-8bd2401 audiopolicy: Remove duplicated AUDIO_FEATURE_ENABLED_PROXY_DEVICE flag
-53a488c frameworks/av: Fix video recording breaks
-5e86327 video: Use boot clock for recording start time
-12336bd frameworks/av: Don't override LOCAL_CFLAGS
-785a47f soundtrigger: fix memory corruption
-d6f5f34 audioflinger: Fix audio for WifiDisplay
-
-====================
-     01-01-2017
+     01-15-2017
 ====================
 
    * OTA_config/
-de3c787 Update Build
+7c8169c update bacon 01/14
 
    * frameworks/base/
-1f90d4a TeslaCoil qs tile -Icon coverted from png to vector xml by De Jan thanks great work!
-8a2c289 Frameworks: follow charging notification settings also for wireless charging
+002cd77 DUI Smartbar: double tap to sleep on navbar [1/3]
+b7002e6 Fix DUI navbar edit logspam
+a090f27 Lockscreen charging info: real time values [1/4]
+8f80d82 Fix issue when start android/com.android.internal.backup.LocalTransportService
+8717c4f Fix InCallActivity onStop call when launch from Lockscreen
+9b00176 Remove unused variable.
+3a0d964 Fix a use-of-uninitialized-value warning.
+43c0675 logcat: fix SuperSU related spam E/ActivityManager( 4885): Sending non-protected broadcast eu.chainfire.supersu.NativeAccess from system uid 0 pkg null 09-16 23:35:48.711 E/ActivityManager( 4885): java.lang.Throwable 09-16 23:35:48.711 E/ActivityManager( 4885): at com.android.server.am.ActivityManagerService.broadcastIntentLocked(ActivityManagerService.java:17695) 09-16 23:35:48.711 E/ActivityManager( 4885): at com.android.server.am.ActivityManagerService.broadcastIntent(ActivityManagerService.java:18256) 09-16 23:35:48.711 E/ActivityManager( 4885): at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:499) 09-16 23:35:48.711 E/ActivityManager( 4885): at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2755) 09-16 23:35:48.711 E/ActivityManager( 4885): at android.os.Binder.execTransact(Binder.java:565)
+c6b7d23 Fix window animation flash issue
+7fa5a19 Fix split-screen flash issue
+ef7de1f [PackageManagerService]: Fixes can not boot issue.
+603e98b Added missing @DrawableRes
+5ac4323 Fix clipping for edit screen of Quick Settings
+4bfa002 Lockscreen charging: Formatting improvements
 
-   * packages/apps/Bluetooth/
-a7a3377 jni: fix merge failure
+   * packages/apps/DUI/
+d275afe Smartbar: double tap to sleep on navbar [2/3]
 
-====================
-     12-31-2016
-====================
-
-   * OTA_config/
-10e67ab Update Build
-
-   * frameworks/base/
-ca4486f fix missing volume qs tile
-
-====================
-     12-30-2016
-====================
-
-
-   * frameworks/base/
-50c9d20 Fix battery  bug on Header DateTime Positions
-9f62802 Header Date+Time positions [1/2]
-5e346e7 QS Header Icon settings [1/2]
-15012e2 Battery icon: add alternative Big Circle style [1/2]
-a8766e2 Revert "Base: charger sounds also for wired"
-c00eeec Battery bolt: don't show it when using charging symbol near percentage text
-8ec8511 Fixes Hardware keys backlight not turning of with disabler
-543d12a PowerManagerService: Fix updating of mUserActivitySummary
-8de5894 Support enforcing a minimum delay between notification sounds of an app.
-e47cea7 Power connect/disconnect notif: fix sound playing when set to silent
-4ca3f2d SystemUI: fix notification on charger
-e8f2599 [1/2] Forward port power connect/disconnect notification support
-dee1529 Battery custom charging symbol near pct: show also on keyguard
-
-   * hardware/qcom/display-caf/msm8916/
-eda3b27 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.10' into cm-14.1-caf-8916
-
-   * hardware/qcom/media-caf/msm8916/
-4c3361b Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.10' into cm-14.1-caf-8916
-
-   * kernel/motorola/msm8916/
-1c8a11a usb: Avoid exposing kernel addresses
-5a7932b net: ping: check minimum size on ICMP header length
-762f0cb net: avoid signed overflows for SO_{SND|RCV}BUFFORCE
-c5e860d tcp: fix potential memory corruption
-4d4fd95 cgroup: prefer %pK to %p
-3cd708f msm: crypto: Fix integer over flow check in qce driver
-857907d ecryptfs: don't allow mmap when the lower fs doesn't support it
-
-   * packages/apps/Settings/
-039cd66 Add setup UI for minimum delay between an app's notification sounds.
-257554a [2/2] Forward port power connect/disconnect notification support
+   * packages/apps/OmniSwitch/
+3d49460 I'll choose our shade of green
 
    * packages/apps/TeslaCoil/
-a2ca71b Header Date+Time positions [2/2]
-c7eb9a1 QS Header Icon settings [2/2]
-2ba1918 Battery icon: add alternative Big Circle style [2/2]
+caf88d5 DUI Smartbar: double tap to sleep on navbar [3/3]
+0cf39c4 Lockscreen charging info: real time values [4/4]
+
+   * system/core/
+3b68036 Lockscreen charging info: real time values [2/4]
+
+   * vendor/tesla/
+b68ca8b v3.5
+
+====================
+     01-14-2017
+====================
+
+
+   * hardware/qcom/audio-caf/msm8994/
+1ded135 policy_hal: Fix mismerges
+
+   * manifest/
+cbf32dd track arm-eabi-4.9 tc from validus org
+
+====================
+     01-13-2017
+====================
+
+   * OTA_config/
+4a9581c ota: update Redmi2 01/12
+
+   * frameworks/base/
+ab25fd5 Squash: SystemUI: Tile: Lockscreen fixed for 7.0 by @Millosr
+554c17f Turn off carrier provisioning by default to allow tethering
+
+====================
+     01-12-2017
+====================
+
+
+   * build/
+4a5c93a Drop PicoTTS
+
+   * device/motorola/msm8916-common/
+ed0e84f msm8916-common: sepolicy: Fix some bluetooth denials
+7927611 Add bluetooth_loader
+
+   * packages/apps/Settings/
+3d2215c Settings: Let's get to choose keyboard again in Settings.
 
