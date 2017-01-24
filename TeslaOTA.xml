@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <wt88047>
-            <Filename>Tesla-wt88047-7.1.1.Beta.v3.4-Official-20170112-1445.zip</Filename>
+            <Filename>Tesla-wt88047-7.1.1.Beta.v3.5-Official-20170124-1608.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download TeslaN build">https://www.androidfilehost.com/?fid=457095661767129273</RomUrl>
+                description="Download TeslaN build">https://www.androidfilehost.com/?fid=529152257862697901</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
