@@ -1,106 +1,146 @@
 ====================
-     01-24-2017
+     02-07-2017
 ====================
 
 
-   * device/motorola/lux/
-563f586 Update tesla.dependencies
+   * bionic/
+e518c3b Check for bad packets in getaddrinfo.c's getanswer.
+
+   * build/
+fd9bed6 N6F26R
+1676aaf Update Security String to 2017-02-05 on nyc-dev
+70a7a48 Update Security String to 2017-02-01 on nyc-dev
+
+   * frameworks/av/
+65287c9 Fix security vulnerability: potential OOB write in audioserver
+42c20fe Effect: Use local cached data for Effect commit
 
    * frameworks/base/
-570620a Less notifications sound [1/2]
-7b11abf Rework dashboard settings [2/2]
-e7d752a Dashboard summaries double lines toggle [1/2]
-94a6f54 Dashboard tile layout config [2/2]
-b068217 QS Smart Ambient-LiftToWake tile: make it compatible with all devices
+af98e52 [DO NOT MERGE] Fix vulnerability in MemoryIntArray - fix build file
+ac7df27 Fix vulnerability in MemoryIntArray
+01286d5 DO NOT MERGE. Retain DownloadManager Uri grants when clearing.
+d105aa0 DO NOT MERGE: Check provider access for content changes.
 
    * frameworks/native/
-e2c0fc8 Revert back to previous configuration for xxxhdpi-3072-dalvik-heap
+edeb28e Correct overflow check in Parcel resize code
+2af2fe2 Fix security vulneratibly 31960359
+1b0a8d2 Fix SF security vulnerability: 32706020
 
-   * packages/apps/Settings/
-62ee9af Less notifications sound [2/2]
-cb6b629 Rework dashboard settings [1/2]
-d0d0d8d Dashboard summaries double lines toggle [2/2]
-3c27777 Dashboard tile layout config [1/2]
+   * hardware/libhardware/
+c32d03d Fix security vulnerability: potential OOB write in audioserver
+
+   * hardware/qcom/audio-caf/msm8996/
+805af44 audio: configs: Enable Dolby feature
+afee25c Fix security vulnerability: Equalizer command might allow negative indexes
+502bcd6 Fix security vulnerability: Effect command might allow negative indexes
+
+   * hardware/qcom/media/
+2de60c7 media: Fix pathmap barrier
+ede7059 media: Use    * pathmap
+
+   * libcore/
+0916572 Fix URL parser may return wrong host name
+
+   * packages/apps/Bluetooth/
+7a34107 Remove MANAGE_DOCUMENTS permission as it isn't needed
+
+   * packages/apps/Messaging/
+0447abb resolve merge conflicts of eafd58a to nyc-dev
+cfab2f8 32807795  Security Vulnerability - AOSP Messaging App: thirdparty can attach private files from "/data/data/com.android.messaging/" directory to the messaging app.
+57bdac6 32322450 Security Vulnerability - heap buffer overflow in libgiftranscode.so
+
+   * system/core/
+799b6ab change /data/bugreports to /bugreports
+
+   * system/sepolicy/
+76e5172 label /bugreports
+
+   * vendor/lge/
+8f6e201 g3-common: qsee: D8553C blobs
 
 ====================
-     01-23-2017
+     02-06-2017
+====================
+
+
+   * device/lge/hammerhead/
+e53ddb9 Fix up device tree
+22d1db5 Revert "Remove obsolete qcom header makefile include"
+
+   * hardware/qcom/media/
+237f366 libstagefrighthw: Remove padding in encoder_nativehandle_buffer_type
+719a679 mm-video-legacy: venc: update metadata-type used for HAL1 based  recording
+99a5f4c mm-video-legacy: venc: update allocation-size check for meta-buffer
+b0a043c Enable TARGET_COMPILE_WITH_MSM_KERNEL guard
+23b40f1 media: Use kernel headers
+960bbe3 Revert "msm8974: remove from top level makefile"
+
+   * vendor/motorola/
+b3230b3 victara: remove charge_only_mode
+01f8bac msm8226: Fix EXIF data on builds signed with release-keys
+
+====================
+     02-05-2017
+====================
+
+
+   * device/motorola/msm8916-common/
+2d4a151 msm8916-common: enable NightDisplay
+d392d42 msm8916-common: use Camera2 instead of Snap
+f0bc05b Revert "msm8916-common: sepolicy: address untrusted_app denial"
+
+   * device/qcom/common/
+46aef1a extractors: Set INITIAL_COPYRIGHT_YEAR
+3aa1b57 extractors: Add msm8952 blobs
+2dfe120 Revert "extractors: Update msm8996 graphics blobs info"
+3991a35 Revert "extractors: Add msm8996 32bit libmm-disp-apis and libmm-qdcm"
+c73bcd6 extractors: Add msm8996 32bit libmm-disp-apis and libmm-qdcm
+efa3a0d extractors: Update msm8996 graphics blobs info
+f3e87e1 extractors: Split 32/64 makefiles
+10122e9 qcom: extractors: Add msm8960 graphics list
+287f957 qc: Fix makefiles
+de3c316 power: msm8937: Improve boost values
+44208e8 power: msm8937: Remove display_hint_sent usage
+edbe285 power: msm8937: Fix build warnings
+d82cbef qc: Add guard makefile for binaries repo
+587505c extractors: Add origin branches for graphics blobs
+f4e7d8e Revert "Wait for QSEECom listeners before calling KMS APIs"
+9835058 Revert "cryptfs_hw: update the listener property with keymaster property"
+
+   * hardware/qcom/keymaster/
+3e292c8 Merge remote-tracking branch 'slim/ng7.1' into HEAD
+
+   * kernel/motorola/msm8916/
+29102fe Merge branch 'cm-14.1' of https://github.com/desaishivam26/android_kernel_motorola_msm8916 into cm-14.1
+81d0d33 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_kernel_motorola_msm8916 into cm-14.1
+
+====================
+     02-04-2017
 ====================
 
 
    * frameworks/base/
-13ca432 Add Statusbar  BatteryBar customizations [1/2]
-
-   * frameworks/opt/telephony/
-2bd010a Telephony: Plmn name override
-
-   * hardware/ril-caf/
-d8532a9 ril-caf: Only allow GET_CARRIER_RESTRICTIONS for ril versions >= 14
+e8df275 Set external QS tiles tint mode to SRC_ATOP
+dffaf5f Themes: Expose Keyguard affordance circle background
+55c19b4 graphics: ADB "N" icon compatible with OMS7
+60570fc FWB: The Return of the Ticker 2/2 Return of ticker work done by @rogersb11 Included are on and off switch from @Jubakuba Custom color selection for Ticker text and icons
 
    * packages/apps/Settings/
-6d4e1ef Hotlink to show Tesla Features at-a-glance
+f5b4fd8 Set external settings icon tint mode to SRC_ATOP
 
    * packages/apps/TeslaCoil/
-74dda0a Revert "no gesture for now"
-5f16de3 Fix GA fc and saving the gesture cache
-1f0e4a0 Add Statusbar BatteryBar customizations [2/2]
-
-   * packages/apps/masquerade/
-1c402c5 Release 20P: Initiate the caller package checking system
+8a99668 quickbar scroll comment out for now
+162fbaa Status Bar Ticker [2/2]
 
 ====================
-     01-22-2017
+     02-03-2017
 ====================
 
 
-   * frameworks/base/
-76b643d Revert "Fix InCallActivity onStop call when launch from Lockscreen"
-6888430 Revert "Fix issue when start android/com.android.internal.backup.LocalTransportService"
-
-   * hardware/qcom/display-caf/msm8952/
-d7f8861 gralloc: allow forcing old pixel alignment
-
-====================
-     01-21-2017
-====================
-
+   * device/lge/hammerhead/
+b00380d camera: also include media kernel headers
 
    * device/nvidia/shield-common/
-41be6a6 Put back init.icera.rc changes
-6e5747f Fix an icera sepolicy neverallow
-a6f4d0f Move common dependencies to common and add libstagefrighthw
-dedd9d3 A new tablet named falcon added upstream
-95580f9 Fix sepolicy errors
-
-   * frameworks/base/
-bb5fe78 FWbase : Fix GA fc and saving the gesture cache
-3769015 Support for Configurable Trigger Region
-24ec206 tesla
-c755cf4 Implement App circle sidebar [1/2]
-ea22879 Increase gesture anywhere width to 40px [1/2]
-529f986 Gesture Anywhere [1/3]
-
-   * hardware/qcom/display-caf/msm8952/
-ee2bb0e Fix duplicate copy file rules
-
-   * manifest/
-0581c0b add OmniJaws
-
-   * packages/apps/Settings/
-640507a Add gesture anywhere permissions
-
-   * packages/apps/TeslaCoil/
-cd160a1 no gesture for now
-b414f0d TeslaCoil: AppCircle Sidebar
-eb3e35e Gesture Anywhere [2/3]
-
-   * vendor/tesla/
-52a5e5b build OmniJaws
-
-====================
-     01-20-2017
-====================
-
-
-   * packages/apps/KernelAdiutor/
-3b5a548 Revert "Fix calculation of big.LITTLE cores on SD82*"
+b23c579 Report product model as usb product name
+1012bd6 Add some labels to the eks service
 

@@ -1,227 +1,153 @@
 ====================
-     12-15-2016
+     02-08-2017
 ====================
 
 
-   * device/lge/g5-common/
-0b86312 g5: Remove unused sound configs and add protected vbat acdb
+   * bionic/
+e518c3b Check for bad packets in getaddrinfo.c's getanswer.
 
-   * device/lge/hammerhead/
-e217f79 Tesla N Bringup
+   * build/
+fd9bed6 N6F26R
+1676aaf Update Security String to 2017-02-05 on nyc-dev
+70a7a48 Update Security String to 2017-02-01 on nyc-dev
+
+   * device/nvidia/shield-common/
+53a65f6 Add thermal hal and move powerhal defines here
+
+   * frameworks/av/
+65287c9 Fix security vulnerability: potential OOB write in audioserver
+42c20fe Effect: Use local cached data for Effect commit
 
    * frameworks/base/
-ef5559b DUI: fix SmartBar edit mode
-bcc4a29 Small QS tiles number: fix SystemUI FC when changing the value
-d9f49e2 Fix issue that padlock icon is not animating while expanding QS
+af98e52 [DO NOT MERGE] Fix vulnerability in MemoryIntArray - fix build file
+ac7df27 Fix vulnerability in MemoryIntArray
+01286d5 DO NOT MERGE. Retain DownloadManager Uri grants when clearing.
+d105aa0 DO NOT MERGE: Check provider access for content changes.
 
-   * system/netd/
-038e4d7 Revert "Revert "Don't start tethering if IPv6 RPF is not supported.""
+   * frameworks/native/
+edeb28e Correct overflow check in Parcel resize code
+2af2fe2 Fix security vulneratibly 31960359
+1b0a8d2 Fix SF security vulnerability: 32706020
 
-   * vendor/lge/
-1aa9411 g5: Initial blobs
-19ffe10 g4: update liboemcrypto from bullhead for widevine
-acf27b9 Merge pull request #242 from Shelnutt2/cm-14.1
-b2fb644 ls990: Add pn544 firmware
-3bcab24 ls990: Remove prebuilt ril
+   * hardware/libhardware/
+c32d03d Fix security vulnerability: potential OOB write in audioserver
 
-   * vendor/tesla/
-8e5f7ec Add Reliance Jio India IMS volte apn's
-d01f13f Fix Reliance Jio India APNs.
-f0f9af0 apns: Add Reliance Jio APNs
+   * hardware/qcom/audio-caf/msm8996/
+805af44 audio: configs: Enable Dolby feature
+afee25c Fix security vulnerability: Equalizer command might allow negative indexes
+502bcd6 Fix security vulnerability: Effect command might allow negative indexes
 
-====================
-     12-14-2016
-====================
+   * hardware/qcom/media/
+b3df078 Revert "media: Use    * pathmap"
+8a3de46 Revert "media: Fix pathmap barrier"
+2de60c7 media: Fix pathmap barrier
+ede7059 media: Use    * pathmap
 
+   * libcore/
+0916572 Fix URL parser may return wrong host name
 
-   * device/lge/g5-common/
-0d96d4a g5: add libvolumelistener
-501464e g5: build snap and force HAL1 for Google Camera / Snap
+   * manifest/
+5d4031e r17
 
-   * device/lge/hammerhead/
-6656597 overlay: trim frameworks/base overlay
-4f2c2e3 hammerhead: Switch to cmhw vibrator implementation
-ff84b17 Revert "hammerhead: enable doze power saving mode"
-a76ecd0 hammerhead: Remove duplicate livedisplay permissions
-0384f37 hammerhead: Enable HAL1 hacks
+   * packages/apps/Bluetooth/
+7a34107 Remove MANAGE_DOCUMENTS permission as it isn't needed
 
-   * frameworks/base/
-e90b624 Data tile quick toggle: apply the custom behavior also to mini tiles bar
-0236598 Bring back 'custom small QS tiles' [1/2]
-3c1c314 N-Extras: Add dynamic theme BootAnimation support
-65d526d Revert "N-Extras: Add dynamic theme BootAnimation support"
-5fcdf76 Expose various QuickSettings text colors
-78eddbd Expose QS edit item decoration background color
-590669c Allow Navbar ripple color to be themed
-29a6e1e Allow Permission Icons to be fully themed
-226b861 Allow Immersive cling colors to be fully themed
-eae0eab Expose resolver hardcoded colors
-68ee0db OMS7-N: ApplicationsState: add filter for Substratum icon overlays [1/2]
+   * packages/apps/Messaging/
+0447abb resolve merge conflicts of eafd58a to nyc-dev
+cfab2f8 32807795  Security Vulnerability - AOSP Messaging App: thirdparty can attach private files from "/data/data/com.android.messaging/" directory to the messaging app.
+57bdac6 32322450 Security Vulnerability - heap buffer overflow in libgiftranscode.so
 
-   * kernel/lge/msm8996/
-2e93ba8 qpnp: Fix LG derps on elsa
-7932e35 h918_defconfig: Initial CM defconfig
-
-   * kernel/motorola/msm8916/
-3444e61 BACKPORT: perf: Fix event->ctx locking
-5a8e568 perf: protect group_leader from races that cause ctx double-free
-0f8b4e5 Revert "msm: mdss: Port HBM fixes"
-1cc95a0 fs: ext4: disable support for fallocate FALLOC_FL_PUNCH_HOLE
-12b84e3 KEYS: Fix short sprintf buffer in /proc/keys show function
-576a6c0 net: llc: use correct size for sysctl timeout entries
-6c3c4b2 mm: Fix NULL pointer dereference in madvise(MADV_WILLNEED) support
-b6c29c6 vfs: read file_handle only once in handle_to_path
-665802f mnt: Only change user settable mount flags in remount
-a21efc2 eCryptfs: Remove buggy and unnecessary write in file name decode routine
-
-   * packages/apps/Dialer/
-63d0b80 Revert "Re-add call recording feature."
-9f3ec13 rename to tesla_strings
-88c2a5c Re-add call recording feature.
-65b816d Substratum expose hardcoded colors
-dfbbc1e Themes: InCallUI dialpad digits color
-52ed98c Themes: Separate background color from text color
-fd62290 Add missing permissions to Dialer
-22f851e german translate
-b64c461 [3/3] Flip to Mute/Reject Call
-533989b [2/3] Dialer: Proximity Speakerphone originally done by dankoman30 rewritten and moved to dialer by beanstown106
-80e675f [3/3]InCallUI: Proximity Speaker
-c3e3193 Give speed dial entry editor a sane layout.
-844eb69 Remove SIP dial icon in dialer for some carriers
-6c1f739 Dialer: Add call/data usage Timer in Dialer setting
-8248c8e Using Setting provider to get WiFi call configuration instead of System properties
-9112648 Dialer: Input ,(pause) or ;(wait) when long press * or #
-0a30c4f Dialer: add upgrade for smart search table.
-a88a969 Dialer: Can't show Card 2 call log one card existed
-f70d261 Revert "Make FloatingActionButtonController view visible."
-638bf25 Dialer: fix the runtime exception issue for smartsearch.
-34436a5 IMS: CallLogs:FR33084_VoWiFi_Phonebook
-072a3db Dialer: add video call capability check based on PresenceService
-887243c Dialer: WFC: Add wifi call features.
-cb408dc Dialer: Add support for operator name
-8bc89ba InCallUI: Use proper sub IDs
-d6a647e incallui: remove qti framework dependency for DSDA
-8287e89 IMS-VT: Handle configuration changes on low battery Video call
-8123470 IMS-VT: FR36492 - UI to disable picture in picture mode
-d8d4694 IMS-VT: Fix preview size issue during VT call
-f4a0762 IMS-VT: Handle InCallActivity destroy when low battery dialog is showing
-c73d8ff IMS-VT: Validate phone number for a Video call
-3bdce51 Fix active call InCallUI buttons highlight when EM call disconnects
-5589d88 Dialer:phone interface has highlight when receive a BT request
-334b46d InCallUI: Config to control call record feature
-5038c2c IMS-VT: Remove one directional video call support
-10ef9c0 IMS: Customize HD icon in CallCard for some carriers
-05e4069 IMS-VT: Fix orientation change not working after back key press
-343098f IMS-VT: Handle buttons display in InCall Screen
-7ce44c1 IMS-VT: Set notificationType for IncomingCall when InCallUi is not showing
-e3d667f VideoCall: preview before upgrade video call is accepted.
-644b9c5 IMS-VT: Do not toggle full screen mode when not in video call.
-5a322de MSIM: Dismiss pending dialog on incoming call notification.
-8bd386b Fix incorrect call duration after system time changes
-d71d6b7 Revert "Expedite the processing of destroying Incall UI after end call"
-6d3b308 Revert "Fix MT call cannot be rejected for DSDS"
-cdd28f3 InCallUI: customize video call UI
-
-   * packages/apps/Settings/
-1822deb Settings: Expose LinearColorBar default colors
-f0fe53d Settings: Expose storage summary text
-403b0fe Settings: Expose storage icon colors
-27e1f28 Settings: Expose gesture settings switchbar
-cd3a02a Themes: Expose condition card colors
-d4f9a8f Expose dashboard category and tile color
-fcdf69d OMS7-N: Apps: show/hide Substratum icon overlays [2/2]
-
-   * packages/apps/TeslaCoil/
-7875969 Bring back 'custom small QS tiles' [2/2]
-
-   * packages/services/Telephony/
-922dc21 telephony: allow broadcasts from Samsung RIL
-
-====================
-     12-13-2016
-====================
-
-
-   * frameworks/base/
-dc4daab webview_packages: correct signature definition for Chrome Stable
-45eeac1 webview_packages: prefer the more powerful webview packages
-24c3768 SystemUI : Port forward statusbar brightness control Brings back the status bar brightness control from cm-10.2/cm-11
-1c2c757 Brightness mirror - fix multi-touch issue
-b9837f5 fix build
-9f226c3 Tesla logo in the statusbar
-8632c70 FWB: Add Volume Key Answer (1/2) hey, winter)
-da02534 Allow Volume wake and music control to work toghether [1/2] *disable volume wake when muic is active if music controls is on *change volume wake logic
-fed1903 Revert "Statusbar brightness control [2/2]"
-eccbfc1 Revert "Brightness control: UserHandle.USER_CURRENT"
-c67c66e Brightness control: UserHandle.USER_CURRENT
-
-   * packages/apps/TeslaCoil/
-1fb513c statusbar brightness control
-d3bfa7d  Add Volume Key Answer (2/2)
-cbd4ec2 Allow Volume wake and music control to work toghether [2/2] *disable volume wake when muic is active if music controls is on
-670b9d8 Revert "Statusbar brightness control [1/2]"
+   * system/core/
+799b6ab change /data/bugreports to /bugreports
 
    * system/sepolicy/
-f092880 Allow apps in /system/priv-app to call and execute su commands
+76e5172 label /bugreports
 
    * vendor/lge/
-a78f691 g4: update libdrmdecrypt from bullhead
-4300094 g4: update drm blobs from bullhead nmf26f
+8f6e201 g3-common: qsee: D8553C blobs
 
 ====================
-     12-12-2016
+     02-07-2017
 ====================
 
 
-   * device/nvidia/shieldtablet/
-47d45f4 Add caf_fw.mk
+   * device/lge/hammerhead/
+e53ddb9 Fix up device tree
+22d1db5 Revert "Remove obsolete qcom header makefile include"
+
+   * hardware/qcom/media/
+237f366 libstagefrighthw: Remove padding in encoder_nativehandle_buffer_type
+719a679 mm-video-legacy: venc: update metadata-type used for HAL1 based  recording
+99a5f4c mm-video-legacy: venc: update allocation-size check for meta-buffer
+b0a043c Enable TARGET_COMPILE_WITH_MSM_KERNEL guard
+23b40f1 media: Use kernel headers
+960bbe3 Revert "msm8974: remove from top level makefile"
+
+   * vendor/motorola/
+b3230b3 victara: remove charge_only_mode
+
+====================
+     02-06-2017
+====================
+
+
+   * device/motorola/msm8916-common/
+2d4a151 msm8916-common: enable NightDisplay
+d392d42 msm8916-common: use Camera2 instead of Snap
+f0bc05b Revert "msm8916-common: sepolicy: address untrusted_app denial"
+
+   * device/qcom/common/
+46aef1a extractors: Set INITIAL_COPYRIGHT_YEAR
+3aa1b57 extractors: Add msm8952 blobs
+2dfe120 Revert "extractors: Update msm8996 graphics blobs info"
+3991a35 Revert "extractors: Add msm8996 32bit libmm-disp-apis and libmm-qdcm"
+c73bcd6 extractors: Add msm8996 32bit libmm-disp-apis and libmm-qdcm
+efa3a0d extractors: Update msm8996 graphics blobs info
+f3e87e1 extractors: Split 32/64 makefiles
+10122e9 qcom: extractors: Add msm8960 graphics list
+287f957 qc: Fix makefiles
+de3c316 power: msm8937: Improve boost values
+44208e8 power: msm8937: Remove display_hint_sent usage
+edbe285 power: msm8937: Fix build warnings
+d82cbef qc: Add guard makefile for binaries repo
+587505c extractors: Add origin branches for graphics blobs
+f4e7d8e Revert "Wait for QSEECom listeners before calling KMS APIs"
+9835058 Revert "cryptfs_hw: update the listener property with keymaster property"
+
+   * hardware/qcom/keymaster/
+3e292c8 Merge remote-tracking branch 'slim/ng7.1' into HEAD
+
+   * kernel/motorola/msm8916/
+29102fe Merge branch 'cm-14.1' of https://github.com/desaishivam26/android_kernel_motorola_msm8916 into cm-14.1
+81d0d33 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_kernel_motorola_msm8916 into cm-14.1
+
+   * vendor/motorola/
+01f8bac msm8226: Fix EXIF data on builds signed with release-keys
+
+====================
+     02-05-2017
+====================
+
 
    * frameworks/base/
-150aaa3 Statusbar brightness control [2/2]
-
-   * manifest/
-dc52c40  8916,8952 audio-caf track 7.1
-
-   * packages/apps/TeslaCoil/
-f82ad93 Statusbar brightness control [1/2]
-
-====================
-     12-11-2016
-====================
-
-
-   * device/lge/g5-common/
-7d14dfe Revert "g5: Redo the way we fetch BT and WiFi addrs"
-
-   * device/nvidia/shieldtablet/
-3a2df7b Shieldtablet: Enable MTP/ADB by default
-829aa80 Revert "Whitelist dev node used by zygote"
-
-   * frameworks/base/
-bd8b31d Merge branch 'n7.1.1' of pull ya ass
-50a9a4b settingsprovider: bt default off
-82b07c6 add adb socket and dev node to Whitelist
-
-   * manifest/
-60c4da4 8996 audio-caf track 7.1
-1d39fc8 our telephony again
+e8df275 Set external QS tiles tint mode to SRC_ATOP
+dffaf5f Themes: Expose Keyguard affordance circle background
+55c19b4 graphics: ADB "N" icon compatible with OMS7
 
    * packages/apps/Settings/
-279e8ec Changed information string about model
+f5b4fd8 Set external settings icon tint mode to SRC_ATOP
 
-   * packages/services/Telecomm/
-b0454e9 Telecomm: Notification Led
+   * packages/apps/TeslaCoil/
+8a99668 quickbar scroll comment out for now
 
-   * packages/services/Telephony/
-6f6f024 [2/3] Flip to Mute/Reject Call
+====================
+     02-04-2017
+====================
 
-   * system/netd/
-ad8af1e Revert "Don't start tethering if IPv6 RPF is not supported."
 
-   * vendor/lge/
-4c98487 Merge pull request #243 from finnq/cm-14.1_g3_izat
-23d781a g3: move izat.conf to our device tree
+   * frameworks/base/
+60570fc FWB: The Return of the Ticker 2/2 Return of ticker work done by @rogersb11 Included are on and off switch from @Jubakuba Custom color selection for Ticker text and icons
 
-   * vendor/tesla/
-e84ab6e v3.4
+   * packages/apps/TeslaCoil/
+162fbaa Status Bar Ticker [2/2]
 
