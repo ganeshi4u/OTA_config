@@ -1,0 +1,127 @@
+====================
+     02-08-2017
+====================
+
+
+   * bionic/
+e518c3b Check for bad packets in getaddrinfo.c's getanswer.
+
+   * build/
+fd9bed6 N6F26R
+1676aaf Update Security String to 2017-02-05 on nyc-dev
+70a7a48 Update Security String to 2017-02-01 on nyc-dev
+
+   * frameworks/av/
+65287c9 Fix security vulnerability: potential OOB write in audioserver
+42c20fe Effect: Use local cached data for Effect commit
+
+   * frameworks/base/
+af98e52 [DO NOT MERGE] Fix vulnerability in MemoryIntArray - fix build file
+ac7df27 Fix vulnerability in MemoryIntArray
+01286d5 DO NOT MERGE. Retain DownloadManager Uri grants when clearing.
+d105aa0 DO NOT MERGE: Check provider access for content changes.
+
+   * frameworks/native/
+edeb28e Correct overflow check in Parcel resize code
+2af2fe2 Fix security vulneratibly 31960359
+1b0a8d2 Fix SF security vulnerability: 32706020
+
+   * hardware/libhardware/
+c32d03d Fix security vulnerability: potential OOB write in audioserver
+
+   * hardware/qcom/audio-caf/msm8996/
+805af44 audio: configs: Enable Dolby feature
+afee25c Fix security vulnerability: Equalizer command might allow negative indexes
+502bcd6 Fix security vulnerability: Effect command might allow negative indexes
+
+   * hardware/qcom/media/
+2de60c7 media: Fix pathmap barrier
+ede7059 media: Use    * pathmap
+
+   * libcore/
+0916572 Fix URL parser may return wrong host name
+
+   * packages/apps/Bluetooth/
+7a34107 Remove MANAGE_DOCUMENTS permission as it isn't needed
+
+   * packages/apps/Messaging/
+0447abb resolve merge conflicts of eafd58a to nyc-dev
+cfab2f8 32807795  Security Vulnerability - AOSP Messaging App: thirdparty can attach private files from "/data/data/com.android.messaging/" directory to the messaging app.
+57bdac6 32322450 Security Vulnerability - heap buffer overflow in libgiftranscode.so
+
+   * system/core/
+799b6ab change /data/bugreports to /bugreports
+
+   * system/sepolicy/
+76e5172 label /bugreports
+
+====================
+     02-07-2017
+====================
+
+
+   * hardware/qcom/media/
+237f366 libstagefrighthw: Remove padding in encoder_nativehandle_buffer_type
+719a679 mm-video-legacy: venc: update metadata-type used for HAL1 based  recording
+99a5f4c mm-video-legacy: venc: update allocation-size check for meta-buffer
+b0a043c Enable TARGET_COMPILE_WITH_MSM_KERNEL guard
+23b40f1 media: Use kernel headers
+960bbe3 Revert "msm8974: remove from top level makefile"
+
+====================
+     02-06-2017
+====================
+
+
+   * device/oppo/common/
+6bbe2ce oppo-common: Calculate TrustZone size at runtime
+567017d releasetools: Wipe DDR partition when updating SBL or RPM
+
+   * device/qcom/common/
+46aef1a extractors: Set INITIAL_COPYRIGHT_YEAR
+3aa1b57 extractors: Add msm8952 blobs
+2dfe120 Revert "extractors: Update msm8996 graphics blobs info"
+3991a35 Revert "extractors: Add msm8996 32bit libmm-disp-apis and libmm-qdcm"
+c73bcd6 extractors: Add msm8996 32bit libmm-disp-apis and libmm-qdcm
+efa3a0d extractors: Update msm8996 graphics blobs info
+f3e87e1 extractors: Split 32/64 makefiles
+10122e9 qcom: extractors: Add msm8960 graphics list
+287f957 qc: Fix makefiles
+de3c316 power: msm8937: Improve boost values
+44208e8 power: msm8937: Remove display_hint_sent usage
+edbe285 power: msm8937: Fix build warnings
+d82cbef qc: Add guard makefile for binaries repo
+587505c extractors: Add origin branches for graphics blobs
+f4e7d8e Revert "Wait for QSEECom listeners before calling KMS APIs"
+9835058 Revert "cryptfs_hw: update the listener property with keymaster property"
+
+   * hardware/qcom/keymaster/
+3e292c8 Merge remote-tracking branch 'slim/ng7.1' into HEAD
+
+====================
+     02-05-2017
+====================
+
+
+   * frameworks/base/
+e8df275 Set external QS tiles tint mode to SRC_ATOP
+dffaf5f Themes: Expose Keyguard affordance circle background
+55c19b4 graphics: ADB "N" icon compatible with OMS7
+
+   * packages/apps/Settings/
+f5b4fd8 Set external settings icon tint mode to SRC_ATOP
+
+   * packages/apps/TeslaCoil/
+8a99668 quickbar scroll comment out for now
+
+====================
+     02-04-2017
+====================
+
+
+   * frameworks/base/
+60570fc FWB: The Return of the Ticker 2/2 Return of ticker work done by @rogersb11 Included are on and off switch from @Jubakuba Custom color selection for Ticker text and icons
+
+   * packages/apps/TeslaCoil/
+162fbaa Status Bar Ticker [2/2]
+
