@@ -1,98 +1,269 @@
 ====================
-     01-24-2017
+     02-17-2017
 ====================
 
-   * OTA_config/
-52548c9 Lux update 23/01
+
+   * frameworks/base/
+3ecdfce Notification tint: add optional findContrastColor algorithm for dark backgrounds
+
+   * kernel/wingtech/msm8916/
+ef1d492 config: rename file to wt88047_kernel_defconfig
+c90ed6e kernel is now Jerrica-Meteorite
+3353edc script: my script to build the kernel
+3000d5b config: ltr553 too included, but not used anyway
+cd3d9f1 ltr553: ondemand proximity use new definition
+554b698 bring back LTR553 ondemand proximity sensor too
+e38af61 ASoC: set WT88047 resistances config
+5f271ec config: selinux never enforce (permissive!)
+39cc47f SELinux forced permissive/enforcing patch
+13d0946 hotplug: msm active all the time, as its default for uw
+07cccc5 hotplug: revamp msm hotplug
+04be58d implement kexec hardboot for Multirom
+461f931 msm8916: Mild undervolt
+d194fe1 ARM: dts: msm8916: Unlock available frequencies
+8f92447 arm/dt: msm8916: Enable bam_dmux fast shutdown
+26e0090 msm8916: gpu: Add UC/OC frequencies
+85883e2 config: enable other supported features
+395bba2 exFAT support
+1d7678b config: disable some debugs, enable preserve_mem
+6c5c76d config: enable zram lz4 compress
+fc01049 zram: compact zram when suspended
+5e423eb zsmalloc: reorganize struct size_class to pack 4 bytes hole
+7e81447 zsmalloc: use page->private instead of page->first_page
+186657a zsmalloc: reduce size_class memory usage
+d99b22c mm/zsmalloc.c: remove useless line in obj_free()
+517565f zsmalloc: use preempt.h for in_interrupt()
+7edae6c zsmalloc: fix obj_to_head use page_private(page) as value but not pointer
+4050d27 zsmalloc: add comments for ->inuse to zspage
+0a6e7f1 zsmalloc: remove null check from destroy_handle_cache()
+8125399 zsmalloc: use class->pages_per_zspage
+61632b1 zsmalloc: consider ZS_ALMOST_FULL as migrate source
+739388e zram: update documentation
+3c9efbb zsmalloc: account the number of compacted pages
+eedb8aa zsmalloc/zram: introduce zs_pool_stats api
+2195380 zsmalloc: cosmetic compaction code adjustments
+5278d0b zsmalloc: introduce zs_can_compact() function
+4825bde zsmalloc: always keep per-class stats
+11fc55e zsmalloc: drop unused variable `nr_to_migrate'
+54d61e9 zram: add `compact` sysfs entry to documentation
+d49faa0 zsmalloc: remove obsolete ZSMALLOC_DEBUG
+4a17206 zsmalloc: partial page ordering within a fullness_list
+b26a37f zram: don't call idr_remove() from zram_remove()
+b620723 zram/zcomp: do not zero out zcomp private pages
+c818f83 zram: pass gfp from zcomp frontend to backend
+32b116a zram: make is_partial_io/valid_io_request/page_zero_filled return boolean
+b8b35a2 zram: keep the exact overcommited value in mem_used_max
+1ca26d5 zram: introduce comp algorithm fallback functionality
+2bc6d6f zram: fix possible use after free in zcomp_create()
+bf8fd36 zram: unify error reporting
+83b8dda zram: fix pool name truncation
+441d6b5 zram: check comp algorithm availability earlier
+c9f3033 zram: cut trailing newline in algorithm name
+98a2315 zram: cosmetic zram_bvec_write() cleanup
+b6d4209 zram: add dynamic device add/remove functionality
+9967822 zram: close race by open overriding
+b69ec82 zram: return zram device_id from zram_add()
+575407c zram: trivial: correct flag operations comment
+0afe97d zram: report every added and removed device
+2b2b558 zram: remove max_num_devices limitation
+646ad20 zram: reorganize code layout
+93ec984 zram: use idr instead of `zram_devices' array
+e6abea3 zram: cosmetic ZRAM_ATTR_RO code formatting tweak
+2b7876b zram: Add back show_mem_notifier and QUEUE_FAST_FLAG
+c584fe9 staging: zram: Rate limit memory allocation errors
+80d2a81 zram: Disable allocation failure logging
+ff074ed zram: remove obsolete ZRAM_DEBUG option
+7ba9322 zram: try vmalloc() after kmalloc()
+779f148 zram/zcomp: use GFP_NOIO to allocate streams
+e60f0ba Fixup compilation error with LTR559 Ondemand proximity sensor
+b37b2a2 Duration between PWRKEY is increased
+c9cc87c dt2w - handle slot change more effectively
+e716b066f dt2w disable debug
+ddef979 Ondemand proximity sensor for CM version of LTR559
+b727429 config: enable dt2w
+b99e55d Fix up dt2w debug messages
+b03036e Add DT2W Support
+e7dde25 hotplug: enable MSM hotplug
+3c4c706 Add MSM hotplug
+aef995c cpufreq: add despair governor
+ed450d4 Added fsync on/off support.
+8e45a1e Add /dev/frandom support
+80c9caf wakeup: add toggles for wlan wakelocks. They are all enabled by default, it's up to the user and I provide no support if Wi-Fi stops working normally without these locks enabled. This is for advanced users
+159c64e int_sqrt: Improve 3x faster integer sqrt.
+07e998a int_sqrt: correction square root algo with naming
+0ffc901 mm/zpool: add name argument to create zpool
+ad58ecf mm/zpool: use prefixed module loading
+636e23d mm/zpool: implement common zpool api to zbud/zsmalloc
+b63836e config: enable KCAL control
+5f87aa4 msm: mdss: KCAL: Only apply updates on index 0
+d9b411f msm: mdss: KCAL: Use PCC for negative display mode
+f6d8bb2 msm: mdss: KCAL: Send a pp display commit when changes are made
+77147f8 msm: mdss: KCAL: Do not read from picture adjustment registers
+c57fa81 msm: mdss: KCAL: Read values from MDP registers wherever possible
+bfdc5bc msm: mdss: KCAL: Apply default values on boot
+32471d3 msm: mdss: KCAL: Queue changes when panel is powered off
+aae1c5c msm: mdss: KCAL: Remove MODULE_DESCRIPTION
+d926e16 msm: mdss: KCAL: Update Kconfig description
+8c257de msm: mdss: KCAL: Update according to linux guidelines and checkpatch.pl
+b8d4fba msm: mdss: KCAL: Check panel power state before applying values
+4daabcb msm: mdss: KCAL: Allow kcal_enable to control all post-processing features
+37d5ffb msm: mdss: Keep KCAL within its own source file
+d8c8ab8 msm: mdss: Remove deprecated __dev* markings
+896cec1 msm: mdss: Add pa_v2 support to KCAL
+d618583 msm: mdss: Replace PGC implementation with PCC for KCAL
+749e9c7 msm: mdss: Add KCAL support for post processing control [v2]
+aa8ce7c6 mako hotplug - fix stats conflict with driver code
+990623d cpufreq: add an helper to get/set cpu utilization to be used by mako_hotplug
+f4547f2 Mako: Add working toggle.
+5482874 mako_hotplug: increase the work schedule time when dual-core or quad-core mode is active, from 1 to 2 seconds
+91e5005 mako_hotplug: don't use PAGE_SIZE for snprintf
+11e6204 mako_hotplug: run the main work only once every second if special cases apply
+793f173 mako_hotplug: don't offline cores if the load at that sample is above the threshold, even if we met all the other conditions
+35a75e7 mako_hotplug: let's use an unbound wq
+dae45f3 mako_hotplug: remove works for resume/suspend entirely
+a733d90 mako_hotplug: squash code from lollipop branch
+7e62d17 msm: mpm: disable debugging
+5dc229d lz4: fix compression/decompression signedness mismatch
+5e37aea lib: add lz4 compressor module
+279c0b4 lib: add support for LZ4-compressed kernel
+bf4d0f3 decompressor: add LZ4 decompressor module
+e21e5ad mm: zsmalloc: backport from Linux 4.1
+56770f3 block: zram: make lz4 the default compressor
+56c3e8d block: zram: Backport from Linux 4.1
+7dfd1a8 config: enable PSTORE..
+ef184d4 Fix up compilation error for qpnp with redefition
+24e7aa8 msm: vibrator: Add a sysfs node for the default (boot-up) level.
+3896441 msm: vibrator: Properly unregister device files
+d5e289c msm: vibrator: Add min/max voltage sysfs entries
+567b80f msm: Improve qpnp-vibrator scheduling
+70707a2 drivers: platform: msm: qpnp-vibrator: Add sysfs interface for intensity
+07e8b9c2 config: enable default scheduler and define governors
+118f72b sched: prevent task migration while governor queries CPUs' load
+b35fe95 cpufreq: Introduce new relation for freq selection
+3d7e7a7 cpufreq: Add impulse governor
+fc3b7c5 cpufreq: Add lionfish governor v1.1
+289e0b3 block: Add sioplus,tripndroid & zen scheduler
+e926f4f Added fiops IO scheduler
+0278418 Add: SIO scheduler
+c7e2274 block, bfq: add Early Queue Merge (EQM) to BFQ-v7r8 for 3.10.8+
+1efc4e0 block: introduce the BFQ-v7r8 I/O sched for 3.10.8+
+d903301 block: cgroups, kconfig, build bits for BFQ-v7r8-3.10.8+
+8ea4c8d config: enable force fast charge
+0afc278 Fast Charge is added, and enabled by default
+a6ce470 media: radio: IRIS transport without firmware loading support
+22e06ac config: enable led/yas/proximity/charger
+462bb3b config: Enable camera_wt88047_v2
+870ecb2 camera_wt88047_v2: Fix compiling kernel in place
+5c97e50 wt88047: camera: Merge LNX.LA.3.7.1.c5-07700-8x16.0 release
+84ad243 msm: camera: Avoid ref_count chaos
+e157f35 msm: camera: Working camera driver for WT88047
+4b7f979 msm: camera: Prepare older camera source for WT88047
+57472be Enable reboot to recovery/bootloader/etc.
+88f09f2 leds: leds-aw2013: Disable vdd control for WT88047
+7ae4a8b leds-aw2013: Don't reset values when nothing has changed
+7b91e81 leds: aw2013: Reduce logging level
+e822f4b leds: aw2013: Use an ordered workqueue for command processing
+8549032 leds: aw2013_led: Don't reset the brightness level when setting blink
+73522e9 leds: aw2013_led: Support configuring GPIOs before use
+697b25e leds: aw2013_led: Allow direct GPIO control as an alternative to vcc
+aa21142 input: misc: Modify LTR-559 for WT88047
+3beea69 input: misc: ltr559: Fix the initial-sensor-covered fix
+a5d11d9 [LTR559] Tune proximity thresholds and ensure initial calibration
+aebd7a0 Add Sensor driver : contain Gsensor Gyro Compass light and proximity
+6797f40 script: add dtbToolCM for dt generation
+9702df9 maintain AnyKernel2 locally for easy building
+0448707 drivers: Fix white space errors
+2ebb466 ASoC: Fix Kconfig warning
+52edb8b sound: minir cleanup
+306cd31 Xaomi kernel changes for Redmi 2L
+f2d5c35 ARM: dts: wt88047: Import WT88047 board files
+dc5e62d config: enable/disable required stuff
+e723e45 config: enable pronto wlan
+deaccb2 staging: build prima driver when enabled
+115173b staging: define QCOM_TDLS for prima
+
+   * vendor/oneplus/
+cb47141 Merge pull request #1 from BigTopKrazies/test
+c48c30a op3: add aptX codec support
+e96c917 Revert "op3: add aptX codec support"
+
+   * vendor/qcom/binaries/
+9270cde Merge pull request #6 from TheMuppets/cm-14.1
+
+====================
+     02-16-2017
+====================
+
+
+   * build/
+4440c2d core: finish using PRIVATE_RECOVERY_OUT rather than hard-coding "RECOVERY"
+
+   * device/qcom/common/
+40c6b79 extractors: Add aptX & aptXHD to confirmed platforms
+
+   * hardware/qcom/bootctrl/
+810a245 bootctl: use TARGET_RECOVERY_UPDATER_LIBS macro for linking
+
+   * packages/apps/Settings/
+aa9b2d5 Bring back main dashboard background color
+
+   * vendor/oneplus/
+e4f6a0f op3: add aptX codec support
+
+   * vendor/qcom/binaries/
+5280d5c Revert "bluetooth: Add aptX & aptXHD to comfirmed platforms"
+fd419b8 Merge pull request #5 from TheMuppets/cm-14.1
+
+====================
+     02-15-2017
+====================
+
 
    * device/wingtech/wt88047/
-a690186 Revert "experimental: mic-gain for low in-call volume"
+faaf049 wt88047: audio: Add support for line-out
+98ba4c8 wt88047: add device out for FM.
+d55ba3e Enable media extensions
+6a94926 audio: CTS fix for GetMaxSupportedInstances test.
 
-   * frameworks/base/
-570620a Less notifications sound [1/2]
-7b11abf Rework dashboard settings [2/2]
-e7d752a Dashboard summaries double lines toggle [1/2]
-94a6f54 Dashboard tile layout config [2/2]
-b068217 QS Smart Ambient-LiftToWake tile: make it compatible with all devices
-
-   * frameworks/native/
-e2c0fc8 Revert back to previous configuration for xxxhdpi-3072-dalvik-heap
-
-   * packages/apps/Settings/
-62ee9af Less notifications sound [2/2]
-cb6b629 Rework dashboard settings [1/2]
-d0d0d8d Dashboard summaries double lines toggle [2/2]
-3c27777 Dashboard tile layout config [1/2]
+   * vendor/qcom/binaries/
+48c3f6b bluetooth: Add aptX & aptXHD to comfirmed platforms
 
 ====================
-     01-23-2017
+     02-14-2017
 ====================
 
 
+   * build/
+18c0a42 Build: Switch to Magisk as the built in root [2/2]
+
    * frameworks/base/
-13ca432 Add Statusbar  BatteryBar customizations [1/2]
-
-   * frameworks/opt/telephony/
-2bd010a Telephony: Plmn name override
-
-   * hardware/ril-caf/
-d8532a9 ril-caf: Only allow GET_CARRIER_RESTRICTIONS for ril versions >= 14
-
-   * packages/apps/Settings/
-6d4e1ef Hotlink to show Tesla Features at-a-glance
+3d06406 Auto calculate quickbar tiles amount
+2bd8623 All tile scroller for quickbar settings [1/2]
+7c4bd2c Bring back portrait/landscape QS mod [1/2]
+32a6603 base: allow disabling quick settings on secure lock screens [1/2]
+9688a69 Make QS columns count configurable And add infrastructure to add more settings and distribute them to QS panel
+92a5f47 Hide QS customizer correctly
 
    * packages/apps/TeslaCoil/
-74dda0a Revert "no gesture for now"
-5f16de3 Fix GA fc and saving the gesture cache
-1f0e4a0 Add Statusbar BatteryBar customizations [2/2]
+fffa834 All tile scroller for quickbar settings [2/2]
+199d95c Bring back portrait/landscape QS mod [2/2]
+bc69929 allow disabling quick settings on secure lock screens [2/2]
+084d951 TeslaCoil part of 'Make QS columns count configurable' Partially revert "Seekbars are just stylish, let's use them"
 
-   * packages/apps/masquerade/
-1c402c5 Release 20P: Initiate the caller package checking system
-
-====================
-     01-22-2017
-====================
-
-
-   * frameworks/base/
-76b643d Revert "Fix InCallActivity onStop call when launch from Lockscreen"
-6888430 Revert "Fix issue when start android/com.android.internal.backup.LocalTransportService"
-
-   * hardware/qcom/display-caf/msm8952/
-d7f8861 gralloc: allow forcing old pixel alignment
-
-====================
-     01-21-2017
-====================
-
-
-   * frameworks/base/
-bb5fe78 FWbase : Fix GA fc and saving the gesture cache
-3769015 Support for Configurable Trigger Region
-24ec206 tesla
-c755cf4 Implement App circle sidebar [1/2]
-ea22879 Increase gesture anywhere width to 40px [1/2]
-529f986 Gesture Anywhere [1/3]
-
-   * hardware/qcom/display-caf/msm8952/
-ee2bb0e Fix duplicate copy file rules
-
-   * manifest/
-0581c0b add OmniJaws
-
-   * packages/apps/Settings/
-640507a Add gesture anywhere permissions
-
-   * packages/apps/TeslaCoil/
-cd160a1 no gesture for now
-b414f0d TeslaCoil: AppCircle Sidebar
-eb3e35e Gesture Anywhere [2/3]
+   * vendor/oneplus/
+84bb99c op3: Remove prebuilt org.ifaa.android.manager
+2074507 op3: Update blobs
 
    * vendor/tesla/
-52a5e5b build OmniJaws
+c176cf7 Magisk: Update zip to v11.1 and APK to v4.1
+7996811 Update Magisk Manager to 4.0 and Magisk zip to 11.0
+1286266 Prebuilt: Switch to Magisk for root solution [1/3]
 
 ====================
-     01-20-2017
+     02-13-2017
 ====================
 
+
+   * frameworks/base/
+2e6b096 QS: add Screenrecord tile
 
