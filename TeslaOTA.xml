@@ -152,5 +152,16 @@
                title="Gapps"
                description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
        </huashan>
+       <flo>
+           <Filename> Tesla-flo-7.1.1.Beta.v3.6-Official-20170220-1025.zip</Filename>
+           <RomUrl
+               id="rom"
+               title="Rom"
+               description="Download Tesla-N build">https://www.androidfilehost.com/?fid=817550096634747807</RomUrl>
+           <GappsUrl
+               id="gapps"
+               title="Gapps"
+               description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
+       </flo>
     </Stable>
 </SlimOTA>
