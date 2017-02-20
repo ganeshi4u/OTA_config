@@ -153,11 +153,11 @@
                description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
        </huashan>
        <flo>
-           <Filename>Tesla-flo-7.1.1.Beta.v3.6-Official-20170220-1025.zip</Filename>
+           <Filename>Tesla-flo-7.1.1.Beta.v3.6-Official-20170220-1331.zip</Filename>
            <RomUrl
                id="rom"
                title="Rom"
-               description="Download Tesla-N build">https://www.androidfilehost.com/?fid=817550096634747807</RomUrl>
+               description="Download Tesla-N build">https://www.androidfilehost.com/?fid=529152257862704712</RomUrl>
            <GappsUrl
                id="gapps"
                title="Gapps"
