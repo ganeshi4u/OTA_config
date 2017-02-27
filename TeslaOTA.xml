@@ -81,11 +81,11 @@
                 description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
         </shieldtablet>
         <hammerhead>
-            <Filename>Tesla-hammerhead-7.1.1.Beta.v3.5-Official-20170208-0849.zip</Filename>
+            <Filename>Tesla-hammerhead-7.1.1.Beta.v3.6-Official-20170227-1213.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download TeslaN build">https://www.androidfilehost.com/?fid=457095661767135617</RomUrl>
+                description="Download TeslaN build">https://www.androidfilehost.com/?fid=457095661767140509</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"

@@ -1,153 +1,134 @@
 ====================
-     02-08-2017
+     02-27-2017
 ====================
 
-
-   * bionic/
-e518c3b Check for bad packets in getaddrinfo.c's getanswer.
-
-   * build/
-fd9bed6 N6F26R
-1676aaf Update Security String to 2017-02-05 on nyc-dev
-70a7a48 Update Security String to 2017-02-01 on nyc-dev
-
-   * device/nvidia/shield-common/
-53a65f6 Add thermal hal and move powerhal defines here
-
-   * frameworks/av/
-65287c9 Fix security vulnerability: potential OOB write in audioserver
-42c20fe Effect: Use local cached data for Effect commit
-
-   * frameworks/base/
-af98e52 [DO NOT MERGE] Fix vulnerability in MemoryIntArray - fix build file
-ac7df27 Fix vulnerability in MemoryIntArray
-01286d5 DO NOT MERGE. Retain DownloadManager Uri grants when clearing.
-d105aa0 DO NOT MERGE: Check provider access for content changes.
-
-   * frameworks/native/
-edeb28e Correct overflow check in Parcel resize code
-2af2fe2 Fix security vulneratibly 31960359
-1b0a8d2 Fix SF security vulnerability: 32706020
-
-   * hardware/libhardware/
-c32d03d Fix security vulnerability: potential OOB write in audioserver
-
-   * hardware/qcom/audio-caf/msm8996/
-805af44 audio: configs: Enable Dolby feature
-afee25c Fix security vulnerability: Equalizer command might allow negative indexes
-502bcd6 Fix security vulnerability: Effect command might allow negative indexes
-
-   * hardware/qcom/media/
-b3df078 Revert "media: Use    * pathmap"
-8a3de46 Revert "media: Fix pathmap barrier"
-2de60c7 media: Fix pathmap barrier
-ede7059 media: Use    * pathmap
-
-   * libcore/
-0916572 Fix URL parser may return wrong host name
-
-   * manifest/
-5d4031e r17
-
-   * packages/apps/Bluetooth/
-7a34107 Remove MANAGE_DOCUMENTS permission as it isn't needed
-
-   * packages/apps/Messaging/
-0447abb resolve merge conflicts of eafd58a to nyc-dev
-cfab2f8 32807795  Security Vulnerability - AOSP Messaging App: thirdparty can attach private files from "/data/data/com.android.messaging/" directory to the messaging app.
-57bdac6 32322450 Security Vulnerability - heap buffer overflow in libgiftranscode.so
-
-   * system/core/
-799b6ab change /data/bugreports to /bugreports
-
-   * system/sepolicy/
-76e5172 label /bugreports
-
-   * vendor/lge/
-8f6e201 g3-common: qsee: D8553C blobs
-
-====================
-     02-07-2017
-====================
-
+   * OTA_config/
+7e4ee39 Add bullhead to teslaOTA
+92aecdc Update lux & shieldtablet 26/02
 
    * device/lge/hammerhead/
-e53ddb9 Fix up device tree
-22d1db5 Revert "Remove obsolete qcom header makefile include"
+058337a hammerhead: Include FFMPEG codec configuration
 
-   * hardware/qcom/media/
-237f366 libstagefrighthw: Remove padding in encoder_nativehandle_buffer_type
-719a679 mm-video-legacy: venc: update metadata-type used for HAL1 based  recording
-99a5f4c mm-video-legacy: venc: update allocation-size check for meta-buffer
-b0a043c Enable TARGET_COMPILE_WITH_MSM_KERNEL guard
-23b40f1 media: Use kernel headers
-960bbe3 Revert "msm8974: remove from top level makefile"
+   * frameworks/base/
+0f0f625 Ticker: Center Ticker layout horizontally in statusbar view
+494ef27 Slim recents: card expand button: use same color like card text
+08cb5bd Slim recents: avoid crashes due to different drawable types
+1e3acf9 Slim Recents squash [1/2]
+53cccfe fix build
+5973d71 Blur: Color Filters implementation (1/2)
+bc2e0df Blur: Implement Recents Blur (1/2)
+994fa5e [SQUASHED] Implement XOSP Blur personalization options (1/2)
 
-   * vendor/motorola/
-b3230b3 victara: remove charge_only_mode
+   * manifest/
+8cff8f3 track frameworks_opt_cards from Validus
+7fa84e6 masquerade- change github
+
+   * packages/apps/TeslaCoil/
+4bdc21a Slim Recents squash [2/2] This is a squashed and AICPfied port of all slim recents related commits found on Slim's ng7.1 frameworks/opt/slim.
+13e7970 add blur category
+5f16323 [SQUASHED] Implement XOSP Blur personalization options (1/2) All credits for original work goes to serjar (Author of the very famous Xposed module: Blurred System UI)
 
 ====================
-     02-06-2017
+     02-26-2017
 ====================
 
 
    * device/motorola/msm8916-common/
-2d4a151 msm8916-common: enable NightDisplay
-d392d42 msm8916-common: use Camera2 instead of Snap
-f0bc05b Revert "msm8916-common: sepolicy: address untrusted_app denial"
+0336f24 Mount debugfs
 
-   * device/qcom/common/
-46aef1a extractors: Set INITIAL_COPYRIGHT_YEAR
-3aa1b57 extractors: Add msm8952 blobs
-2dfe120 Revert "extractors: Update msm8996 graphics blobs info"
-3991a35 Revert "extractors: Add msm8996 32bit libmm-disp-apis and libmm-qdcm"
-c73bcd6 extractors: Add msm8996 32bit libmm-disp-apis and libmm-qdcm
-efa3a0d extractors: Update msm8996 graphics blobs info
-f3e87e1 extractors: Split 32/64 makefiles
-10122e9 qcom: extractors: Add msm8960 graphics list
-287f957 qc: Fix makefiles
-de3c316 power: msm8937: Improve boost values
-44208e8 power: msm8937: Remove display_hint_sent usage
-edbe285 power: msm8937: Fix build warnings
-d82cbef qc: Add guard makefile for binaries repo
-587505c extractors: Add origin branches for graphics blobs
-f4e7d8e Revert "Wait for QSEECom listeners before calling KMS APIs"
-9835058 Revert "cryptfs_hw: update the listener property with keymaster property"
+   * hardware/qcom/audio-caf/msm8916/
+8fe87cd     audiopolicy: Update voice concurrency support for 8916
+680b47a Fix security vulnerability: Effect command might allow negative indexes
+65d785e hal: fix for KW issues.
+c69c67a hal:KW fixes
 
-   * hardware/qcom/keymaster/
-3e292c8 Merge remote-tracking branch 'slim/ng7.1' into HEAD
+   * hardware/qcom/display-caf/msm8916/
+c28e4d4 hwc: Add src image width and height check in prepare
+0cc44d2 libmemtrack: Fix integer overflow in kgsl function
 
    * kernel/motorola/msm8916/
-29102fe Merge branch 'cm-14.1' of https://github.com/desaishivam26/android_kernel_motorola_msm8916 into cm-14.1
-81d0d33 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_kernel_motorola_msm8916 into cm-14.1
+ba3d7e3 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_kernel_motorola_msm8916 into cm-14.1
+
+====================
+     02-25-2017
+====================
+
+
+   * packages/resources/devicesettings/
+587aaa1 Automatic translation import
+
+   * vendor/lge/
+2e1093c Merge pull request #49 from victorlapin/ng7.1
+45e53ef fix typo
 
    * vendor/motorola/
-01f8bac msm8226: Fix EXIF data on builds signed with release-keys
+9abe9e3 griffin: update vendor blobs
+
+   * vendor/nvidia/
+dd02a16 Remove gatekeeper hal. Not used in stock
+
+   * vendor/tesla/
+10f8a9f Update Nova 5.0.2
 
 ====================
-     02-05-2017
+     02-24-2017
 ====================
 
 
-   * frameworks/base/
-e8df275 Set external QS tiles tint mode to SRC_ATOP
-dffaf5f Themes: Expose Keyguard affordance circle background
-55c19b4 graphics: ADB "N" icon compatible with OMS7
+   * kernel/motorola/msm8916/
+829ea28 ANDROID: sdcardfs: Don't bother deleting freelist
+9153944 ANDROID: sdcardfs: Add missing path_put
+ebfdc6a ANDROID: sdcardfs: Switch strcasecmp for internal call
+5d7dae0 ANDROID: sdcardfs: switch to full_name_hash and qstr
+3fc0f13 ANDROID: sdcardfs: Add GID Derivation to sdcardfs
+f69e1d3 ANDROID: sdcardfs: Remove redundant operation
+d4b7250 ANDROID: sdcardfs: add support for user permission isolation
+436ed22 ANDROID: sdcardfs: Refactor configfs interface
+79d4d1b ANDROID: sdcardfs: Allow non-owners to touch
+04dfce7 wlan: Get debug information when the HAL_START_RSP fails
+94bccb1 wlan: Correct value for bad RSSI in PER based roaming
+15ed5a3 prima: Avoid overflow of "set_bssid_hotlist" params
+4555193 wlan: Add support in driver to do sap restart during SSR
+5524456 prima: Resolve out of bound memory access, while processing setpno
+e089038 wlan: Add NULL check for tail, probe response and assoc response
+1fdf324 wlan: Remove the support for iw_set_priv ioctl
+b48a316 wlan: Fix bssid hint logic to keep the AP on head of the list
+8b3befb wlan: Configure correct max tx power to firmware
+8299019 wlan: Allow fastreassoc driver command for connected BSSID
+b9009bb prima: Process pno ioctl appropriately
+c77f3b9 wlan: Prioritize the bssid_hint, if it fails try with other BSS
+cfb2923 wlan: Use cfg80211_roamed_bss API to indicate the roaming
+bf1f885 wlan: Add support for new cfg80211 connect api
+90f5460 wlan: Send proper IEs number when sec chan bcn filter is skipped
+ea29bc4 wlan: Enable DFS channel for a single channel scan
+5fce6f9 wlan: Request FW recovery after three mgmt TX timeout
+a2fe765 wlan: Replace time of the day with jiffies during scan reject
+b366846 wlan: Check for config support before sendig carrier off
+c3d407f wlan: Add configuration option for bad RSSI in PER based roaming
+1bcee02 prima: Fix array out-of-bounds & integer underflow in _iw_set_genie
+1198fbb wlan: Add support for SAP restart in case of lte coex event
+867acfd wlan: Remove PTK/GTK debug logs
+b77abd0 wlan: Log IP address of the first Rx packet after wakeup
+4fa5ae3 wlan:Restore DXE power state when InitScanRSp fail
+
+   * packages/resources/devicesettings/
+f6ceba9 Automatic translation import
+
+====================
+     02-23-2017
+====================
+
+   * OTA_config/
+7ebb6bc Update clark
+d32e35c Add clark
+
+   * device/motorola/msm8916-common/
+221db15 msm8916-common: remove qti-ims service
+f4662c7 msm8916-common: cmactions: use EXTRA_SETTINGS
 
    * packages/apps/Settings/
-f5b4fd8 Set external settings icon tint mode to SRC_ATOP
+fbb0faa Add me plz
 
-   * packages/apps/TeslaCoil/
-8a99668 quickbar scroll comment out for now
-
-====================
-     02-04-2017
-====================
-
-
-   * frameworks/base/
-60570fc FWB: The Return of the Ticker 2/2 Return of ticker work done by @rogersb11 Included are on and off switch from @Jubakuba Custom color selection for Ticker text and icons
-
-   * packages/apps/TeslaCoil/
-162fbaa Status Bar Ticker [2/2]
+   * vendor/tesla/
+1fc8491 Update Magisk Manager 4.2.6
 
