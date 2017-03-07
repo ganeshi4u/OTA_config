@@ -1,127 +1,193 @@
 ====================
-     02-08-2017
+     03-07-2017
 ====================
 
 
-   * bionic/
-e518c3b Check for bad packets in getaddrinfo.c's getanswer.
+   * device/wingtech/wt88047/
+18f52f7 config: enable BOARD_HAVE_QCOM_FM
 
-   * build/
-fd9bed6 N6F26R
-1676aaf Update Security String to 2017-02-05 on nyc-dev
-70a7a48 Update Security String to 2017-02-01 on nyc-dev
+   * kernel/wingtech/msm8916/
+abc87af config: localversion is now Jerrica-Orbit
+92d0b32 Merge tag 'LA.BR.1.2.9-01810-8x16.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.10 into nebula
+346605a selinux: never enforce
+b45d522 update defconfig for selinux configs
+83f9e98 SELinux forced permissive/enforcing patch
+ba458f5 Merge tag 'LA.BR.1.2.9-01710-8x16.0' of https://source.codeaurora.org… …/quic/la/kernel/msm-3.10 into nebula
 
-   * frameworks/av/
-65287c9 Fix security vulnerability: potential OOB write in audioserver
-42c20fe Effect: Use local cached data for Effect commit
+====================
+     03-06-2017
+====================
+
+   * OTA_config/
+4bb8862 bullhead 03/05 update
 
    * frameworks/base/
-af98e52 [DO NOT MERGE] Fix vulnerability in MemoryIntArray - fix build file
-ac7df27 Fix vulnerability in MemoryIntArray
-01286d5 DO NOT MERGE. Retain DownloadManager Uri grants when clearing.
-d105aa0 DO NOT MERGE: Check provider access for content changes.
-
-   * frameworks/native/
-edeb28e Correct overflow check in Parcel resize code
-2af2fe2 Fix security vulneratibly 31960359
-1b0a8d2 Fix SF security vulnerability: 32706020
-
-   * hardware/libhardware/
-c32d03d Fix security vulnerability: potential OOB write in audioserver
-
-   * hardware/qcom/audio-caf/msm8996/
-805af44 audio: configs: Enable Dolby feature
-afee25c Fix security vulnerability: Equalizer command might allow negative indexes
-502bcd6 Fix security vulnerability: Effect command might allow negative indexes
-
-   * hardware/qcom/media/
-2de60c7 media: Fix pathmap barrier
-ede7059 media: Use    * pathmap
-
-   * libcore/
-0916572 Fix URL parser may return wrong host name
-
-   * packages/apps/Bluetooth/
-7a34107 Remove MANAGE_DOCUMENTS permission as it isn't needed
-
-   * packages/apps/Messaging/
-0447abb resolve merge conflicts of eafd58a to nyc-dev
-cfab2f8 32807795  Security Vulnerability - AOSP Messaging App: thirdparty can attach private files from "/data/data/com.android.messaging/" directory to the messaging app.
-57bdac6 32322450 Security Vulnerability - heap buffer overflow in libgiftranscode.so
-
-   * system/core/
-799b6ab change /data/bugreports to /bugreports
-
-   * system/sepolicy/
-76e5172 label /bugreports
+5e86500 OmniJaws: Fix More Settings Intent
 
 ====================
-     02-07-2017
+     03-05-2017
 ====================
 
 
-   * hardware/qcom/media/
-237f366 libstagefrighthw: Remove padding in encoder_nativehandle_buffer_type
-719a679 mm-video-legacy: venc: update metadata-type used for HAL1 based  recording
-99a5f4c mm-video-legacy: venc: update allocation-size check for meta-buffer
-b0a043c Enable TARGET_COMPILE_WITH_MSM_KERNEL guard
-23b40f1 media: Use kernel headers
-960bbe3 Revert "msm8974: remove from top level makefile"
-
 ====================
-     02-06-2017
+     03-04-2017
 ====================
 
 
-   * device/oppo/common/
-6bbe2ce oppo-common: Calculate TrustZone size at runtime
-567017d releasetools: Wipe DDR partition when updating SBL or RPM
-
-   * device/qcom/common/
-46aef1a extractors: Set INITIAL_COPYRIGHT_YEAR
-3aa1b57 extractors: Add msm8952 blobs
-2dfe120 Revert "extractors: Update msm8996 graphics blobs info"
-3991a35 Revert "extractors: Add msm8996 32bit libmm-disp-apis and libmm-qdcm"
-c73bcd6 extractors: Add msm8996 32bit libmm-disp-apis and libmm-qdcm
-efa3a0d extractors: Update msm8996 graphics blobs info
-f3e87e1 extractors: Split 32/64 makefiles
-10122e9 qcom: extractors: Add msm8960 graphics list
-287f957 qc: Fix makefiles
-de3c316 power: msm8937: Improve boost values
-44208e8 power: msm8937: Remove display_hint_sent usage
-edbe285 power: msm8937: Fix build warnings
-d82cbef qc: Add guard makefile for binaries repo
-587505c extractors: Add origin branches for graphics blobs
-f4e7d8e Revert "Wait for QSEECom listeners before calling KMS APIs"
-9835058 Revert "cryptfs_hw: update the listener property with keymaster property"
-
-   * hardware/qcom/keymaster/
-3e292c8 Merge remote-tracking branch 'slim/ng7.1' into HEAD
-
-====================
-     02-05-2017
-====================
-
+   * external/DUtils/
+89cd946 Slim Recent: fix topmost app when using lastapp action
 
    * frameworks/base/
-e8df275 Set external QS tiles tint mode to SRC_ATOP
-dffaf5f Themes: Expose Keyguard affordance circle background
-55c19b4 graphics: ADB "N" icon compatible with OMS7
+5d2f8fa [QUICK SETTINGS] Add Caffeine QS Tile
+bc15522 base: qs weather: be nice to people without OmniJaws
+a78929d [1/2] base: SystemUI: OmniJaws qs tile integration
+8f9d0a5 Slim Recent: change App info icon for longpress header options
+7d1ea72 Slim Recent: make dragForMultiwin smooth and dock app up/down following the gesture
+2ceec84 Slim Recent lastapp toggle: better app animation
 
-   * packages/apps/Settings/
-f5b4fd8 Set external settings icon tint mode to SRC_ATOP
+   * frameworks/opt/cards/
+2093dee Switch to target API 25 (7.1.1)
+
+   * hardware/qcom/fm/
+8b902c3 Automatic translation import
+67c51d3 Automatic translation import
+05912ce jni: Confine the firmware-load skipping to the actual loading
+ce3f211 Use BOARD_HAVE_QCOM_FM flag
+9e24f7b Revert "Disable libfm_jni"
+6039ce2 Automatic translation import
+702fa81 Convert regional band arrays to string references
+6c5d34d fmapp2: Allow value for the default fm recording duration to be overlayed.
+f31efd3 fmapp2: String improvements
+a10377e Fm : Update India bands
+315bee7 FMRadio : Fix headphone icon
+6fa0ab4 FMRadio : Fix settings UI bugs
+f898a3d FMRadio : Localization of band types
+95142f5 FMRadio : improved band selection
+ce58576 FMRadio : cleaned up band selection code
+440e745 FMRadio : Select band based on country
+632469b FMRadio : Keep track of scanned frequencies in service
+a3ad3a7 FMRadio : Ensure scan state is kept in sync
+c14ed92 FM: The collect channel disappear when quit FM
+233d45f Fix status text to reflect when FM is enabled.
+4c01fdc FM: fix mRadioTextScroller usage in transmitter activity
+2159d90 FM: respect hw.fm.internal_antenna
+9676ca3 FMRadio : Launch station list automatically after scan
+ae0ad9a FM: reenable radio text visibility after station info updated
+dd1fb3c FM: Store tag num/value in sequence
+1f1d965 FM: always use overlay default country
+b381188 FM: retune last frequency when resume after call
+ee73777 FM2: one more missing materialization change
+9fedc4a FM2: missing materialization changes
+120cde7 fmapp2: materialize
+1e8d3b2 FM: fixup strings
+6989d31 New Material icon
+827d339 FMRadio: add Indonesia
+d0cdf88 FM: Add property to force use internal antenna
+2ca46c7 FM: Cleanup resources
+db01dd2 FMRadio : Switch file extension to aac
+f066988 FMRadio : Call unregister in onPause
+6d903a3 Scanned frequencies are saved in ascending ordering
+58d8017 FmRadio : Re-add RDS fields to UI
+5d457fd Fm : Make default country an overlay
+c2603d8 Fm : Restore seek arrows
+307d9f5 FMRadio : Re-vamp UI
+bf8efbc FM: jni: Fix compile error with TARGET_QCOM_NO_FM_FIRMWARE
+d76119a fmapp2: new launcher icon by LeopardSurd
+af9048d jni: Skip loading FM firmware if requested
+8afc067 FM2: Update notification to use notification builder
+1e2b05d Break bootclasspath dependency
+383a305 Allow library to be used by apps directly
+802def3 libfm_jni: Confine the firmware-load skipping to the actual loading
+e1b5319 libfm_jni: Improve and fix FM jni logs
+41161f0 libfm_jni: Add support for internal antenna hardware
+4ed6844 libfm_jni: Do not come here unless QCOM_HARDWARE is in use
+9e31211 libfm_jni: Skip loading FM firmware if requested
+d3ba501 jni: fix calibration data path for legacy fm_qsoc_patches
+9026a3d Drop BOARD_HAVE_QCOM_FM flag
+
+   * manifest/
+b2fa7be track our own opt_cards
 
    * packages/apps/TeslaCoil/
-8a99668 quickbar scroll comment out for now
+79b8548 [1/2] TeslaCoil: add OmniJaws config
+
+   * packages/services/OmniJaws/
+3ee73ed Add new weather icons
+1b74869 [2/2] OmniJaws: set sail to new shores
+3b17086 OmniJaws: expose update time in settings
+f8c6158 OmniJaws: remove deprecated network change receiver
 
 ====================
-     02-04-2017
+     03-03-2017
 ====================
 
+   * OTA_config/
+7c77230 Clark 03/02
 
    * frameworks/base/
-60570fc FWB: The Return of the Ticker 2/2 Return of ticker work done by @rogersb11 Included are on and off switch from @Jubakuba Custom color selection for Ticker text and icons
+2b1eaad Slim Recent: aosp toggle behavior, one tap to show panel another one for lastapp
+49ec8f2 Slim Recent: longpress then drag up/down the app to run it on multiwindow
+d3e99d9 Battery icon: don't show PowerSaving symbol when showing Critical Level
+73ff0a7 Slim Recent: disable all debug logs
+ab4c688 Slim Recent: cleanup unused code
+03f45a9 Slim Recent: move to BaseStatusBar and add native multiwindow capatibility
+20a2957 Slim Recent: remove slimscreenpinning, we run the aosp one
+a858347 Slim recents: make longpress options size better when small
+bfe01c3 Slim Recent: set to 15 max apps as default [1/2]
+286ee30 Slim Recent: default panel color: pixelblue (a bit transparent) [1/2]
+4c694f0 Slim Recent: pinch-in to clear all: pixelblue warning color, 0.7f opacity
+1ab5b98 Slim Recent: fix scroll lag when Auto Expand and improve RecyclerView performances
+65c6ee3 Slim Recent: always set auto color for cards background [1/2]
+789eb8d Slim recent: smaller card text and don't zoom it out when panel scale >100%
+dadc55f Slim recents: don't show content when device is locked
+d042d2f Slim Recent: materialoze card text font
+12877ff Slim Recent: always use automatic text color for card header [1/2]
+cfb05df Slim Recent: remove card shadow for a cleaner UI
+35ed093 Remove any tasks greater then our task limit and some cleanup
+6bfadcd2 Slim recents: fix sometimes missing entries
+601e257 Fix slim recents duplicate entries
+
+   * packages/apps/Snap/
+68238fc Focus only when tapping the preview
+ae05281 Allow to re-open Snap from recent menu
+f36392b Automatic translation import
+6f96317 Snap: CaptureModule: lock exposure also when precapture trigger is started
+b79f01c Automatic translation import
+3374d11 Snap: Allow switching beyond just 2 cameras
+740f0d3 Automatic translation import
+5c48c2d Snap: CaptureModule: fix preview being invisible on first start
+e57c684 CaptureModule: Fix UI.
+47996a4 Snap: CaptureModule: re-apply flash setting when disabling manual iso
+0b7dd1f Snap: CaptureModule: check if ZSL is supported before using it
+c88ecd2 Snap: CaptureModule: enable noise reduction
+b0b027e Snap: CaptureModule: enable redeye reduction
+127b9fe Snap: CaptureModule: enable and fix manual iso control
+15a6e83 Snap: CaptureUI: remove camera2 option
+e2c6c1c Snap: detect and use Camera2 if available
+4527325 Automatic translation import
+cac6833 Snap: Replace noisy debug line
+1c45199 Snap: VideoModule: Restore check on mPreferenceRead
+8689685 Snap: VideoModule: Update flash status on preference change
+49c983d Snap: Fix filtering of unsupported HFR/HSR modes
+d6f79dc Snap: Fix max brightness and power shutter settings
+2034096 Snap: Fix NPE when parameters.getSupportedVideoSizes() is null
+d0ed270 Fix shutter button pressed state tracking issues.
+1ef215f Snap: store module index
+ae10c95 Fix thumbnail sometimes not being shown initially in video mode.
+be2207e Snap: VideoModule: properly update focus settings when switching between cameras
+f0877ff Snap: Fix zoom in video mode
+026be3f Snap: Remove touch AF/AEC option
+87f67e4 Correctly return to film strip after editing a picture.
+6c5f6e0 Snap: CAF strings cleanup second interation
 
    * packages/apps/TeslaCoil/
-162fbaa Status Bar Ticker [2/2]
+fefdbed Slim Recent settings: allow to reset bg color to default
+9af2c1a Slim Recent: set to 15 max apps as default [2/2]
+bf9f70a Slim Recent: default panel color: pixelblue (a bit transparent) [2/2]
+c47c65a Slim Recent: always set auto color for cards background [2/2]
+b3efb0e Slim Recent: enable colorpicker alphaslider
+d7676fc Slim Recent: always use automatic text color for card header [2/2]
+
+   * vendor/tesla/
+4cf5d01 v3.7 now
 
