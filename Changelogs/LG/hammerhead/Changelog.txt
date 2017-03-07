@@ -1,134 +1,36 @@
 ====================
-     02-27-2017
+     03-07-2017
 ====================
 
    * OTA_config/
-7e4ee39 Add bullhead to teslaOTA
-92aecdc Update lux & shieldtablet 26/02
+642eb0d shieldtablet update 07/03
+ebede2e lux update 07/03
+47f992b ota: update Redmi2 03/07
+cd64de1 ota: update bacon 03/07
 
-   * device/lge/hammerhead/
-058337a hammerhead: Include FFMPEG codec configuration
-
-   * frameworks/base/
-0f0f625 Ticker: Center Ticker layout horizontally in statusbar view
-494ef27 Slim recents: card expand button: use same color like card text
-08cb5bd Slim recents: avoid crashes due to different drawable types
-1e3acf9 Slim Recents squash [1/2]
-53cccfe fix build
-5973d71 Blur: Color Filters implementation (1/2)
-bc2e0df Blur: Implement Recents Blur (1/2)
-994fa5e [SQUASHED] Implement XOSP Blur personalization options (1/2)
-
-   * manifest/
-8cff8f3 track frameworks_opt_cards from Validus
-7fa84e6 masquerade- change github
-
-   * packages/apps/TeslaCoil/
-4bdc21a Slim Recents squash [2/2] This is a squashed and AICPfied port of all slim recents related commits found on Slim's ng7.1 frameworks/opt/slim.
-13e7970 add blur category
-5f16323 [SQUASHED] Implement XOSP Blur personalization options (1/2) All credits for original work goes to serjar (Author of the very famous Xposed module: Blurred System UI)
+   * build/
+e0fef83 N6F26U
+e2c23ff Updating Security String to 2017-03-05 on nyc-dev
 
 ====================
-     02-26-2017
-====================
-
-
-   * device/motorola/msm8916-common/
-0336f24 Mount debugfs
-
-   * hardware/qcom/audio-caf/msm8916/
-8fe87cd     audiopolicy: Update voice concurrency support for 8916
-680b47a Fix security vulnerability: Effect command might allow negative indexes
-65d785e hal: fix for KW issues.
-c69c67a hal:KW fixes
-
-   * hardware/qcom/display-caf/msm8916/
-c28e4d4 hwc: Add src image width and height check in prepare
-0cc44d2 libmemtrack: Fix integer overflow in kgsl function
-
-   * kernel/motorola/msm8916/
-ba3d7e3 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_kernel_motorola_msm8916 into cm-14.1
-
-====================
-     02-25-2017
-====================
-
-
-   * packages/resources/devicesettings/
-587aaa1 Automatic translation import
-
-   * vendor/lge/
-2e1093c Merge pull request #49 from victorlapin/ng7.1
-45e53ef fix typo
-
-   * vendor/motorola/
-9abe9e3 griffin: update vendor blobs
-
-   * vendor/nvidia/
-dd02a16 Remove gatekeeper hal. Not used in stock
-
-   * vendor/tesla/
-10f8a9f Update Nova 5.0.2
-
-====================
-     02-24-2017
-====================
-
-
-   * kernel/motorola/msm8916/
-829ea28 ANDROID: sdcardfs: Don't bother deleting freelist
-9153944 ANDROID: sdcardfs: Add missing path_put
-ebfdc6a ANDROID: sdcardfs: Switch strcasecmp for internal call
-5d7dae0 ANDROID: sdcardfs: switch to full_name_hash and qstr
-3fc0f13 ANDROID: sdcardfs: Add GID Derivation to sdcardfs
-f69e1d3 ANDROID: sdcardfs: Remove redundant operation
-d4b7250 ANDROID: sdcardfs: add support for user permission isolation
-436ed22 ANDROID: sdcardfs: Refactor configfs interface
-79d4d1b ANDROID: sdcardfs: Allow non-owners to touch
-04dfce7 wlan: Get debug information when the HAL_START_RSP fails
-94bccb1 wlan: Correct value for bad RSSI in PER based roaming
-15ed5a3 prima: Avoid overflow of "set_bssid_hotlist" params
-4555193 wlan: Add support in driver to do sap restart during SSR
-5524456 prima: Resolve out of bound memory access, while processing setpno
-e089038 wlan: Add NULL check for tail, probe response and assoc response
-1fdf324 wlan: Remove the support for iw_set_priv ioctl
-b48a316 wlan: Fix bssid hint logic to keep the AP on head of the list
-8b3befb wlan: Configure correct max tx power to firmware
-8299019 wlan: Allow fastreassoc driver command for connected BSSID
-b9009bb prima: Process pno ioctl appropriately
-c77f3b9 wlan: Prioritize the bssid_hint, if it fails try with other BSS
-cfb2923 wlan: Use cfg80211_roamed_bss API to indicate the roaming
-bf1f885 wlan: Add support for new cfg80211 connect api
-90f5460 wlan: Send proper IEs number when sec chan bcn filter is skipped
-ea29bc4 wlan: Enable DFS channel for a single channel scan
-5fce6f9 wlan: Request FW recovery after three mgmt TX timeout
-a2fe765 wlan: Replace time of the day with jiffies during scan reject
-b366846 wlan: Check for config support before sendig carrier off
-c3d407f wlan: Add configuration option for bad RSSI in PER based roaming
-1bcee02 prima: Fix array out-of-bounds & integer underflow in _iw_set_genie
-1198fbb wlan: Add support for SAP restart in case of lte coex event
-867acfd wlan: Remove PTK/GTK debug logs
-b77abd0 wlan: Log IP address of the first Rx packet after wakeup
-4fa5ae3 wlan:Restore DXE power state when InitScanRSp fail
-
-   * packages/resources/devicesettings/
-f6ceba9 Automatic translation import
-
-====================
-     02-23-2017
+     03-06-2017
 ====================
 
    * OTA_config/
-7ebb6bc Update clark
-d32e35c Add clark
+4bb8862 bullhead 03/05 update
 
-   * device/motorola/msm8916-common/
-221db15 msm8916-common: remove qti-ims service
-f4662c7 msm8916-common: cmactions: use EXTRA_SETTINGS
+====================
+     03-05-2017
+====================
 
-   * packages/apps/Settings/
-fbb0faa Add me plz
 
-   * vendor/tesla/
-1fc8491 Update Magisk Manager 4.2.6
+====================
+     03-04-2017
+====================
+
+
+====================
+     03-03-2017
+====================
+
 
