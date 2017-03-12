@@ -186,11 +186,11 @@
                description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
        </clark>
          <bullhead>
-           <Filename>Tesla-bullhead-7.1.1.Beta.v3.7-Official-20170305-1833.zip</Filename>
+           <Filename>Tesla-bullhead-7.1.1.Beta.v3.7-Official-20170313-0222.zip</Filename>
            <RomUrl
                id="rom"
                title="Rom"
-               description="Download Tesla-N build">https://www.androidfilehost.com/?fid=457095661767142103</RomUrl>
+               description="Download Tesla-N build">https://www.androidfilehost.com/?fid=457095661767144076</RomUrl>
            <GappsUrl
                id="gapps"
                title="Gapps"
