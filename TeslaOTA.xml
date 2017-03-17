@@ -153,15 +153,19 @@
                description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
        </huashan>
        <flo>
-           <Filename>Tesla-flo-7.1.1.Beta.v3.7-Official-20170308-1451.zip</Filename>
+           <Filename>Tesla-flo-7.1.1.Beta.v3.7-Official-20170317-1557.zip</Filename>
            <RomUrl
                id="rom"
                title="Rom"
-               description="Download Tesla-N build">https://www.androidfilehost.com/?fid=745425885120713492</RomUrl>
+               description="Download Tesla-N build">https://www.androidfilehost.com/?fid=457095661767145440</RomUrl>
            <GappsUrl
                id="gapps"
                title="Gapps"
                description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
+            <XDAUrl
+                id="xda"
+                title="XDA"
+                description="Visit XDA thread">https://forum.xda-developers.com/nexus-7-2013/development/02-20-7-1-1-ground-zero-roms-validus-t3560732</XDAUrl>
        </flo>
        <flounder>
            <Filename>Tesla-flounder-7.1.1.Beta.v3.7-Official-20170310-1309.zip</Filename>
