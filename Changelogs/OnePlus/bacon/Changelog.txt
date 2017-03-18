@@ -1,53 +1,87 @@
 ====================
-     03-12-2017
-====================
-
-
-====================
-     03-11-2017
-====================
-
-
-====================
-     03-10-2017
+     03-18-2017
 ====================
 
    * OTA_config/
-d871d18 Flounder 03/10
-df4ea8c Clark 03/10
+1453c61 Flo 03/17
 
-   * packages/services/OmniJaws/
-e2d42d7 OmniJaws: Clean up unused imports, simpify few things
-d7a0ed7 OmniJaws: Add menu item to search for Chronus icons
-6adabaa OmniJaws: manifest add DEFAULT category to activities
+   * frameworks/base/
+dc106d0 Toast long timeout fix
+2f432a0 Toast icon switch [1/2]
+fd365aa SlimRecents: Fix potential SystemUI NPE
+c059fcd67 Slim Recents: don't show panel if app pinning is currently active
+7822c49 Slim Recents: fix multiwindow glitch when docking app to bottom
+
+   * packages/apps/OmniSwitch/
+ce64715 OmniSwitch: delay task info loading to speedup open
+4adb6ec OmniSwitch: more multi window tweaks
+44b262d OmniSwitch: basic multi window support
+
+   * packages/apps/TeslaCoil/
+7805498 add others category
+60920fc Toast icon switch [2/2]
+
+   * vendor/tesla/
+d7162ca Merge pull request #3 from eldainosor/n7.1.1
+f1f89a7 apn: Updating Movistar Argentina APN
 
 ====================
-     03-09-2017
+     03-17-2017
 ====================
 
-   * OTA_config/
-615cf0f Flo 03/08
 
-   * vendor/qcom/binaries/
-4e4570f we are NOT lineage.
+   * frameworks/base/
+515785a Expose Screenshot flash and background colors
+bbb5c40 Unify all "advanced" tiles into one easy toggle tile (1/2)
+3e56775 QS BT easy toggle: if enabled, long press for detail view
+9582dcf QS: BT easy toggle [1/2]
+
+   * packages/apps/TeslaCoil/
+99dc107 Let brightness icon use System switch preference
+f77e0ff Unify all "advanced" tiles into one easy toggle tile (2/2)
+9102e9b QS: Bluetooth easy toggle [2/2]
+
+   * packages/providers/MediaProvider/
+8f76d1e MediaProvider: Fix possible NPE
+acdb4ef MediaProvider: Add read storage permission
 
 ====================
-     03-08-2017
+     03-16-2017
 ====================
 
-   * OTA_config/
-f0c2959 hammerhead update 07/03
-642eb0d shieldtablet update 07/03
 
-   * hardware/qcom/display-caf/msm8996/
-938e782 display: Fix ColorMetaData
-d5d627d display-caf: msm8996: Use ColorMetaData in SDM in hwc2
-718be10 display-caf: 8996: Add color metadata to libgralloc1
+   * frameworks/base/
+b9c5049 SubscriptionManager: remove unprovisioned sims from the list of active subscriptions
 
-   * vendor/oneplus/
-9c56ba2 Merge pull request #2 from BigTopKrazies/test
+   * packages/apps/Settings/
+27b8561 Fix possible NPE on SIM settings shutdown.
+3ca887a Clean up SIM enable toggle implementation
+87b8aee Settings: port manual provisiong support
 
-   * vendor/qcom/binaries/
-c6a6341 Merge pull request #8 from TheMuppets/cm-14.1
-dc32e68 msm8996: graphics: Update to LA.UM.5.5.r1-02500-8x96.0
+====================
+     03-15-2017
+====================
+
+
+   * device/oneplus/bacon/
+8bba928 Add dependencies
+
+   * device/wingtech/wt88047/
+a86983c update dependencies
+
+   * frameworks/base/
+2e55c5f Expose temperature text in DetailedWeatherView
+
+====================
+     03-14-2017
+====================
+
+
+   * frameworks/base/
+302318e ThemeSafety: Introduce App Crash Intent
+1c2943e Slim Recents: fix toptask header layout and other ui improvements
+
+   * packages/apps/TeslaCoil/
+2a66a3c A few more strings fixes
+f052c86 Recent menu: fix string typo
 
