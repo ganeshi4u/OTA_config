@@ -1,263 +1,143 @@
 ====================
-     03-07-2017
+     03-19-2017
 ====================
 
-   * OTA_config/
-47f992b ota: update Redmi2 03/07
-cd64de1 ota: update bacon 03/07
-
-   * build/
-e0fef83 N6F26U
-e2c23ff Updating Security String to 2017-03-05 on nyc-dev
 
    * device/motorola/lux/
-c011ffd lux: Commonize Adreno 4xx blobs
-b31f3bf Enforcing SELinux
+2a0336e lux: Featurize Flash LED
 
    * device/motorola/msm8916-common/
-9cc91da Revert "CMActions: Split Activities"
-76e4151 Revert "CMActions: Introduce a toggle to enable/disable ambient display"
-6ac088a Revert "Fix up gestures_panel.xml"
-
-   * frameworks/av/
-5ce070d avc_utils: skip empty NALs from malformed bistreams
-22b5335 DO NOT MERGE - audioflinger: fix recursive mutex lock in EffectHandle.
-a28b4c2 Don't initialize sync sample parameters until the end
-57c1c20 DO NOT MERGE - improve audio effect framwework thread safety
+9dff135 msm8916-common: Set camera permissions device specific
+ead45be msm8916-common: Drop liboemcrypto
 
    * frameworks/base/
-0cbe22f base: Force authorize all calling packages by Masquerade (2/3)
-0df0686 FWB: Give power dialogs own set of volume icons for themes
-08bfe68 OMS: Add hide annotation to MODIFY_OVERLAYS permission
-d802fd8 Revert "Add a protected broadcast for Masquerade events"
-df1d24e OMS7: Rootless Security Update Preparation for March 2017
-747a790 Add a protected broadcast for Masquerade events
-fc0a9f3 Fix issue with saving admins before finishing loading.
-eeb46cf resolve merge conflicts of ad4aa1ce7d3d to nyc-mr1-dev
-c521a62 Fix exploit where can hide the fact that a location was mocked am: a206a0f17e am: d417e54872 am: 3380a77516 am: 0a8978f04b am: 1684e5f344 am: d28eef0cc2 am: 1f458fdc66 am: d82f8a67fc am: 1ac8affd51 am: 56098f81b6 am: 7cec76de0f am: 2da05d0f9e
-6ce79a9 [DO NOT MERGE] Prevent crash from early Toast surface destruction.
-644466f Add @GuardedBy annotation to PersistentDataBlockService#mIsWritable.
-fbab996 Prevent writing to FRP partition during factory reset.
-
-   * frameworks/opt/net/wifi/
-d23750c configparse: do not delete passpoint configuration file
-
-   * manifest/
-ec85a52 Hello ThemeInterfacer
-d86b074 android 7.1.1_r28
-
-   * packages/apps/PackageInstaller/
-3ba93d8 Merge tag 'android-7.1.1_r28' into n7.1.1
-
-   * packages/apps/Settings/
-774eb5b Settings: Expose styles in the manifest for themes
-f1a27be Settings: Expose "ALL" hardcoded and @android colors
-5cec837 Settings: Expose and add tint mode to custom icons
-5e6ce3e Settings: Guard against themes without colorAccent defined
-03070ea Development: Allow all Masquerade calling packages for debugging (3/3)
-
-   * packages/apps/ThemeInterfacer/
-e9e6979 Welcome to Theme Interfacer! [1/2]
-
-   * system/core/
-e95bde6 Create "theme extras" directory
-
-   * system/sepolicy/
-4a5fd16 Welcome to Theme Interfacer! [2/2]
-4d5ac54 sepolicy: Redo masquerade rules
-10b3a36 sepolicy: Fix application of bootanimation
-d55c1d7 sepolicy: allow masquerade to read and write theme assets
-e028c50 sepolicy: rename masquerade domain and allow JobService in system_server
-06d3d21 initial policy edits for masquerade to operate rootless
-f102f10 sepolicy: fix themed sounds
-5c57d01 sepolicy: fix themed boot animation
-bf84cc3 Introduce sepolicy exceptions for theme assets
-
-   * vendor/tesla/
-26d0302 Hello ThemeInterfacer
-82df472 Update Nova 5.0.3
-
-====================
-     03-06-2017
-====================
-
-   * OTA_config/
-4bb8862 bullhead 03/05 update
-
-   * device/motorola/lux/
-dcbe506 Update tesla.dependencies
-
-   * device/motorola/msm8916-common/
-e37901d msm8916-common: Use BOARD_HAVE_QCOM_FM flag
-4c239b7 msm8916-common: Commonize Adreno 4xx blobs
-749f35d Fix up gestures_panel.xml
-
-   * kernel/motorola/msm8916/
-451947b Merge branch 'cm-14.1' of https://github.com/LineageOS/android_kernel_motorola_msm8916 into cm-14.1
-
-====================
-     03-05-2017
-====================
-
-
-   * frameworks/base/
-5e86500 OmniJaws: Fix More Settings Intent
-
-   * packages/apps/ThemeInterfacer/
-5136d71 AndroidManifest: Add protected broadcasts
-cf8d545 JobService: new RestartService job
-7714c9b Broadcast authorization result
-6ef1df0 Introducing Signature check in Masquerade (1/3)
-
-   * vendor/motorola/
-1e5868b msm8610-common: move graphics blobs back here
-b722bbe msm8916-common: Commonize Adreno 4xx blobs
-675d2ad msm8916-common: Update netmgr blobs from addison (NPN25.137-24-1)
-1842b8d msm8916-common: Remove rfs_access
-
-====================
-     03-04-2017
-====================
-
-
-   * external/DUtils/
-89cd946 Slim Recent: fix topmost app when using lastapp action
-
-   * frameworks/base/
-5d2f8fa [QUICK SETTINGS] Add Caffeine QS Tile
-bc15522 base: qs weather: be nice to people without OmniJaws
-a78929d [1/2] base: SystemUI: OmniJaws qs tile integration
-8f9d0a5 Slim Recent: change App info icon for longpress header options
-7d1ea72 Slim Recent: make dragForMultiwin smooth and dock app up/down following the gesture
-2ceec84 Slim Recent lastapp toggle: better app animation
-
-   * manifest/
-b2fa7be track our own opt_cards
+0a39d28 Slim Recents icon pack: fallback to app icon if pack doesn't have any
+21b7e3a Slim Recents iconpack support [1/2]
 
    * packages/apps/TeslaCoil/
-79b8548 [1/2] TeslaCoil: add OmniJaws config
-
-   * packages/services/OmniJaws/
-3ee73ed Add new weather icons
-1b74869 [2/2] OmniJaws: set sail to new shores
-3b17086 OmniJaws: expose update time in settings
-f8c6158 OmniJaws: remove deprecated network change receiver
-
-====================
-     03-03-2017
-====================
-
-
-   * device/motorola/msm8916-common/
-3fe416f init: disable rfs_access on 8939
-
-   * frameworks/opt/cards/
-2093dee Switch to target API 25 (7.1.1)
-
-   * hardware/qcom/fm/
-8b902c3 Automatic translation import
-67c51d3 Automatic translation import
-05912ce jni: Confine the firmware-load skipping to the actual loading
-ce3f211 Use BOARD_HAVE_QCOM_FM flag
-9e24f7b Revert "Disable libfm_jni"
-6039ce2 Automatic translation import
-702fa81 Convert regional band arrays to string references
-6c5d34d fmapp2: Allow value for the default fm recording duration to be overlayed.
-f31efd3 fmapp2: String improvements
-a10377e Fm : Update India bands
-315bee7 FMRadio : Fix headphone icon
-6fa0ab4 FMRadio : Fix settings UI bugs
-f898a3d FMRadio : Localization of band types
-95142f5 FMRadio : improved band selection
-ce58576 FMRadio : cleaned up band selection code
-440e745 FMRadio : Select band based on country
-632469b FMRadio : Keep track of scanned frequencies in service
-a3ad3a7 FMRadio : Ensure scan state is kept in sync
-c14ed92 FM: The collect channel disappear when quit FM
-233d45f Fix status text to reflect when FM is enabled.
-4c01fdc FM: fix mRadioTextScroller usage in transmitter activity
-2159d90 FM: respect hw.fm.internal_antenna
-9676ca3 FMRadio : Launch station list automatically after scan
-ae0ad9a FM: reenable radio text visibility after station info updated
-dd1fb3c FM: Store tag num/value in sequence
-1f1d965 FM: always use overlay default country
-b381188 FM: retune last frequency when resume after call
-ee73777 FM2: one more missing materialization change
-9fedc4a FM2: missing materialization changes
-120cde7 fmapp2: materialize
-1e8d3b2 FM: fixup strings
-6989d31 New Material icon
-827d339 FMRadio: add Indonesia
-d0cdf88 FM: Add property to force use internal antenna
-2ca46c7 FM: Cleanup resources
-db01dd2 FMRadio : Switch file extension to aac
-f066988 FMRadio : Call unregister in onPause
-6d903a3 Scanned frequencies are saved in ascending ordering
-58d8017 FmRadio : Re-add RDS fields to UI
-5d457fd Fm : Make default country an overlay
-c2603d8 Fm : Restore seek arrows
-307d9f5 FMRadio : Re-vamp UI
-bf8efbc FM: jni: Fix compile error with TARGET_QCOM_NO_FM_FIRMWARE
-d76119a fmapp2: new launcher icon by LeopardSurd
-af9048d jni: Skip loading FM firmware if requested
-8afc067 FM2: Update notification to use notification builder
-1e2b05d Break bootclasspath dependency
-383a305 Allow library to be used by apps directly
-802def3 libfm_jni: Confine the firmware-load skipping to the actual loading
-e1b5319 libfm_jni: Improve and fix FM jni logs
-41161f0 libfm_jni: Add support for internal antenna hardware
-4ed6844 libfm_jni: Do not come here unless QCOM_HARDWARE is in use
-9e31211 libfm_jni: Skip loading FM firmware if requested
-d3ba501 jni: fix calibration data path for legacy fm_qsoc_patches
-9026a3d Drop BOARD_HAVE_QCOM_FM flag
-
-   * packages/apps/Snap/
-68238fc Focus only when tapping the preview
-ae05281 Allow to re-open Snap from recent menu
-f36392b Automatic translation import
-6f96317 Snap: CaptureModule: lock exposure also when precapture trigger is started
-b79f01c Automatic translation import
-3374d11 Snap: Allow switching beyond just 2 cameras
-740f0d3 Automatic translation import
-5c48c2d Snap: CaptureModule: fix preview being invisible on first start
-e57c684 CaptureModule: Fix UI.
-47996a4 Snap: CaptureModule: re-apply flash setting when disabling manual iso
-0b7dd1f Snap: CaptureModule: check if ZSL is supported before using it
-c88ecd2 Snap: CaptureModule: enable noise reduction
-b0b027e Snap: CaptureModule: enable redeye reduction
-127b9fe Snap: CaptureModule: enable and fix manual iso control
-15a6e83 Snap: CaptureUI: remove camera2 option
-e2c6c1c Snap: detect and use Camera2 if available
-4527325 Automatic translation import
-cac6833 Snap: Replace noisy debug line
-1c45199 Snap: VideoModule: Restore check on mPreferenceRead
-8689685 Snap: VideoModule: Update flash status on preference change
-49c983d Snap: Fix filtering of unsupported HFR/HSR modes
-d6f79dc Snap: Fix max brightness and power shutter settings
-2034096 Snap: Fix NPE when parameters.getSupportedVideoSizes() is null
-d0ed270 Fix shutter button pressed state tracking issues.
-1ef215f Snap: store module index
-ae10c95 Fix thumbnail sometimes not being shown initially in video mode.
-be2207e Snap: VideoModule: properly update focus settings when switching between cameras
-f0877ff Snap: Fix zoom in video mode
-026be3f Snap: Remove touch AF/AEC option
-87f67e4 Correctly return to film strip after editing a picture.
-6c5f6e0 Snap: CAF strings cleanup second interation
-
-   * packages/apps/ThemeInterfacer/
-88088a4 Add missing exception handling in setDefaultAudible
-c7e2111 Rewrite the way we handle sound overlays
-2295725 This is not how you convert long to String ;_;
-7555531 Improve code style
-11bc3ec Unify logging
-410b80e Use Log.e() instead of printStackTrace();
-
-   * packages/resources/devicesettings/
-3cc11e1 Automatic translation import
+5421f86 Slim Recents iconpack dialog: use android built-in default icon drawable
+63be58b Slim Recents iconpack support [2/2]
 
    * vendor/motorola/
-8e88944 clark: pull in adreno libs and regen makefiles
+061dbf5 griffin: remove Mods related apks
+2bb9c66 griffin: remove MotoDisplayFWProxy
+d56d1fc griffin: update drm blobs
+f2913ed griffin: fix wakelock type
+5974b2c griffin: fix missing package
+e1b4c48 griffin: kang drm from bullhead
+76bec1a griffin: fix adreno blob lib64/libmm-disp-apis.so
+dde42e9 griffin: update adreno blobs
+0373e18 Revert "griffin: switch to shared graphics driver repository"
+006b819 griffin: disable btsnoop trace
+
+====================
+     03-18-2017
+====================
+
+   * OTA_config/
+e3188e7 ota: update Bacon 03/18
+
+   * frameworks/av/
+a7418ee fixings
+4236496 APM: Avoid invalidation of music stream if not required.
+93fcef8 audio: Disable a2dp support on FM active
+2df80fd audiopolicy: Add support for 384kHz audio playback
+dcfadc7 audioflinger: fix for playback paused during track transition
+0ce35ff AudioFlinger: increase size of client heap
+e020347 libstagefright: omx: Prevent assertion due to state mismatches
+e61c142 Fix 64-bit comparison
+d0691ae libstagefright: Avoid negative values for cttsOffsetTimeUs
+e91d614 libstagefright: update cttsOffsetTimeUs for video track
+0ce616d stagefright: Support MP3 in MPEG4 containers
+5205aac Stagefright: Do not skip frames in time-lapse-source for high-speed
+555a5ab ACodec: Fix video autoscaling on old OMX decoders
+69751b7 stagefright: ACodec: Selectively call VQZIP Info
+a37f663 libstagefright: Use proper ctts offset
+7801b22 IMediaSource: add check before calling readMultiple
+7220a21 MediaPlayerService: Clear the vector holding tracks
+1748c3d StagefrightRecorder: add null check for recording source
+f489346 MediaPlayerService: Fix binder dereference while connecting to media services
+da91488 AudioTrack: Don't tear down sink for invalid offload track
+ac72151 audio: Don't update the audio_output flag with track flags
+0d1a819 stagefright: add handling for Large metadata across binder
+da51e1e Stagefright: Addition of DS capability
+d9624aa libstagefright: Restore AOSP's handling of 24/32-bit wav files
+e7e0f3f stagefright: allow multiple custom OMXPlugins
+
+   * frameworks/base/
+dc106d0 Toast long timeout fix
+2f432a0 Toast icon switch [1/2]
+fd365aa SlimRecents: Fix potential SystemUI NPE
+c059fcd67 Slim Recents: don't show panel if app pinning is currently active
+7822c49 Slim Recents: fix multiwindow glitch when docking app to bottom
+
+   * packages/apps/OmniSwitch/
+ce64715 OmniSwitch: delay task info loading to speedup open
+4adb6ec OmniSwitch: more multi window tweaks
+44b262d OmniSwitch: basic multi window support
+
+   * packages/apps/Settings/
+243d56b Expanded Desktop: move it  to TeslaCoil (1/2)
+
+   * packages/apps/TeslaCoil/
+383e9df Expanded Desktop: move it to TeslaCoil (2/2)
+7805498 add others category
+60920fc Toast icon switch [2/2]
+
+====================
+     03-17-2017
+====================
+
+   * OTA_config/
+1453c61 Flo 03/17
+
+   * frameworks/base/
+515785a Expose Screenshot flash and background colors
+bbb5c40 Unify all "advanced" tiles into one easy toggle tile (1/2)
+3e56775 QS BT easy toggle: if enabled, long press for detail view
+9582dcf QS: BT easy toggle [1/2]
+
+   * packages/apps/TeslaCoil/
+99dc107 Let brightness icon use System switch preference
+f77e0ff Unify all "advanced" tiles into one easy toggle tile (2/2)
+9102e9b QS: Bluetooth easy toggle [2/2]
+
+   * packages/providers/MediaProvider/
+8f76d1e MediaProvider: Fix possible NPE
+acdb4ef MediaProvider: Add read storage permission
 
    * vendor/tesla/
-4cf5d01 v3.7 now
+d7162ca Merge pull request #3 from eldainosor/n7.1.1
+f1f89a7 apn: Updating Movistar Argentina APN
+
+====================
+     03-16-2017
+====================
+
+
+   * packages/resources/devicesettings/
+5a5b9c5 Automatic translation import
+
+====================
+     03-15-2017
+====================
+
+
+   * frameworks/base/
+b9c5049 SubscriptionManager: remove unprovisioned sims from the list of active subscriptions
+2e55c5f Expose temperature text in DetailedWeatherView
+
+   * hardware/nvidia/power/
+b50c1f2 Bring    * back closer to upstream for easier updates
+
+   * kernel/motorola/msm8916/
+89e6f5a Merge branch 'cm-14.1' of https://github.com/LineageOS/android_kernel_motorola_msm8916 into cm-14.1
+
+   * packages/apps/Settings/
+27b8561 Fix possible NPE on SIM settings shutdown.
+3ca887a Clean up SIM enable toggle implementation
+87b8aee Settings: port manual provisiong support
+
+   * vendor/motorola/
+789936d clark: kang drm from bullhead
 
