@@ -1,62 +1,118 @@
 ====================
-     03-12-2017
-====================
-
-
-====================
-     03-11-2017
+     03-20-2017
 ====================
 
    * OTA_config/
-d871d18 Flounder 03/10
+239725b Lux 19/03
+fafa156 Clark 03/19
 
-   * packages/services/OmniJaws/
-e2d42d7 OmniJaws: Clean up unused imports, simpify few things
-d7a0ed7 OmniJaws: Add menu item to search for Chronus icons
-6adabaa OmniJaws: manifest add DEFAULT category to activities
+   * frameworks/base/
+0a39d28 Slim Recents icon pack: fallback to app icon if pack doesn't have any
+21b7e3a Slim Recents iconpack support [1/2]
 
-====================
-     03-10-2017
-====================
-
-   * OTA_config/
-df4ea8c Clark 03/10
+   * packages/apps/TeslaCoil/
+5421f86 Slim Recents iconpack dialog: use android built-in default icon drawable
+63be58b Slim Recents iconpack support [2/2]
 
 ====================
-     03-09-2017
+     03-19-2017
 ====================
 
    * OTA_config/
-615cf0f Flo 03/08
+e3188e7 ota: update Bacon 03/18
+
+   * frameworks/av/
+a7418ee fixings
+4236496 APM: Avoid invalidation of music stream if not required.
+93fcef8 audio: Disable a2dp support on FM active
+2df80fd audiopolicy: Add support for 384kHz audio playback
+dcfadc7 audioflinger: fix for playback paused during track transition
+0ce35ff AudioFlinger: increase size of client heap
+e020347 libstagefright: omx: Prevent assertion due to state mismatches
+e61c142 Fix 64-bit comparison
+d0691ae libstagefright: Avoid negative values for cttsOffsetTimeUs
+e91d614 libstagefright: update cttsOffsetTimeUs for video track
+0ce616d stagefright: Support MP3 in MPEG4 containers
+5205aac Stagefright: Do not skip frames in time-lapse-source for high-speed
+555a5ab ACodec: Fix video autoscaling on old OMX decoders
+69751b7 stagefright: ACodec: Selectively call VQZIP Info
+a37f663 libstagefright: Use proper ctts offset
+7801b22 IMediaSource: add check before calling readMultiple
+7220a21 MediaPlayerService: Clear the vector holding tracks
+1748c3d StagefrightRecorder: add null check for recording source
+f489346 MediaPlayerService: Fix binder dereference while connecting to media services
+da91488 AudioTrack: Don't tear down sink for invalid offload track
+ac72151 audio: Don't update the audio_output flag with track flags
+0d1a819 stagefright: add handling for Large metadata across binder
+da51e1e Stagefright: Addition of DS capability
+d9624aa libstagefright: Restore AOSP's handling of 24/32-bit wav files
+e7e0f3f stagefright: allow multiple custom OMXPlugins
+
+   * frameworks/base/
+dc106d0 Toast long timeout fix
+2f432a0 Toast icon switch [1/2]
+fd365aa SlimRecents: Fix potential SystemUI NPE
+c059fcd67 Slim Recents: don't show panel if app pinning is currently active
+7822c49 Slim Recents: fix multiwindow glitch when docking app to bottom
+
+   * packages/apps/Settings/
+243d56b Expanded Desktop: move it  to TeslaCoil (1/2)
+
+   * packages/apps/TeslaCoil/
+383e9df Expanded Desktop: move it to TeslaCoil (2/2)
+7805498 add others category
+60920fc Toast icon switch [2/2]
 
    * vendor/oneplus/
-9c56ba2 Merge pull request #2 from BigTopKrazies/test
-
-   * vendor/qcom/binaries/
-4e4570f we are NOT lineage.
-c6a6341 Merge pull request #8 from TheMuppets/cm-14.1
+e7470da Merge pull request #3 from BigTopKrazies/test
 
 ====================
-     03-08-2017
+     03-18-2017
 ====================
 
    * OTA_config/
-f0c2959 hammerhead update 07/03
-642eb0d shieldtablet update 07/03
-ebede2e lux update 07/03
+1453c61 Flo 03/17
 
-   * device/wingtech/wt88047/
-ccc2d9b wt88047: Use MIUI Global Stable build fingerprint
+   * packages/apps/OmniSwitch/
+ce64715 OmniSwitch: delay task info loading to speedup open
+4adb6ec OmniSwitch: more multi window tweaks
+44b262d OmniSwitch: basic multi window support
 
-   * hardware/qcom/display-caf/msm8996/
-938e782 display: Fix ColorMetaData
-d5d627d display-caf: msm8996: Use ColorMetaData in SDM in hwc2
-718be10 display-caf: 8996: Add color metadata to libgralloc1
+   * vendor/tesla/
+d7162ca Merge pull request #3 from eldainosor/n7.1.1
+f1f89a7 apn: Updating Movistar Argentina APN
 
-   * kernel/wingtech/msm8916/
-285a31d SafetyNet bypass: Show androidboot.verifiedbootstate=green
-b9aafcf Revert "proc: Remove verifiedbootstate flag from /proc/cmdline"
+====================
+     03-17-2017
+====================
 
-   * vendor/qcom/binaries/
-dc32e68 msm8996: graphics: Update to LA.UM.5.5.r1-02500-8x96.0
+
+   * frameworks/base/
+515785a Expose Screenshot flash and background colors
+bbb5c40 Unify all "advanced" tiles into one easy toggle tile (1/2)
+3e56775 QS BT easy toggle: if enabled, long press for detail view
+9582dcf QS: BT easy toggle [1/2]
+
+   * packages/apps/TeslaCoil/
+99dc107 Let brightness icon use System switch preference
+f77e0ff Unify all "advanced" tiles into one easy toggle tile (2/2)
+9102e9b QS: Bluetooth easy toggle [2/2]
+
+   * packages/providers/MediaProvider/
+8f76d1e MediaProvider: Fix possible NPE
+acdb4ef MediaProvider: Add read storage permission
+
+====================
+     03-16-2017
+====================
+
+
+   * frameworks/base/
+b9c5049 SubscriptionManager: remove unprovisioned sims from the list of active subscriptions
+2e55c5f Expose temperature text in DetailedWeatherView
+
+   * packages/apps/Settings/
+27b8561 Fix possible NPE on SIM settings shutdown.
+3ca887a Clean up SIM enable toggle implementation
+87b8aee Settings: port manual provisiong support
 
