@@ -168,15 +168,19 @@
                 description="Visit XDA thread">https://forum.xda-developers.com/nexus-7-2013/development/02-20-7-1-1-ground-zero-roms-validus-t3560732</XDAUrl>
        </flo>
        <flounder>
-           <Filename>Tesla-flounder-7.1.1.Beta.v3.7-Official-20170310-1309.zip</Filename>
+           <Filename>Tesla-flounder-7.1.1.Beta.v3.7-Official-20170320-0559.zip</Filename>
            <RomUrl
                id="rom"
                title="Rom"
-               description="Download Tesla-N build">https://www.androidfilehost.com/?fid=529152257862709054</RomUrl>
+               description="Download Tesla-N build">https://www.androidfilehost.com/?fid=529152257862712263</RomUrl>
            <GappsUrl
                id="gapps"
                title="Gapps"
                description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
+          <XDAUrl
+                id="xda"
+                title="XDA"
+                description="Visit XDA thread">https://forum.xda-developers.com/nexus-9/development/rom-gzroms-tesla-flounder-2015-06-19-t3139058</XDAUrl>
        </flounder>
        <clark>
            <Filename>Tesla-clark-7.1.1.Beta.v3.7-Official-20170319-1208.zip</Filename>
