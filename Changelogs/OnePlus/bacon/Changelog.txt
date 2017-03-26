@@ -1,87 +1,127 @@
 ====================
-     03-18-2017
-====================
-
-   * OTA_config/
-1453c61 Flo 03/17
-
-   * frameworks/base/
-dc106d0 Toast long timeout fix
-2f432a0 Toast icon switch [1/2]
-fd365aa SlimRecents: Fix potential SystemUI NPE
-c059fcd67 Slim Recents: don't show panel if app pinning is currently active
-7822c49 Slim Recents: fix multiwindow glitch when docking app to bottom
-
-   * packages/apps/OmniSwitch/
-ce64715 OmniSwitch: delay task info loading to speedup open
-4adb6ec OmniSwitch: more multi window tweaks
-44b262d OmniSwitch: basic multi window support
-
-   * packages/apps/TeslaCoil/
-7805498 add others category
-60920fc Toast icon switch [2/2]
-
-   * vendor/tesla/
-d7162ca Merge pull request #3 from eldainosor/n7.1.1
-f1f89a7 apn: Updating Movistar Argentina APN
-
-====================
-     03-17-2017
+     03-27-2017
 ====================
 
 
-   * frameworks/base/
-515785a Expose Screenshot flash and background colors
-bbb5c40 Unify all "advanced" tiles into one easy toggle tile (1/2)
-3e56775 QS BT easy toggle: if enabled, long press for detail view
-9582dcf QS: BT easy toggle [1/2]
+   * build/
+5239ecc Magisk as default and define explict rootless method [1/2]
+6bcb46c Default root method provision [1/2]
 
-   * packages/apps/TeslaCoil/
-99dc107 Let brightness icon use System switch preference
-f77e0ff Unify all "advanced" tiles into one easy toggle tile (2/2)
-9102e9b QS: Bluetooth easy toggle [2/2]
+   * device/wingtech/wt88047/
+a0bbe4b config: Default root method is rootless
+a6d2836 disable fluence for voicecall/speaker
 
-   * packages/providers/MediaProvider/
-8f76d1e MediaProvider: Fix possible NPE
-acdb4ef MediaProvider: Add read storage permission
-
-====================
-     03-16-2017
-====================
-
-
-   * frameworks/base/
-b9c5049 SubscriptionManager: remove unprovisioned sims from the list of active subscriptions
+   * packages/apps/KernelAdiutor/
+3623c82 Launcher icon update
 
    * packages/apps/Settings/
-27b8561 Fix possible NPE on SIM settings shutdown.
-3ca887a Clean up SIM enable toggle implementation
-87b8aee Settings: port manual provisiong support
+987c1e4 Themes: Expose SmartBar Dialogs from manifest Change-Id: I56775998901159074d5352cfd1eff2b79af28b26 Signed-off-by: Bryan Owens <djbryan3540@gmail.com>
+
+   * packages/apps/SlimRecents/
+191e5d8 Performances: move some settings checks from doInBackground to SettingsObserver
+
+   * vendor/tesla/
+aaf5c63 Update Nova 5.1-beta2
+c663107 Magisk as default and define explict rootless method [2/2]
+2a14906 Default root method provision [2/2]
 
 ====================
-     03-15-2017
+     03-26-2017
+====================
+
+
+   * external/DUtils/
+e610183 WiFi Hotspot: use new on/off logic
+e8f2937 Set default button behavior as in AOSP
+
+   * packages/apps/OmniSwitch/
+33ca096 OmniSwitch: add missing docked task indicator for other views
+
+====================
+     03-25-2017
+====================
+
+
+   * external/DUtils/
+148f0a3 Kill App action: remove the killed app from Recents list
+65cb8bc DUI: Update kill process logic [2/2]
+
+   * frameworks/base/
+e585f9f SystemUI: grant PACKAGE_USAGE_STATS permission for DUI [1/2]
+2b405c9 Build Slim Recents into SystemUI [1/2]
+8a2342e Revert Slim Recents
+90b8a7f Slim Recents: fix SystemUI fc
+89e6728 Slim Recents: more fixes, cleanup and improvements
+69f40c9 Revert "Slim Recents icon pack: code cleanup and improvements"
+
+   * manifest/
+1adaf96 add SlimRecents
+
+   * packages/apps/Settings/
+ce51a99 Add Kernel Adiutor to dashboard
+cbd27af Enable Development Settings By Default regardless of build type * also kill dev countdown + redo arleady enabled string
+
+   * packages/apps/SlimRecents/
+3dcee9b Remove useless ic_menu_delete
+4aee805 Slim Recents: fix SystemUI fc 03-23 23:34:49.053 24500  9597 E AndroidRuntime: FATAL EXCEPTION: AsyncTask #183 03-23 23:34:49.053 24500  9597 E AndroidRuntime: Process: com.android.systemui, PID: 24500 03-23 23:34:49.053 24500  9597 E AndroidRuntime: java.lang.RuntimeException: An error occurred while executing doInBackground() 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at android.os.AsyncTask$3.done(AsyncTask.java:325) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:354) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at java.util.concurrent.FutureTask.setException(FutureTask.java:223) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at java.util.concurrent.FutureTask.run(FutureTask.java:242) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:243) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at java.lang.Thread.run(Thread.java:761) 03-23 23:34:49.053 24500  9597 E AndroidRuntime: Caused by: java.lang.IllegalStateException: Cannot call this method while RecyclerView is computing a layout or scrolling 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at android.support.v7.widget.RecyclerView.assertNotInLayoutOrScroll(RecyclerView.java:2455) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at android.support.v7.widget.RecyclerView$RecyclerViewDataObserver.onItemRangeChanged(RecyclerView.java:4801) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at android.support.v7.widget.RecyclerView$AdapterDataObservable.notifyItemRangeChanged(RecyclerView.java:10781) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at android.support.v7.widget.RecyclerView$AdapterDataObservable.notifyItemRangeChanged(RecyclerView.java:10772) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at android.support.v7.widget.RecyclerView$Adapter.notifyItemChanged(RecyclerView.java:6361) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at com.android.systemui.slimrecent.RecentPanelView$CardLoader.addCard(RecentPanelView.java:1166) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at com.android.systemui.slimrecent.RecentPanelView$CardLoader.doInBackground(RecentPanelView.java:1118) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at com.android.systemui.slimrecent.RecentPanelView$CardLoader.doInBackground(RecentPanelView.java:959) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at android.os.AsyncTask$2.call(AsyncTask.java:305) 03-23 23:34:49.053 24500  9597 E AndroidRuntime:        at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+affc50f Slim Recents: more fixes, cleanup and improvements -code cleanup -set max cache size to 1/6 max maxMemory -we use drawables for app icons, let's handle drawables also into the cache without bitmap to drawable conversions -add back mCardAdapter.notifyItemChanged(index) for app icon and thumbs loading, (those drawable are loaded in separated async tasks so sometimes they are ready after the card has been shown).
+588804d Slim Recents icon cache: clear it when changing scale factor
+e00a733 Slim Recents: add icon cache to improve performances - add back kufi LRU cache implementation to improve performances - adapt it to the new iconpack code - allow to clear the whole cache when changing the iconpack - don'd do a notifyItemChanged when loading card icon and screenshot, we do already notifyItemInserted in the mCardAdapter.addCard (this could also avoid sysui fc due to notifyItemChanged during animation).
+d2e53fe Slim Recents icon pack: fallback to app icon if pack doesn't have any
+543fb9c Slim Recents iconpack support [1/2] ezio: adapted IconPackHelper from CM trebuchet (https://review.lineageos.org/#/c/136600/) with latest OmniSwitch improvements; splitted the whole dialog part and moved it into Settings; i've set here Danesh as commit author because he made the original IconPackHelper code long time ago.
+98f165b SlimRecents: Fix potential SystemUI NPE 03-17 08:18:33.344 E/AndroidRuntime(1412): Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.graphics.Bitmap.isRecycled()' on a null object reference https://www.hastebin.com/unoluyugih.bash
+eed0087 Slim Recents: fix black killapp button on white cards the button is red, no need to apply light/dark color
+db0ccfd Slim Recents: don't show panel if app pinning is currently active ezio edits: don't show the panel at all like stock aosp recents and also don't allow multiwindow action if slimrecents enabled and app pinning active
+b18cac8 Slim Recents: fix multiwindow glitch when docking app to bottom aosp multiwindow has this limitation, but we can easly bypass it just docking first the app we want to top, then the bottom one
+067cf36 SlimRecents: add killapp button to toptask card
+30bf4d3 Slim Recents: fix toptask header layout and other ui improvements
+457744c Slim Recent new multiwindow when multiwindow already active: make it more robust
+7afab28 Slim Recent Refactor: full code rewrite and new UI
+dbbd82e Slim Recent ui/logic/performances improvements, multiwindow and dynam… …ic drag actions
+e3cc099 lim recents: fix entries order, fix drawable FC, improve longpress O… …ptions
+f731c78 Slim Recents [1/2]
+
+====================
+     03-24-2017
+====================
+
+
+   * frameworks/base/
+76cb1f1 Slim Recents icon pack: code cleanup and improvements
+cdf0ba2 Battery tile icon style: unlink it from statusbar icon style [1/2]
+e007b5b Allow themers to customize battery frame color on darkintensity
+
+   * packages/apps/Settings/
+ea5ee75 Magisk icon OCD
+
+   * packages/apps/TeslaCoil/
+2ccec2a Battery tile icon style: unlink it from statusbar icon style [2/2]
+
+   * vendor/tesla/
+c933d68 Update Magisk GZR Edition v1.1
+
+====================
+     03-23-2017
 ====================
 
 
    * device/oneplus/bacon/
-8bba928 Add dependencies
+b68a468 bacon: enable proximityCheckOnWake overlay
 
    * device/wingtech/wt88047/
-a86983c update dependencies
+653ae38 overlay: enable proximity wake
+98aaf55 prop: disable frp for now
 
    * frameworks/base/
-2e55c5f Expose temperature text in DetailedWeatherView
+cde14d9 [1/2] Add proximity wake
 
-====================
-     03-14-2017
-====================
+   * kernel/wingtech/msm8916/
+df2d8bd config: disable ondemand proximity sensor
 
+   * packages/apps/Contacts/
+cc43c7a Fix NPE when 'merge contacts' encounters unknown names.
 
-   * frameworks/base/
-302318e ThemeSafety: Introduce App Crash Intent
-1c2943e Slim Recents: fix toptask header layout and other ui improvements
-
-   * packages/apps/TeslaCoil/
-2a66a3c A few more strings fixes
-f052c86 Recent menu: fix string typo
+   * packages/apps/Settings/
+64344a1 Fix crash when proximity wake is not enabled
+81e5ff2 [2/2] Add proximity wake
 
