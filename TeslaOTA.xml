@@ -70,11 +70,11 @@
                 description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
         </OnePlus3>
         <lux>
-            <Filename>Tesla-lux-7.1.1.Beta.v3.7-Official-20170319-1817.zip</Filename>
+            <Filename>Tesla-lux-7.1.1.RC.v3.8-Official-20170404-0747.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download TeslaN build">https://www.androidfilehost.com/?fid=673368273298940131</RomUrl>
+                description="Download TeslaN build">https://www.androidfilehost.com/?fid=817550096634759782</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -85,11 +85,11 @@
                 description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
         </lux>
         <shieldtablet>
-            <Filename>Tesla-shieldtablet-7.1.1.Beta.v3.7-Official-20170307-1419.zip</Filename>
+            <Filename>Tesla-shieldtablet-7.1.1.RC.v3.8-Official-20170404-1647.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download TeslaN build">https://www.androidfilehost.com/?fid=745425885120713224</RomUrl>
+                description="Download TeslaN build">https://www.androidfilehost.com/?fid=529152257862716971</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -100,11 +100,11 @@
                 description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
         </shieldtablet>
         <hammerhead>
-            <Filename>Tesla-hammerhead-7.1.1.Beta.v3.7-Official-20170307-1558.zip</Filename>
+            <Filename>Tesla-hammerhead-7.1.1.RC.v3.8-Official-20170404-1734.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download TeslaN build">https://www.androidfilehost.com/?fid=529152257862708397</RomUrl>
+                description="Download TeslaN build">https://www.androidfilehost.com/?fid=529152257862716972</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"

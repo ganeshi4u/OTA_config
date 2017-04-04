@@ -1,36 +1,91 @@
 ====================
-     03-07-2017
+     04-04-2017
+====================
+
+
+   * frameworks/base/
+02d62b8 Revert "[Squashed] Remove drawables we don't need"
+6c65a1f Fix partial screenshot not working when dragging from left or top border
+ad1177a Partial screenshot: fix SystemUI fc
+1d1aec4 Fix possible NPE
+5661a8d Partial screenshot aborted by user: show a less troubled warning
+2cfbbe9 Hold "volume up" during boot to disable all overlays
+
+   * packages/apps/DUI/
+3e9641e Smartbar media arrows: more code improvements [1/2]
+ed10f5e SmartBar: show arrows for next/previous track when media playing [1/2]
+965858d SmartBar: allow set custom buttons opacity when Pulse is active [1/3]
+
+====================
+     04-03-2017
+====================
+
+
+   * vendor/tesla/
+90a8bbe gzr: update apns
+
+====================
+     04-02-2017
 ====================
 
    * OTA_config/
-642eb0d shieldtablet update 07/03
-ebede2e lux update 07/03
-47f992b ota: update Redmi2 03/07
-cd64de1 ota: update bacon 03/07
+aeab91c bullhead 04/02
 
-   * build/
-e0fef83 N6F26U
-e2c23ff Updating Security String to 2017-03-05 on nyc-dev
+   * external/DUtils/
+5c13cda Smartbar media arrows: more code improvements [2/2]
+
+   * packages/apps/TeslaCoil/
+b3a777a Fix pulse nav buttons opacity option dependency
+
+   * vendor/tesla/
+6ca70ba v3.8 RC
 
 ====================
-     03-06-2017
+     04-01-2017
+====================
+
+
+   * frameworks/base/
+ee4c442 Themes: Expose Keyboard Shortcuts Dialog
+30cd147 SmartBar: allow set custom buttons opacity when Pulse is active [3/3]
+fff26b3 Fix NullPointerException in MediaPlayer
+73ff364 Frameworks/base: Fix old code in MediaPlayer
+
+   * packages/apps/TeslaCoil/
+c3d485a SmartBar: allow set custom buttons opacity when Pulse is active [2/3]
+
+   * packages/resources/devicesettings/
+a765ae0 Add strings for fingerprint pocketmode
+
+   * vendor/tesla/
+b6fa9de Update Nova 5.1-beta3
+c70ad0c Update Magisk Manager 4.3.1
+fd41615 Update Magisk zip 12.0
+
+====================
+     03-31-2017
 ====================
 
    * OTA_config/
-4bb8862 bullhead 03/05 update
+32dece4 ota: Tesla-onyx (03/30)
 
-====================
-     03-05-2017
-====================
+   * device/motorola/msm8916-common/
+e1b9f8b msm8916-common: camera: Force ZSL to always be on
+2125ed3 Revert "msm8916-common: use Camera2 instead of Snap"
 
+   * external/DUtils/
+b3e4a3a DUI: validate image size before attempting to set as icon [1/2]
 
-====================
-     03-04-2017
-====================
+   * hardware/qcom/audio-caf/msm8916/
+d4d6b51 hal: dolby: Only set C_KEY if ACDB License is enabled.
 
+   * kernel/motorola/msm8916/
+76d85af Merge branch 'cm-14.1' of https://github.com/LineageOS/android_kernel_motorola_msm8916 into HEAD
 
-====================
-     03-03-2017
-====================
+   * packages/apps/TeslaCoil/
+7abc319 SmartBar: show arrows for next/previous track when playing audio [2/2]
+7fa6c0f DUI: validate image size before attempting to set as icon [2/2]
 
+   * packages/apps/ThemeInterfacer/
+ae4821c Fix failed authorization toast on restartService
 

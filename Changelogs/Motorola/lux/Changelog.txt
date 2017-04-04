@@ -1,143 +1,94 @@
 ====================
-     03-19-2017
+     04-04-2017
 ====================
 
-
-   * device/motorola/lux/
-2a0336e lux: Featurize Flash LED
-
-   * device/motorola/msm8916-common/
-9dff135 msm8916-common: Set camera permissions device specific
-ead45be msm8916-common: Drop liboemcrypto
 
    * frameworks/base/
-0a39d28 Slim Recents icon pack: fallback to app icon if pack doesn't have any
-21b7e3a Slim Recents iconpack support [1/2]
+02d62b8 Revert "[Squashed] Remove drawables we don't need"
+6c65a1f Fix partial screenshot not working when dragging from left or top border
+ad1177a Partial screenshot: fix SystemUI fc
+1d1aec4 Fix possible NPE
+5661a8d Partial screenshot aborted by user: show a less troubled warning
+2cfbbe9 Hold "volume up" during boot to disable all overlays
 
-   * packages/apps/TeslaCoil/
-5421f86 Slim Recents iconpack dialog: use android built-in default icon drawable
-63be58b Slim Recents iconpack support [2/2]
-
-   * vendor/motorola/
-061dbf5 griffin: remove Mods related apks
-2bb9c66 griffin: remove MotoDisplayFWProxy
-d56d1fc griffin: update drm blobs
-f2913ed griffin: fix wakelock type
-5974b2c griffin: fix missing package
-e1b4c48 griffin: kang drm from bullhead
-76bec1a griffin: fix adreno blob lib64/libmm-disp-apis.so
-dde42e9 griffin: update adreno blobs
-0373e18 Revert "griffin: switch to shared graphics driver repository"
-006b819 griffin: disable btsnoop trace
-
-====================
-     03-18-2017
-====================
-
-   * OTA_config/
-e3188e7 ota: update Bacon 03/18
-
-   * frameworks/av/
-a7418ee fixings
-4236496 APM: Avoid invalidation of music stream if not required.
-93fcef8 audio: Disable a2dp support on FM active
-2df80fd audiopolicy: Add support for 384kHz audio playback
-dcfadc7 audioflinger: fix for playback paused during track transition
-0ce35ff AudioFlinger: increase size of client heap
-e020347 libstagefright: omx: Prevent assertion due to state mismatches
-e61c142 Fix 64-bit comparison
-d0691ae libstagefright: Avoid negative values for cttsOffsetTimeUs
-e91d614 libstagefright: update cttsOffsetTimeUs for video track
-0ce616d stagefright: Support MP3 in MPEG4 containers
-5205aac Stagefright: Do not skip frames in time-lapse-source for high-speed
-555a5ab ACodec: Fix video autoscaling on old OMX decoders
-69751b7 stagefright: ACodec: Selectively call VQZIP Info
-a37f663 libstagefright: Use proper ctts offset
-7801b22 IMediaSource: add check before calling readMultiple
-7220a21 MediaPlayerService: Clear the vector holding tracks
-1748c3d StagefrightRecorder: add null check for recording source
-f489346 MediaPlayerService: Fix binder dereference while connecting to media services
-da91488 AudioTrack: Don't tear down sink for invalid offload track
-ac72151 audio: Don't update the audio_output flag with track flags
-0d1a819 stagefright: add handling for Large metadata across binder
-da51e1e Stagefright: Addition of DS capability
-d9624aa libstagefright: Restore AOSP's handling of 24/32-bit wav files
-e7e0f3f stagefright: allow multiple custom OMXPlugins
-
-   * frameworks/base/
-dc106d0 Toast long timeout fix
-2f432a0 Toast icon switch [1/2]
-fd365aa SlimRecents: Fix potential SystemUI NPE
-c059fcd67 Slim Recents: don't show panel if app pinning is currently active
-7822c49 Slim Recents: fix multiwindow glitch when docking app to bottom
-
-   * packages/apps/OmniSwitch/
-ce64715 OmniSwitch: delay task info loading to speedup open
-4adb6ec OmniSwitch: more multi window tweaks
-44b262d OmniSwitch: basic multi window support
-
-   * packages/apps/Settings/
-243d56b Expanded Desktop: move it  to TeslaCoil (1/2)
-
-   * packages/apps/TeslaCoil/
-383e9df Expanded Desktop: move it to TeslaCoil (2/2)
-7805498 add others category
-60920fc Toast icon switch [2/2]
-
-====================
-     03-17-2017
-====================
-
-   * OTA_config/
-1453c61 Flo 03/17
-
-   * frameworks/base/
-515785a Expose Screenshot flash and background colors
-bbb5c40 Unify all "advanced" tiles into one easy toggle tile (1/2)
-3e56775 QS BT easy toggle: if enabled, long press for detail view
-9582dcf QS: BT easy toggle [1/2]
-
-   * packages/apps/TeslaCoil/
-99dc107 Let brightness icon use System switch preference
-f77e0ff Unify all "advanced" tiles into one easy toggle tile (2/2)
-9102e9b QS: Bluetooth easy toggle [2/2]
-
-   * packages/providers/MediaProvider/
-8f76d1e MediaProvider: Fix possible NPE
-acdb4ef MediaProvider: Add read storage permission
+   * packages/apps/DUI/
+3e9641e Smartbar media arrows: more code improvements [1/2]
+ed10f5e SmartBar: show arrows for next/previous track when media playing [1/2]
+965858d SmartBar: allow set custom buttons opacity when Pulse is active [1/3]
 
    * vendor/tesla/
-d7162ca Merge pull request #3 from eldainosor/n7.1.1
-f1f89a7 apn: Updating Movistar Argentina APN
+90a8bbe gzr: update apns
 
 ====================
-     03-16-2017
+     04-03-2017
+====================
+
+   * OTA_config/
+aeab91c bullhead 04/02
+
+   * external/DUtils/
+5c13cda Smartbar media arrows: more code improvements [2/2]
+
+   * packages/apps/TeslaCoil/
+b3a777a Fix pulse nav buttons opacity option dependency
+
+   * vendor/tesla/
+6ca70ba v3.8 RC
+
+====================
+     04-02-2017
 ====================
 
 
-   * packages/resources/devicesettings/
-5a5b9c5 Automatic translation import
-
 ====================
-     03-15-2017
+     04-01-2017
 ====================
 
+   * OTA_config/
+32dece4 ota: Tesla-onyx (03/30)
+
+   * device/motorola/msm8916-common/
+e1b9f8b msm8916-common: camera: Force ZSL to always be on
+2125ed3 Revert "msm8916-common: use Camera2 instead of Snap"
 
    * frameworks/base/
-b9c5049 SubscriptionManager: remove unprovisioned sims from the list of active subscriptions
-2e55c5f Expose temperature text in DetailedWeatherView
+ee4c442 Themes: Expose Keyboard Shortcuts Dialog
+30cd147 SmartBar: allow set custom buttons opacity when Pulse is active [3/3]
+fff26b3 Fix NullPointerException in MediaPlayer
+73ff364 Frameworks/base: Fix old code in MediaPlayer
 
-   * hardware/nvidia/power/
-b50c1f2 Bring    * back closer to upstream for easier updates
+   * hardware/qcom/audio-caf/msm8916/
+d4d6b51 hal: dolby: Only set C_KEY if ACDB License is enabled.
 
    * kernel/motorola/msm8916/
-89e6f5a Merge branch 'cm-14.1' of https://github.com/LineageOS/android_kernel_motorola_msm8916 into cm-14.1
+76d85af Merge branch 'cm-14.1' of https://github.com/LineageOS/android_kernel_motorola_msm8916 into HEAD
 
-   * packages/apps/Settings/
-27b8561 Fix possible NPE on SIM settings shutdown.
-3ca887a Clean up SIM enable toggle implementation
-87b8aee Settings: port manual provisiong support
+   * packages/apps/TeslaCoil/
+c3d485a SmartBar: allow set custom buttons opacity when Pulse is active [2/3]
+
+   * packages/apps/ThemeInterfacer/
+ae4821c Fix failed authorization toast on restartService
+
+   * packages/resources/devicesettings/
+a765ae0 Add strings for fingerprint pocketmode
+
+   * vendor/tesla/
+b6fa9de Update Nova 5.1-beta3
+c70ad0c Update Magisk Manager 4.3.1
+fd41615 Update Magisk zip 12.0
+
+====================
+     03-31-2017
+====================
+
+
+   * external/DUtils/
+b3e4a3a DUI: validate image size before attempting to set as icon [1/2]
+
+   * packages/apps/TeslaCoil/
+7abc319 SmartBar: show arrows for next/previous track when playing audio [2/2]
+7fa6c0f DUI: validate image size before attempting to set as icon [2/2]
 
    * vendor/motorola/
-789936d clark: kang drm from bullhead
+d66d7fc qcom-common: Switch from legacy audio HAL
 
