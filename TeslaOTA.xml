@@ -228,4 +228,25 @@
                description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
 </bullhead>
     </Stable>
+    <Unofficial>
+        <A7010a48>
+            <Filename>Tesla-A7010a48-7.1.1.RC.v3.8-UNOFFICIAL-20170408-1704.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download Tesla build">https://www.androidfilehost.com/?fid=673368273298943698</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Tesla changelogs">https://forum.xda-developers.com/showpost.php?p=71727328&postcount=2</ChangelogUrl>
+            <GappsUrl
+                id="gapps"
+                title="Gapps"
+                description="Download Latest Gapps">http://www.opengapps.org</GappsUrl>
+            <XDAUrl
+                id="XDA"
+                title="XDA Forums"
+                description="Visit GZR K4 thread on XDA Forum">https://forum.xda-developers.com/k4-note/development/rom-tesla-rom-n-t3584481</XDAUrl>
+        </A7010a48>
+     </Unofficial>
 </SlimOTA>
