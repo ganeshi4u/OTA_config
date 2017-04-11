@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <A7010a48>
-            <Filename>Tesla-A7010a48-7.1.1.RC.v3.8-UNOFFICIAL-20170408-1704.zip</Filename>
+            <Filename>Tesla-A7010a48-7.1.1.RC.v3.8-UNOFFICIAL-20170410-1236.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download Tesla build">https://www.androidfilehost.com/?fid=673368273298943698</RomUrl>
+                description="Download Tesla build">https://www.androidfilehost.com/?fid=673368273298946326</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
